@@ -1,0 +1,60 @@
+{
+  "name": "@larp/app-owbn",
+  "description": "One World By Night",
+  "version": "0.0.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.org/itential/app-ssh_helper.git"
+  },
+  "scripts": {
+    "jenkins": "npm install && PATH=$(npm bin):$PATH grunt jenkins",
+    "lint": "eslint .",
+    "lint:all": "cdir=$(pwd) && npm run lint && cd csr-ui && npm run lint; cd $cdir && unset cdir",
+    "lint:fix": "eslint . --fix",
+    "test:unit": "cross-env NODE_ENV=test nyc --recursive --reporter=html --reporter=text --report-dir=coverage/unit mocha test/unit/**",
+    "test:integration": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text --report-dir=coverage/integration mocha test/integration/**.js",
+    "test": "npm run test:unit && npm run test:integration"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-transform-classes": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-istanbul": "^5.1.1",
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jsdoc-to-markdown": "^4.0.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "testdouble": "^3.12.0" 
+  },
+  "dependencies": {
+    "@angular/cli": "^7.3.9",
+    "bundle-dependencies": "^1.0.2",
+    "ip-address": "^5.8.9",
+    "jsonschema": "^1.2.4",
+    "mongodb": "^3.2.3",
+    "mongodb-uri": "^0.9.7"
+  },
+  "eslintIgnore": [
+    "node_modules/*",
+    "resources/*",
+    "coverage/**",
+    "views/**",
+    "scripts/**",
+    "test/**",
+    "ui/**",
+    "utils/**"
+  ],
+  "bundledDependencies": [
+    "@angular/cli",
+    "bundle-dependencies",
+    "ip-address",
+    "jsonschema",
+    "mongodb"
+  ]
+}

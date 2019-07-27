@@ -1,0 +1,55 @@
+{
+	"id": "@larp/app-owbn",
+	"title": "app-owbn",
+	"export": "app-owbn",
+	"type": "Application",
+	"summary": "Application to act as an interface for OWBN",
+	"pdb": true,
+	"version": "0.0.1",
+	"roles": [
+		"admin"
+	],
+	"methods": [
+		{
+			"name": "getDevicesFiltered",
+			"summary": "broker get user",
+			"description": "XO",
+			"input": [{
+					"name": "adapterId",
+					"type": "string"
+				},
+				{
+					"name": "options",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_data",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/getDevicesFiltered",
+				"verb": "POST"
+			},
+			"roles": [
+				"admin"
+			],
+			"task": true
+		}
+	],
+	"views": [        
+		{
+			"path": "/",
+			"roles": [
+				"admin"
+			],
+			"template": "index.html",
+			"title": "OWBN",
+			"icon": "/owbn/img/johnny_automatic_rose_border.svg",
+			"type": "view"
+		}
+	],
+	"src": "cog.js",
+	"encrypted": false
+}
