@@ -1,7 +1,7 @@
 {
 	"id": "@larp/app-owbn",
-	"title": "app-owbn",
-	"export": "app-owbn",
+	"title": "owbn",
+	"export": "owbn",
 	"type": "Application",
 	"summary": "Application to act as an interface for OWBN",
 	"pdb": true,
@@ -11,26 +11,91 @@
 	],
 	"methods": [
 		{
-			"name": "getDevicesFiltered",
-			"summary": "broker get user",
-			"description": "XO",
+			"name": "characterCreate",
+			"summary": "Create Character",
+			"description": "Character creater",
 			"input": [{
-					"name": "adapterId",
-					"type": "string"
-				},
-				{
-					"name": "options",
+					"name": "characterSheet",
 					"type": "object"
 				}
 			],
 			"output": {
-				"name": "return_data",
+				"name": "return_results",
 				"type": "object",
 				"description": "data"
 			},
 			"route": {
-				"path": "/getDevicesFiltered",
+				"path": "/characterSheet",
 				"verb": "POST"
+			},
+			"roles": [
+				"admin"
+			],
+			"task": true
+		},
+		{
+			"name": "characterUpdate",
+			"summary": "Create Character",
+			"description": "Character creater",
+			"input": [{
+					"name": "characterSheet",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/characterSheet",
+				"verb": "PUT"
+			},
+			"roles": [
+				"admin"
+			],
+			"task": true
+		},
+		{
+			"name": "characterDelete",
+			"summary": "Create Character",
+			"description": "Character creater",
+			"input": [{
+					"name": "characterSheet",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/characterSheet",
+				"verb": "DELETE"
+			},
+			"roles": [
+				"admin"
+			],
+			"task": true
+		},
+		{
+			"name": "characterShow",
+			"summary": "Create Character",
+			"description": "Character creater",
+			"input": [{
+					"name": "characterSheet",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/characterSheet",
+				"verb": "GET"
 			},
 			"roles": [
 				"admin"

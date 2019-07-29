@@ -1,0 +1,292 @@
+{
+    "The Ash Path" : {
+        "source" : "Necromancy",
+        "description" : "The barriers between this world and the Underworld of the dead are permeable to the student of the Ash Path. With this path, a necromancer can see, hear and communicate with wraiths of all sorts, not just the ones that he can summon or control. Indeed, with enough skill, the Ash Path allows a vampire to cross the Shroud into the lands of the dead. This frightening power thus allows for myriad effects as the vampire reaches into the Underworld and deals freely with the denizens therein.  Retests with the Ash Path rely on the Occult Ability. At the Storyteller's discretion, the specialised Ability of Wraith Lore may be used instead.",
+        "retests" : "Occult",
+        "powers" : [
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Shroudsight",
+                "effect" : "See into the underworld",
+                "description" : "With minimal effort, you can see across the Shroud that separates the world of the living from the lands of the dead. The Underworld appears as a decaying and ghastly reflection of the mortal world, sometimes with structures lost to the past or unusual spirits flitting about You can see (though not hear or feel) anything that transpires in the Underworld within your normal visual range, with a sort of 'double sight' that does not hinder your normal vision.  You need only expend a Mental Trait to look across the Shroud for the duration of the scene, or for an hour, whichever comes first."
+            },
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Lifeless Tongues",
+                "effect" : "Understand language of any wraith",
+                "description" : "The babble of restless spirits is clear to you. By concentrating for a moment, you attune your senses to the Underworld, making yourself capable of both seeing and hearing all that transpires there around you. Furthermore, you can understand the language of the dead, so unless a ghost goes out of the way to use a language that you do not know, you can comprehend the words of any wraith.  You must expend a Willpower Trait to attune yourself to the Underworld for a scene or an hour (whichever ends first). "
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Dead Hand",
+                "effect" : "You can touch the contents of the Shadowlands",
+                "description" : "The structures and entities of the Underworld are very real to you. In a bizarre sort of half-life, you can stretch your physical form across the Shroud, interacting with beings and scenery there even as your physical body remains partially in the living world.  By expending a Willpower Trait, you make yourself capable of touching the contents of the Shadowlands for a scene or an hour (whichever comes first). Each additional scene or hour, you can maintain this power at the cost of one Blood Trait. During this time, you do not actually pierce the Shroud, but your actions affect both worlds. Thus, you can climb a ghostly rope, then turn and step onto a real-world roof. You can also lash out physically and strike or grapple with ghosts, though they can return the attacks. However, you cannot push or pull objects from one world to the next. Effectively, you exist in both realms simultaneously, which can be very disturbing to those watching you climb invisible ropes or grapple unseen opponents."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Ex Nihilo",
+                "effect" : "Cross into the lands of the dead",
+                "description" : "Tearing through the Shroud between worlds, you can cross into the lands of the dead. This journey is a harrowing one, for many spirits wait to take vengeance on necromancers, and the Underworld is full of hazards unknown to most vampires. Furthermore, there is no way to gather blood or sustenance in the Underworld, and you can become lost in the storms and seas of the deadlands. Still, this power allows for direct contact with shades of the restless, and it serves as an unusual means of travel. While you are in the Shadowlands, you still see everything that transpires in the mortal world, but your physical form exists in the realm of the dead.  You must first mark a doorway with chalk or blood on any available surface, taking a full turn to do so. (You need not actually draw such a door, but you should pantomime the appropriate actions.) You must then expend a Willpower Trait and two Blood Traits, and make a Static Physical Challenge with a difficulty of eight Traits. If you succeed, you step through the door into the Underworld. Returning to the material world is a matter of concentration; you need only focus your intent to do so and expend a Willpower Trait, at which point you return to the living lands at the end of the turn. Beware, though, for if you wander too deeply into the deadlands, you may become lost and unable to pierce the Shroud.  When you travel into the deadlands, you take with you only the inanimate objects that you carry. You cannot pull in other living or undead creatures. Furthermore, the laws of physics in the Underworld are not the same as those of the material world; guns do not work, and electrical devices fail. Generally, you must rely on your own powers. "
+            },
+            { 
+                "cost" : 9,
+                "rank" : "Advanced",
+                "name" : "Shroud Mastery",
+                "effect" : "Raise or lower the shroud to the deadlands",
+                "description" : "Your control over the barrier between the living and dead worlds is nearly absolute. Instead of stepping across or watching the events of the Underworld, you can actually manipulate the fabric of the Shroud. By changing the strength of the web between worlds, you can make it easier to cross, or bar wraiths from exerting their influence on the material world.  You must expenda Willpower Trait to exercise Shroud Mastery. Then, you may raise or lower the Shroud, as you desire. Each Mental Trait that you expend alters the strength of the Shroud by one point in either direction. A stronger Shroud makes it more difficult for wraiths to interact with the living, while a weaker Shroud has the reverse effect. You can raise the Shroud up to a maximum of 10 or lower it to a minimum of three. The typical Shroud rating for most locations is 7 or 8, though areas frequented by vampires or ghosts (cemeteries, crypts, mortuaries and sites of Elysium) may have ratings of 4 or 5.  If you are simply using wraiths as generic antagonists, each point of change in the Shroud's strength grants the wraith bonus Traits when interacting with the living world (if the Shroud is weakened) or acts as a penalty to the wraith's total Traits (if the Shroud is strengthened)."
+            }
+        ]
+    },
+    "The Bone Path" : {
+        "source" : "Necromancy",
+        "description" : "The Bone Path controls death's physical ends. Corpses are the medium of power for such a vampire, and they can be imbued with unwholesome energies and animated to perform according to their master's bidding. Zombies and soulless automatons are the hallmarks of the Bone Path.  Retests of the Bone Path use the Occult Ability. The Storyteller may choose to use the specialized Ability of Thanatology instead, if desired.",
+        "retests" : "Occult",
+        "powers" : [
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Tremens",
+                "effect" : "Instill a corpse with a brief jolt of life",
+                "description" : "You can instill a corpse with a brief jolt of life. Though this power is insufficient to actually animate or control bodies, you can make them start or twitch spasmodically. Naturally, this sight frightens those unaccustomed to the mobile dead.  You need expend only one Blood Trait to use Tremens. The body then twitches or moves briefly in a fashion that you dictate, from sitting up to blinking to flailing an arm momentarily. If you expend a Physical Trait as well, you can implant a command into the corpse instead, causing it to move (once) as you direct when a certain event comes to pass. Corpses twitching in this fashion cannot actually attack or inflict damage, but they can certainly startle the unwary."
+            },
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Apprentice's Brooms",
+                "effect" : "Animate the dead",
+                "description" : "Your skills in the Bone Path allow you to animate the dead, bringing ambulatory motion and a semblance of understanding to a cold corpse. Though they cannot fight, these zombies follow simple instructions, performing tasks that you set to them.  You must expend a Blood Trait and a Willpower Trait to use Apprentice's Brooms on one or more corpses, and you must also spend one Mental Trait for each corpse so animated. These corpses have four health levels, and they do not suffer penalties for injuries, but they cannot fight. Corpses animated with this power continue to perform a single task as you direct until they complete the job or until time or damage destroys them. Cadavers continue to rot even after being imbued with this energy, though only at the slow rate of one health level per month."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Shambling Hordes",
+                "effect" : "Summon horde of undead",
+                "description" : "When you raise the dead to do your bidding, they come in skeletal hordes and withered masses that obey your every command, working and fighting until destroyed. Any body, no matter how decomposed, can be raised to serve your will.  You must expend a Willpower Trait to call on the Shambling Hordes, and then invest one Mental Trait and one Blood Trait for each corpse animated. As long as the skeleton is reasonably intact, the corpse rises to do your bidding. Such guardians can perform tasks or fight for you with no regard to their own welfare. They typically have four health levels (though heavily damaged corpses may have less), and they suffer no wound penalties. These zombies fight with the same number of Physical Traits that they possessed in life (assume five Traits for randomly chosen corpses). They can be given orders to attack people or to guard an area, and they wait tirelessly until destroyed. Decomposition will continue for corpses in varying states of decay, although completely skeletal guardians will be unaffected."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Soul Stealing",
+                "effect" : "Pull the soul from a living or undead body",
+                "description" : "Your mastery of animate flesh and spirit allows you to pull the soul from a living or undead body. With Soul Stealing, you draw out the victim's soul, turning it temporarily into a wraith while leaving the body as an empty husk.  You must expend a Willpower Trait and engage your target in a Social Challenge to use this power. If you succeed, the soul is torn from the body, forced to remain as a ghost for a full hour or scene. You can then use other Necromancy powers to bind the hapless spirit as long as it is separate from the body. The body itself continues to survive in a comatose state, a perfect host for other possessing spirits."
+            },
+            { 
+                "cost" : 9,
+                "rank" : "Advanced",
+                "name" : "Daemonic Possession",
+                "effect" : "Place a willing soul into a fresh corpse or inanimate body",
+                "description" : "Though you are not dealing with actual infernal spirits, you can cast a willing soul into a fresh corpse or inanimate body. Thus embedded, the soul takes control of the body, turning it into a new physical home. Dead bodies continue to decay, and thus, they last no more than a week, but this trick provides a perfect temporary repose for a free-floating soul or summoned ghost.  The body must have died within the same scene in which you use Daemonic Possession, or else it must be alive or undead and bereft of consciousness (for instance, if you have removed its soul or if the owner is currently using Subsume the Spirit, Possession or Psychic Projection). Bodies of vampires in torpor do not make suitable hosts, as the vampire's spirit is still inside the torpid body. You need not make any challenge or expenditure-with an appropriate host and spirit, the process is automatic once you exert your power."
+            }
+        ]
+    },
+    "Hands of Destruction" : {
+        "description" : "The magicians of the Sabbat use magics designed to slay their foes brutally. The painful powers of the Hands of Destruction are one such straightforward path. Rumored to be the work of infernalists and demonic tutors, this path delivers agony and decrepitude on its victims.  Some few Camarilla vampires have unearthed this path, but it remains a rare curiosity among most thaumaturges. With the destruction of the Sabbat's Warlocks, the Hands of Destruction path is relegated to the few zealous warriors who manage to wrest its secrets from tomes or infernal pacts. A number of regents have barred practitioners of this path from their chantries on suspicion of infernalism, and many Tremere refuse to practice it because of its potentially demonic origins.  Exerting Hands of Destruction requires a single turn of casting. In some cases, it is used as a physical attack, and the spell and the attack are considered to take one turn, executed on the caster's normal action.",
+        "retests" : "",
+        "powers" : [
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Decay",
+                "effect" : "Inanimate matter crumbles rapidly under your touch",
+                "description" : "Inanimate matter crumbles rapidly under your touch. Even dead organic material quickly melts into a puddle of putrescence.  No test is necessary to use this power. For each turn that you maintain contact with an object, it ages a full year. Using this power reduces wood or organic matter to a rotted morass quickly, and it can weaken even metal or plastic with sufficient time. If you break contact with the object, the accelerated aging ceases. Any decrepitude that you inflict on something is permanent, though.  Although you can age the flesh of a vampire with this power, such a tactic has no functional effect. Vampires do not suffer any changes or decrepitude from this aging, as their supernaturally preserved corpses are immune to such treatment."
+            },
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Gnarl Wood",
+                "effect" : "Your merest glance can swell or contract wood",
+                "description" : "Your merest glance can swell or contract wood, or twist it into strange shapes. You need not touch the wood to affect it, only see it.  You can warp up to 50 pounds of wood, rendering it gnarled and useless. This is an excellent way to burst doors, destroy furnishings and twists stakes into uselessness. If you try to gnarl an object held by someone, you must best the individual in a Mental Challenge to warp the wood. You can Gnarl Wood against multiple objects at once, as long as you can see them all and they do not total more than 50 pounds in weight."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Acidic Touch",
+                "effect" : "Your touch is caustic",
+                "description" : "Mystically altering your vitae, you cause it to become a thick, black, bilious substance, a caustic fluid that burns flesh, cloth, metal and wood alike. Your Acidic Touch has no effect on yourself, but it can leave horrible corroded marks on anything that makes the slightest contact with your coated hands.  The vitriol created with Acidic Touch inflicts aggravated damage, and it can eat through most substances (Storyteller's discretion as to time). You can exude this acid from any part of your body, thus potentially making simple contact or even a kiss painfully deadly. Each application of Acidic Touch does only one health level of damage, so you may need to use this power repeatedly over several turns to burn through a particularly recalcitrant substance (or subject). No test is necessary to use Acidic Touch, though, of course, if you try to strike someone with the acids, you must make the normal Physical Challenge to hit. The acid created with this power is thick and slimy, so it cannot be flung or spat at opponents; you must deliver it by touch."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Atrophy",
+                "effect" : "Wither the limbs of your opponents",
+                "description" : "The warping effects of your powers allow you to wither the very limbs of your opponents. A simple touch is all that is required to Atrophy a single limb, turning it into a useless, fragile husk.  You need to strike your target physically (with a Physical Challenge) in order to Atrophy a limb. If you hit, you wither one arm or leg, rendering it useless. Doing so gives the victim the Negative Traits Clumsy and Lame. Multiple attacks can wither different limbs, cumulatively crippling the victim (and adding additional Negative Traits). A victim without arms cannot grapple or wield weapons; a victim without functional legs cannot move. This effect is permanent on mortals, though vampires can heal a crippled limb as if it were a single aggravated wound."
+            },
+            { 
+                "cost" : 9,
+                "rank" : "Advanced",
+                "name" : "Turn to Dust",
+                "effect" : "Amplify the process of decay to incredible speeds",
+                "description" : "Amplifying the process of decay to incredible speeds, you can reduce your victim to little more than a pile of dust. Mortals almost always die instantly and collapse to putrefied remains, while even vampires are withered.  If you manage to get a firm grip on your victim with a Physical Challenge, you can cause him to turn to dust. Each Physical Trait that you expend afterward causes the subject to age 10 years. Mortals aged more than 50 years die instantly, reduced to a mass of liquefied tissue and crumbling bone. Vampires attacked with such ferocity (aged 50 years or more) suffer the Negative Trait Repugnant for the remainder of the evening as their bodies shrivel slightly, but the immortal curse prevents any actual physical harm. Note that Turn to Dust functions only on living or undead targets, use Decay on inanimate subjects."
+            }
+        ]
+    },
+    "Lure of Flames" : {
+        "description" : "Perhaps one of the most feared forms of vampire magic, The Lure of Flames allows you to summon forth magical fire. The burning power of your blood is shaped into dancing flame that answers your command. Although such fires are small at first, masters of this path can conjure forth veritable hellstorms of unnatural flame.  Retests for The Lure of Flames use the Occult Ability.",
+        "retests" : "Occult",
+        "powers" : [
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Hand of Flame",
+                "effect" : "Hand bursts into flame",
+                "description" : "A dancing puff of fire surrounds your hand (or both hands) at your command. This palm of flame creates light and allows you to strike with your hand to burn your opponents. Once cast, the Hand of Flame remains until you decide to snuffit out. You can even use it in conjunction with other powers like Celerity and Potence, becoming a formidable combatant.  The Hand of Flame causes aggravated damage, if you strike with your flamewreathed hand(s). You suffer no damage or inconvenience from the Hand of Flame; indeed, you may even wear gloves or other clothing, which remain unaffected by the fires. Should you cause something else to catch fire, that fire can later burn you. Invoking the Hand of Flame takes one action"
+            },
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Flame Bolt",
+                "effect" : "Shoot fire bolt at target",
+                "description" : "By pointing at a target and intoning words of power, you may launch a Flame Bolt. This dart of fire streaks through the air to wound whomever it strikes with a searing blast, and it causes readily flammable objects to catch fire.  Casting a Flame Bolt requires you to challenge your Mental Traits against a target's Physical Traits in order to hit. A Flame Bolt inflicts one level of aggravated fire damage when it strikes, then snuffs out in a puffof mystic fire. Should the Flame Bolestrike a readily flammable target (like a pile of hay or papers, but not clothing worn by someone), the target catches fire. You are not immune to your own Flame Bolt, if by some chance it should be directed back at you. Firing a Flame Bolt is a single action"
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Wall of Fire",
+                "effect" : "Summon a wall of flames",
+                "description" : "A column of flame erupts from the very air, burning with unnatural vigor at your command. You need only point to the desired location and utter the syllables of this magic in order to generate a veritable Wall of Fire. You can create this flaming barrier at any site that you can see, up to 50 feet away from yourself.  Casting a Wall of Fire takes a single action. A Wall of Fire occupies a space approximately six feet in diameter, and of equal height. If you cast the wall at a person's location, you use your Mental Traits in a challenge against the victim's Physical Traits. If you win, the fire shoots up underneath the subject, inflicting a level of aggravated damage. The wall remains until you decide to extinguish it, move more than 50 feet away or are knocked unconscious, fall into torpor, or die. Individuals moving through the Wall of Fire suffer a level of aggravated damage automatically each turn that they are within or passing through its confines.  If you cast a Wall of Fire at a flammable object or surface, the target may well ignite, spreading the fire. You have no special immunity to your own fires created with this magic."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Engulf",
+                "effect" : "Cause victim to burst into flames",
+                "description" : "By staring intently at a subject and speaking the words of fire creation, you cause the victim to burst into flames, combusting rapidly. This fire burns the subject with horrible power, remaining until the subject manages to extinguish the flame.  Casting Engulf takes a single action. You must make a challenge of your Mental Traits against the target's Physical Traits in order to successfully Engulf a foe. If you succeed, the target bursts into flames, suffering two levels of aggravated damage from the fire. Furthermore, until the target takes a full action to smother the flame, he continues to suffer an additional level of aggravated damage at the end of every successive turn. The victim does, of course, score aggravated wounds on others and light flammable objects he touches, but this incidental effect is obviously a secondary consideration.  You may Engulf a target multiple times in successive turns, causing cumulative damage as the victim combusts explosively. However, a victim blasted multiple times still only takes one level of damage per following turn due to the continuing fire."
+            },
+            { 
+                "cost" : 9,
+                "rank" : "Advanced",
+                "name" : "Firestorm",
+                "effect" : "Engulf an entire room in flames",
+                "description" : "When you call to the flames, they come in a searing wash that fills an entire room. A Firestorm rains a hail of flame down across a huge area, burning everything within. Any place that you can see, within 50 feet, can be the target of a Firestorm.  When you call down the Firestorm, an area up to 20 feet in diameter is shot through with roaring sheets of flame. You make a mass challenge against anyone within, pitting your Mental Traits against their physical Traits. Anyone who loses is struck with the fire, immediately taking a level of aggravated damage. Victims who cannot reasonably escape the area (because they are trapped in a dead end, perhaps, or because they cannot move fast enough to get out of the way) are burned automatically without recourse to a challenge, at the Narrator's option. All flammable materials in the area ignite immediately, though people or vampires fleeing the space do not necessarily remain lit.  A Firestorm lasts until you stop it, or until you move out of range. Italso ends immediately if you are knocked unconscious, sent into torpor or killed. Anyone who remains in the area of the Firestorm suffersone level of aggravated damage at the end of every turn after its creation"
+            }
+        ]
+    },
+    "Movement of the Mind" : {
+        "description" : "Through Movement of the Mind, you can manipulate remote objects or even creatures. Though this path does not actually impart any sort of physical force, it allows you to control things as if you held them without actually touching them. You need only see the target in order to affect it.  Manipulation with Movement of the Mind does not provoke a tactile response. That is, you cannot remotely "feel" an object to tell if it is hot, rough, slippery etc. You simply impart motion into the item in question.  Retests of Movement of the Mind use the Occult Ability",
+        "retests" : "Occult",
+        "powers" : [ 
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Force Bolt",
+                "effect" : "Projects a bolt of force",
+                "description" : "Your concentrated will projects a bolt of force capable of stunning opponents and knocking over objects. A Force Bolt is really more of a sudden jar of motion to a target than an actual blow, but the effects are similar.  When you attack someone with a Force Bolt, you use your Mental Traits in a challenge against the victim's Physical Traits. If you win, the subject is knocked to the ground, losing his next action (not full turn-victims with Celerity may well recover in the same turn).  A Force Bolt can be used to lash out at an object no more than a hundred pounds in weight. If the object is not held by anyone, you can push it about five feet in any direction. An object held by someone can only be struck aside if you defeat the holder in a Mental versus Physical Challenge, as described previously. Obviously, though, this power is ideal for disarming foes at a distance, or for knocking aside valuable possessions."
+            },
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Manipulate",
+                "effect" : "Exert fine manipulation over something at range",
+                "description" : "Your control of forces allows you to exert fine manipulation over something at range. When you Manipulate an object, you can toy with it in any fashion that you could with one hand. Thus, you can remotely pick something up, push a button or fire a gun.  Using an object remotely takes your full concentration and thus counts as your turn. Additionally, the difficulty of fine control at range requires that you risk an additional Trait in any challenge with the object -- if you Manipulate a gun to fire at someone, for instance, you must bid an extra Trait for the attack challenge. Objects hefted with this power can only move at walking speed, and they can be nothing larger than you could lift with one hand.  Anything you Manipulate remains under your control as long as you can see it, unless you release it from your spell deliberately. You must maintain complete concentration to Manipulate an object; when you stop concentrating or take a different action, the spell ceases."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Flight",
+                "effect" : "Move something human sized with your mind",
+                "description" : "You can telekinetically hoist a whole person, pulling the individual off the ground. You can also shove large objects around roughly, although you cannot control them easily. This level of power can slam doors, heft desks and snare opponents. Flight even lets you lift yourself off the ground and move at a brisk pace through the air.  When you invoke Flight on a particular subject, you can move it around at a brisk walking speed. You can move anything up to 200 pounds in weight, but you do not have fine control over the object, and the object cannot be used to bludgeon or cut (since it moves too slowly and erratically). If you grab a person with this power, using a challenge of your Mental Traits against the victim's Physical Traits, you can hoist the victim into the air, or even move him about slowly, though this power does not inflict actual damage.  Most spectacularly, Flight lets you move yourself smoothly at walking speed in any direction. You can soar as high as you dare go or simply hover off the ground.  Flight lasts only as long as you concentrate on the effect to the exclusion of all other activities. If you use this power on any subject besides yourself, you must be able to see the target in order to control it with Flight."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Repulse",
+                "effect" : "Push away opponents or shove objects with incredible power",
+                "description" : "A wave of motion overtakes everything around you with a simple gesture and a few spoken words. You can push away threatening opponents or shove objects with incredible power.  You can Repulse anything within your line of sight. Objects flung with Repulse move up to 20 feet away from you, and you can push multiple objects simultaneously. If you Repulse people, you make a challenge of your Mental Traits against each of their Physical Traits, as described in mass combat. Anyone who loses to you is flung 20 feet away. Even people who are grappling or biting you can be pushed away in this fashion. If you Repulse an object so that it strikes a victim, you use your Mental Traits to strike with it while the opponent dodges with Physical Traits. Objects hitting in this fashion do one health level of lethal damage.  Repulse is an instant effect; you cannot Repulse an object to strike someone and then continue shoving it around in successive turns. You must Repulse objects or people every turn that you wish to move them."
+            },
+            { 
+                "cost" : 9,
+                "rank" : "Advanced",
+                "name" : "Control",
+                "effect" : "",
+                "description" : "Gripping a target with mental force, you bend its motions to your will. As you direct its movements with your commanding magical phrases and gestures, it spins, flies and moves according to your direction.  When you Control an object, you can heft anything up to a ton in weight and manipulate it with precision equal to both of your hands. You can therefore hoist an automobile or tie shoelaces. These devices can be used to attack, doing one health level of lethal damage if they strike (as described under Repulse). You can even control a weapon remotely, scoring its normal damage, though this sort of fine manipulation requires you to bidan extra Trait in all challenges with it (as described under Manipulate).  People grabbed with Control can be rendered paralyzed, or they can be flung about at your will. Slamming a victim into a wall or other hard surface causes one level of lethal damage. You must make a Mental Challenge against the target's Physical Traits when you first exercise Control, and in any successive turn where you attempt to move the victim. Thus, you must win a test to grab the victim, and if you do anything other than immobilize him, you must make additional tests. Note that Control only affects the victim's physical motions; the subject can still talk, shout for help, use Disciplines and so on.  Exercising Control over one object or creature requires all of your concentra. tion. Once you stop concentrating, the power dissipates. Control is also lost if you lose sight of the subject "
+            }
+        ]
+    },
+    "The Path of Conjuring" : {
+        "description" : "Creating objects from nothingness is a simple power with The Path of Conjuring. Just a few words and a mental image of the desired item allow for the sudden appearance of nearly any object. Any conjured object or creature is literally produced from nowhere.  Objects created with The Path of Conjuring are generic, with no distinguishing marks, and are always exactly the same every time they are conjured. You cannot conjure anything larger or heavier than yourself. Also, you must have a working familiarity with the object in question. Making this power its most effective may require you to possess certain Abilities. You would need a few levels of Firearms and Crafts: Gunsmith to make an Uzi, for instance, or Science and Medicine to conjure artificial pharmaceuticals. All such objects are conjured from Platonic ideals, not as sums of parts. Therefore, if the object is broken up into components, melted, altered or otherwise violated, the spell is broken and the substance dissolves into a viscous sludge that fades into nothingness.  Using The Path of Conjuring requires a full turn to create any one effect. Retests with The Path of Conjuring, when necessary, use the Occult Ability",
+        "retests" : "Occult",
+        "powers" : [
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Summon the Simple Form",
+                "effect" : "Make an item of inanimate matter of one sort",
+                "description" : "Your rudimentary conjuring skills allow you to create basic objects made of a single homogenous material. These items are little more than chunks of matter, possibly crudely fashioned and lacking in any complex or moving parts. You can thus conjure a rod of metal, a club, a wooden stake, a rock or a lump of coal.  When you Summon the Simple Form, you can only make an item of inanimate matter of one sort. You cannot conjure living or undead creatures, nor can you make something built from multiple substances.  After you have conjured an item with this power, you must spend a Mental Trait at the beginning of every new turn in which you wish to keep it in existence. If you do not, the object vanishes instantly. Youshould record your current Mental Traits at the time that you create an object with this power, in case it is dispelled later with Reverse Conjuration."
+            },
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Permanency",
+                "effect" : "Create real and permanent objects",
+                "description" : "Simple objects that you conjure can now be invested with your power, making them real and permanent. You need not make an item permanent, but if you choose to do so, it remains without any further concentration or effort on your part.  Exercising Permanency on an item conjured with Summon the Simple Form requires that you spend three Blood Traits in the process of conjuring, instead of the usual one. The object is then considered whole and real, and it does not disappear unless banished with Reverse Conjuring."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Magic of the Smith",
+                "effect" : "Create complicated objects, mixed materials",
+                "description" : "Complicated objects, mixed materials and moving parts are now within your purview. As long as you are familiar with an object's workings, you can make a copy of it. The Magic of the Smith can make knives, guns, clothes, medicines and other such useful items, and they all have permanent and lasting substance.  Creating an object with Magic of the Smith costs five Blood Traits instead of the usual one. Record your current Mental Traits on the item card at the time of creation, in case the object is later challenged with Reverse Conjuration."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Reverse Conjuration",
+                "effect" : "Send conjured objects back to the nether planes",
+                "description" : "You can send conjured objects back to the nether planes from which they come. Any item that you can see or feel can be subjected to this power with only a few words and simple gestures.  To use Reverse Conjuration on an item, you must make a MentalChallenge against the Traits recorded at the item's creation. This power works only on conjured objects, but you have no special way of telling a conjured item from a "real" one. You may banish any of your own creations without a challenge (although it still takes a full turn)."
+            },
+            { 
+                "cost" : 9,
+                "rank" : "Advanced",
+                "name" : "Power Over Life",
+                "effect" : "Conjure creations that bear a semblance of life",
+                "description" : "Though you cannot make true life, you can conjure creations that bear a semblance of life. Power Over Life lets you make any creature up to your own size. Such creatures have no independent will, though. They obey your commands mindlessly instead.  You must expend a phenomenal 10 Blood Traits to conjure a living creature, These simulacra last only for a week, after which time they dissolve back into nothingness. A creature that is killed similarly vanishes, as do any parts that are removed from the being (including blood)."
+            }
+        ]
+    },
+    "The Sepulchre Path" : {
+        "source" : "Necromancy",
+        "description" : "Necromancers generally begin their studies with the Sepulchre Path, the means of controlling ghosts. Through the Sepulchre Path, the vampire delves into the names of wraiths and the means by which they may be compelled to service. Many Giovanni call on "family wraiths" that have worked in service to the necromancers for several years, especially since most novices lack the ability to see or communicate with wraiths that they do not summon and control directly.  The Sepulchre Path uses the Occult Ability for retests. Storytellers may choose to use Wraith Lore as a specialized Ability instead.",
+        "retests" : "Occult",
+        "powers" : [
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Insight",
+                "effect" : "View a corposes last minute of life",
+                "description" : "Gazing into the eyes of a corpse, you can see the image burned into its death. A moment's concentration allows you to call up the memories of death itself.  You need only expend a Mental Trait while gazing into the eyes of a corpse in order to use this power. You immediately see the last minute of the individual's existence, generally as flashes of vision and startling sensations. This power can even be used on the corpse of a vampire who has reached Final Death, as long as he had not achieved Golconda and is not in a state of advanced decomposition. However, it does not function on vampires that are still ambulatory."
+            },
+            { 
+                "cost" : 3,
+                "rank" : "Basic",
+                "name" : "Summon Soul",
+                "effect" : "Summon a ghost",
+                "description" : "By calling out the names of the dead, you pull them to attendance. Combined with power over their artifacts from life, you can force them to answer your summons, appearing and obeying your will.  To call a ghost, you must know its name, or at least have a clear image of its persona from The Spirit's Touch. You must also have an object with which the ghost had some contact while it was alive. If this object has particular importance to the wraith (a Fetter), you gain a free retest on your attempt to Summon Soul. Some wraiths cannot be summoned regardless of your efforts; many ghosts are lost in the eternal storm of the Underworld, or go on to their final rewards. Vampires who were diablerized or who achieved Golconda before Final Death likewise cannot be summoned in this fashion.  You must make a Mental Challenge against the wraith that you call If the wraith wishes to be summoned, it can appear voluntarily. The wraith finds itself pulled to your location, and it becomes visible and audible to you. You may ask a single question of the ghost, which it must answer truthfully. After a single turn, the ghost fades away unless it chooses to remain or is coerced with further Necromancy. Even if the ghost stays nearby, you must use other Necromancy powers to see and hear it again, unless you exercise Summon Soul on it again."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Compel Soul",
+                "effect" : "Force ghost to obey you",
+                "description" : "By binding a ghost with its name and your strength of will, you can force it to obey your commands. Once you have summoned a wraith, you may use Compel Soul to make it answer your questions and serve your bidding.  You must first use Summon Soul to cause a wraith to appear for you, then engage in a Social Challenge for the turn in which it manifests. The wraith may expend its Pathos (see Oblivion) to resist, forcing you to expend a Social Trait for each Pathos Trait spent. If you win the challenge, the wraith is bound to obey your commands for an entire hour. The wraith must answer your questions truthfully and act as you direct. During this time, the ghost remains visible and audible to you as well.  If you successfully Compel Soul, you may expend a temporary Willpower Trait to force the wraith to obey you for the entire evening. Expending a permanent Willpower Trait causes the wraith to be bound to your will for a year and a day."
+            },
+            { 
+                "cost" : 6,
+                "rank" : "Intermediate",
+                "name" : "Haunting",
+                "effect" : "Force a ghost to remain in a particular location",
+                "description" : "Your powers of necromantic compulsion allow you to force a ghost to remain in a particular location, or near a specific object. With a cryptic phrase and a powerful command, you bind the wraith so that it may not leave.  You must engage a wraith in a Social Challenge in order to link it to a particular location. If you win, the wraith cannot leave the room (or move more than 10 feet from a particular object) for the remainder of the evening. By spending a temporary Willpower Trait at the time of the Haunting, you can force the wraith to remain in the location for a full week; a permanent Willpower Trait extends this time to a year. If the wraith attempts to leave the location, it suffers one aggravated level of damage per turn outside the confines of the Haunting until it returns or is destroyed utterly."
+            },
+            { 
+                "cost" : 9,
+                "rank" : "Advanced",
+                "name" : "Torment",
+                "effect" : "Inflict actual damage on the dead",
+                "description" : "There is a reason that ghosts fear the most puissant necromancers of the Giovanni. Through the use of Torment, the necromancer can inflict actual damage on the dead, punishing them for their indiscretions.  Though you remain in the physical world, you can make Physical Challenges against wraiths. You lash out with supernatural energies, though many Giovanni choose to direct the blow by striking physically. Your attacks inflict lethal damage on the wraith; a wraith discorporated with this power is banished to the deeper levels of the Underworld for a full month, unable to return."
+            }
+        ]
+    }
+}

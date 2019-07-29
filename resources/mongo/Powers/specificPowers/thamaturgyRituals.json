@@ -1,0 +1,80 @@
+{
+    "name" : "Thaumaturgy Rituals",
+    "type" : "Rituals",
+    "source" : "Thaumaturgy",
+    "description" : "Through arcane incantations and properly prepared formulae, the effects of Thaumaturgy can be extended beyond the brief and limited powers of the various paths. Rituals are used to perform such complex tasks.  Rituals rank in difficulty as Basic, Intermediate or Advanced, just like the levels of Thaumaturgy. A character learns one Basic ritual automatically after learning Thaumaturgy. As the vampire's primary path improves, additional rituals are learned, one appropriate to each level gained. Thus, with Advanced Thaumaturgy, the vampire knows at least two Basic rituals, two Intermediate rituals and one Advanced ritual. Learning additional rituals takes time, effort and access to specialized equipment and Influence. A vampire can only learn rituals whose difficulty do not exceed her primary Thaumaturgy path level.  Actually casting a ritual requires the elements and time listed in each individual description, and a Static Mental Challenge on the part of the caster - difficulty of five Traits for Basic power, seven Traits for Intermediate rituals and nine Traits for Advanced magics. Unless otherwise stated, Basic rituals take 10 minutes to cast, Intermediate rituals require 20 minutes and Advanced rituals take 30 minutes.",
+    "Basic Rituals" : [
+        {
+            "name" :  "Communicate with Kindred Sire",
+            "description" : "Tremere vampires often use Communicate with Kindred Sire to seek advice or aid. You need only meditate for half an hour on an object that once belonged to your sire. When you finish the ritual, you establish telepathic communication with your sire, anywhere in the world. This link lasts for 10 minutes." 
+        },
+        {
+            "name" :  "Defense of the Sacred Haven",
+            "description" : "Defense of the Sacred Haven blocks the entry of sunlight in a single room. You need only use one Blood Trait as you take an hour to inscribe sigils across all of the doors and windows of the room. As long as you remain in the room, sunlight is prevented mystically from entering the area." 
+        },
+        {
+            "name" :  "Deflection of Wooden Doom",
+            "description" : "The wooden stake is the bane of all vampires, but Deflection of Wooden Doom protects against such attacks. You must sit in a circle of wood for a full hour to cast this ritual. When completed, you place a tiny splinter of wood under your tongue. As long as the splinter remains there, or until the next dusk or dawn, you are protected. The first stake to impale your heart mystically crumbles to dust, at which point the ritual ends. The stake must actually enter your body for this ritual to work - a stake simply held near you is unaffected." 
+        },
+        {
+            "name" :  "Devil's Touch",
+            "description" : "You can brand a mortal mystically with the Devil's Touch. You need only place a penny on the mortal as you complete this ritual, and until the next dawn, the subject suffers the Negative Social Traits Repugnant and Obnoxious." 
+        },
+        {
+            "name" :  "The Open Passage",
+            "description" : "Taking an hour to trace a pattern with a Trait of your blood, you can make a barrier insubstantial for a full turn. The barrier itself retains its normal appearance and characteristics, and anything already touching or supported by the barrier when the ritual ends becomes briefly insubstantial with it. With The Open Passage, you can therefore walk through a wall or allow allies to travel through locked doors and similar barriers." 
+        },
+        {
+            "name" :  "Principal Focus of Vitae Infusion",
+            "description" : "Concentrating the power of your blood, you cause your own vitae to sink into a small object. With a touch and a mental command, you can later cause this object to break down back into a pool of your own blood. You can imbue an object between the sizes of a dime and a loaf of bread with a single Trait of your own blood, at which time the object becomes slightly reddish and slick. Alternately, you can use the Principal Focus of Vitae Infusion to craft an object of your blood that responds to the touch of another individual, as long as that individual is present during the casting of the ritual. Of course, since your own blood must be used, the subject risks the blood bond." 
+        },
+        {
+            "name" :  "Scent of the Lupine's Passing",
+            "description" : "With a mixture of milkweed, wolfsbane and other herbs, you can make a poultice that allows you to sniffout werewolves. The poultice retains its effectiveness fora full scene or hour after its creation; as long as you carry it with you, you can detect Lupines by smell. You must get within five feet of your subject and win a Mental Challenge to determine the Scent of the Lupine's Passing." 
+        },
+        {
+            "name" :  "Wake with Evening's Freshness",
+            "description" : "In case of emergencies or if you fear invasion of your haven, you can Wake with Evening's Freshness simply by spreading ashes of burned feathers over your sleeping place while casting this ritual immediately before slumber. Should you be faced with danger, you awaken immediately. For the first two full turns you suffer no penalties for daylight activity (although you can still be injured by sunlight, of course)." 
+        },
+        {
+            "name" :  "Ward versus Ghouls",
+            "description" : "Spending 10 minutes repeating a warding invocation while pouring a Trait of blood over an object, you shape a mystical glyph that causes extreme pain to any ghoul touching it. The night after you cast the ritual, the ward takes effect, causing a level of lethal damage to any ghoul touching the object (even adding this effect to other damage if, say, a warded sword is used against a ghoul in combat). Any object in size between dagger and door may be warded. You can specifically exclude certain ghouls from the effect if they are present while you cast the ritual and if each donates a Trait of blood to attune the Ward versus Ghouls." 
+        }
+    ],
+    "Intermediate Rituals" : [
+        {
+            "name" :  "Bone of Lies",
+            "description" : "By enchanting a mortal finger bone as a Bone of Lies, you bind the soul of the skeleton to the bone. Then, whenever someone holds the bone, the taint of any lies that they speak is drawn into the finger bone, which blackens it as the spirit within becomes corrupt. The bone must be at least 200 years old, and it must be steeped in at least 10 Traits of blood during the casting of the ritual - all of the blood is mystically absorbed. Thereafter, whenever someone knowingly speaks a lie while holding the bone, it darkens noticeably and forces the subject to speak the truth immediately. Each lie so negated uses one of the Blood Traits in the bone; when all 10 are used the bone is blackened and useless, home only to a dark spirit twisted by lies." 
+        },
+        {
+            "name" :  "Incorporeal Passage",
+            "description" : "By looking into a fragment of a mirror while intoning this chant, you become completely incorporeal. Physical attacks pass through you while you may step unhindered through any solid barrier. You can only move forward orstand still once you invoke Incorporeal Passage--you may not tumor back up. The ritual lasts for the next full hour or scene, but you can end it simply by turning away the piece of mirror that you hold." 
+        },
+        {
+            "name" :  "Pavis of Foul Presence",
+            "description" : "To combat the powers of the Presence Discipline, you tie a blue silken cord around your neck while intoning the Paves of Food Presence. Until the next sunrise, you are defended against Presence powers. If someone manages to exerta Presence power on you, it is reflected back instead of affecting you. This ritual is completely unknown outside the Tremere clan, who keep it as a powerful secret in their wars of vampiric influence." 
+        },
+        {
+            "name" :  "Rutor's Hands",
+            "description" : "The terrifying servant created with Rutor's Hands is actually one of your own severed hands with one of your eyeballs set atop it! After casting this ritual, you must cut off your own hand and pluck out your eye, suffering five levels of aggravated damage in the process, in order to complete the spell. (Don't actually inflict physical harm on yourself. Your character does the nasty deed, not you.) The ritual keeps your body parts from crumbling to dust, and it animates them as spies for your use. They follow your mental orders, moving as you direct and allowing you to see and hear whatever they experience. You can create as many as you like, though you must regenerate your hands and eyes fully after each casting before making another set of Rutor's Hands. The spying, scuttling... thing made with this ritual needs a single Trait of blood each week (from any source), or else it crumbles to dust.  You can get cards for your Rutor's Hands, and then use them to spy on other locations. Simply give the card to a Narrator and direct him to a particular location. If the thing is spotted, of course, it is easily destroyed with a single level of damage (it is considered to have three Physical Traits that it can only use to defend itself)." 
+        },
+        {
+            "name" :  "Soul of the Homunculi",
+            "description" : "Few vampires trust anyone, yet the arcane researches of the Tremere often require capable assistants. A homunculus is a tiny physical replica of the caster, completely loyal and made to serve its master as a spy and aide. Casting the Soul of the Homunculi takes a full month of time outside of play. When completed, the homunculus acts as a tiny extension of yourself. Such creations can resemble tiny winged creatures capable of flight, a legless slug with a human face like its master's, or a small marmoset like creature with a face resembling its creator. Any given homunculus is completely loyal to its creator, in effect acting as an extra limb. Homunculi have three Physical Traits and two health levels, and they cannot fight. They can spy and report back or perform small tasks. You can only have one homunculus at any given time." 
+        }
+    ],
+    "Advanced Rituals" : [ 
+        {
+            "name" :  "Blood Contract",
+            "description" : "By spending three nights in the writing of a contract with your own blood, you create an unbreakable bond between yourself and any one signatory. You use two Blood Traits to make the contract-one to write it, and one for both parties to sign it. The Blood Contract enforces compliance of both parties to the literal terms listed. Should either party break the terms of the contract, the individual immediately suffers enough aggravated health levels of damage to fall into torpor, and this damage cannot be resisted in any way. The only way to finish the contract is to fulfill its terms or to physically bum it." 
+        },
+        {
+            "name" :  "Nectar of the Bitter Rose",
+            "description" : "Hidden among the most vile of diablerists, the Nectar of the Bitter Rose breaks the usual constraints of diablerie, allowing multiple vampires to share in the fruits of a victim's power. You must restrain the victim in some fashion while casting this ritual over him. At the ritual's completion, up to five vampires may attempt to gain the benefit of diablerizing the subject. Each would-be diablerist must make a Simple Test (winortie) to gain the benefits. Nectar of the Bitter Rose does not allow a vampire to gain benefits from diablerizing a victim of weaker or lesser generation -- it simply lets multiple people share in a diablerie. Obviously, even the mere knowledge of this ritual is grounds for destruction within the Camarilla." 
+        },
+        {
+            "name" :  "Umbra Walk",
+            "description" : "The Tremere powers of Auspex allow them to search sublime planes of conscious. ness, but there are still other levels of existence to the infinite cosmos. Through the power of this ritual, which requires the sacrifice of an intelligent being (almost certainly costing you a Humanity Trait), you enter the Umbra, a spirit reflection of the physical world. You arrive naked, though certain magical items may come with you at the Storyteller's discretion. You can even bring other people, though each additional traveler requires another sacrifice. The Umbra is a dangerous place, traveled by werewolves and unfriendly spirits. Umbra Walk lasts until you choose to step back into the material plane. See Laws of the Wild for more detailed information about the spirit worlds " 
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "name" : "Vicissitude",
+    "type" : "Discipline",
+    "description" : "The Fiends of Eastern Europe harbor twisted secrets that make other vampires shudder. Vicissitude, the signature Discipline of the Tzimisce clan, reflects the inner nature of the most alien of vampires. Through Vicissitude, the wielder can reshape flesh under his very touch, whether into gross deformity or uneathly beauty.  When used on mortals, ghouls, revenants and vampires of weaker generation than the user, Vicissitude's effects are permanent. Vampires of equal or more potent generations can heal back each Vicissitude-inflicted scar as an aggravated wound. Of course, a user of this Discipline can always shape his own flesh as desired.  Nosferatu, Samedi and vampires with similar deformities in their blood always heal back alterations of Vicissitude that attempt to improve their appearances. The Curse of Caine is not so easily circumvented.  Vicissitude uses the Crafts: Body Crafts Ability for retests. Most Vicissitude effects require physical contact and a Physical Challenge as the vampire tears into the flesh of the opponent. Such strikes use Crafts: Body Crafts for retests, instead of Brawl, since the aim is to mutate the flesh. For certain surgical effects, the Storyteller may require some level of Medicine Ability as well.",
+    "retests" : "Crafts: Body Crafts",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Malleable Visage",
+            "effect" : "Change your own appearance",
+            "description" : "Bending your flesh under your hands, you can change your own appearance. Malleable Visage allows you to duplicate others or simply make your own surface skin different from your natural forms. Cosmetic changes like alterations of voice or skin tone and build are all possible, though you must actually sculpt the desired changes into your flesh.  Changing yourself with Malleable Visage costs one Blood Trait, and it requires you to spend time reshaping yourself appropriately. If you hope to copy someone else, you must make a Static Mental Challenge, difficulty of the subject's Social Traits, to pull off the disguise, and you still use your own Social Traits in any challenge-you are simply duplicating the person's appearance. You can also afflict yourself with a hideous visage, taking on Repugnant Negative Traits (up to three such additional Traits maximum)."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Fleshcraft",
+            "effect" : "Shape flesh",
+            "description" : "Your hands can turn flesh to putty, shaping it like potter's clay. You can perform drastic alterations to the flesh and organs of any creature that you touch.  You must touch your victim to use Fleshcraft, pulling or shaping the flesh to your whims. You can reshape flesh on yourself or others within the limits described in Malleable Visage, or you can move around clumps of tissue or simply reduce someone to scarred deformity. These attacks do not inflict damage, but each such strike causes the victim to suffer a Negative Trait of Repugnant(to a maximum of three such Traits from this power). If you alter the distribution of skin, fat and muscle, you can remove one and only one) of the subject's Physical Traits and replace it with an extra health level, or reverse such an operation."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Bonecraft",
+            "effect" : "Shape target's bone",
+            "description" : "Just as you shape flesh with your touch, you can grasp and twist bone, turning it into any desired shape or moving, lengthening, bending or compressing it. Bonecraft lets you literally pull the bone through a subject's flesh, or you can use it with Fleshcraft to completely restructure a victim - or yourself.  Using Bonecraft allows you to remake appearances just like Fleshcraft, but you can also change someone's height or body structure, reshape bone into unusual or spectacular forms, and even make bone spurs and weapons. You must grab the victim, and then twist, pull or bend the bones appropriately. If you do so without exercising Fleshcraft, each such strike causes one level of lethal damage as bones warp and tear their way through flesh. Used in conjunction with Fleshcraft, you can rebuild someone's visage completely, or you can create defensive spines or offensive bone weapons. Such alterations allow the subject to inflict lethal damage with otherwise unarmed attacks."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Horrid Form",
+            "effect" : "Turn into a hideous monstrosity",
+            "description" : "Your own body warps and grows into a hideous monstrosity with Horrid Form. Your skin becomes black, rubbery and slimy, while sharp bony spikes protrude from your hands and back. You grow to a full eight feet in height, and you shift into something from a nightmare vision. Those unused to such sights may need to make a Courage test.  Awakening the Horrid Form costs two Blood Traits. You gain the Negative Social Traits Bestial, Feral and repugnant in this form, but you also gain the Physical Traits Brawny, Dexterous, Enduring, Ferocious, Quick and Stalwart for the duration of the power. You may also not initiate Social Challenges except for the purposes of intimidation. You inflict lethal damage in brawling combat, and you score an extra health level of damage on all such attacks. You may remain in Horrid Form until you decide to change back."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Bloodform",
+            "effect" : "Turn into a liquid blood",
+            "description" : "Deliquescing into a puddle of vitae is within your power. You need only concentrate briefly, and you can reduce any of your limbs or body parts into a puddle of your own pure blood.  Each limb (arm, leg, head) that you transform becomes one Blood Trait; your body forms the remainder of your Blood Traits, up to your maximum size. You can change part or all of yourself, as desired. This blood functions in all ways as your own blood, but you retain a level of autonomic control over it. In Bloodform, you can move at a slow walking pace as a puddle of blood, oozing over things and through cracks. Changing body parts back requires only that you be in contact with the blood, or that you regrow your part by expending Blood Traits appropriate to the part (a single Trait to regrow a limb, for instance), in which case the blood that previous piece becomes inert. While fully in Bloodform, you can use mental Disciplines, and you are immune to all physical dangers except fire or sunlight. If all of the blood is imbibed or destroyed while you are in this form, though, you meet Final Death."
+        }
+    ]
+}

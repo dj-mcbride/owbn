@@ -1,0 +1,43 @@
+{
+    "name" : "Melpominee",
+    "type" : "Discipline",
+    "description" : "With this Discipline, the very voice of a Cainite is a powerful tool. Inspiring emotion or projecting sound through speech and song, the Melpominee Discipline reflects the incredible mastery possessed by the Daughters of Cacophony. The Greek Muse of tragedy surely reflects in this power, as it can be used both to soothe the mind and to inspire insanity. Some Cainites attribute these sirenlike gifts to a hint of fey madness in the Daughters' bloodline.  The powers of Melpominee function on the very soul, not merely on the flesh. Deaf subjects, or individuals otherwise unable to hear the vampire, can still be affected as long as the singer's voice reaches to the area of the target. These effects extend from the will of the siren, so they only affect those who are in the hearing range of the singer's natural voice or Melpominee-projected effects - engineered recordings, microphones, bullhorns, or electronic or mechanical copies cannot.  The Daughters of Cacophony consider Melpominee to be their highest art and calling, a reflection of the inward music that moves them. As a result, they do not teach its secrets to outsiders, and indeed other Cainites, who do not hear the cosmic music of the spheres, find development of this Discipline difficult in the extreme.  All Melpominee effects use Performance Ability for retests.",
+    "retests" : "Performance",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "The Missing Voice",
+            "effect" : "Throw your voice",
+            "description" : "Like a ventriloquist, you can throw your voice to any place within your line of sight. However, you do not cause your voice to seem to emanate from there with The Missing Voice, you actually cause your speech or song to generate from thin air. You can even carry on two conversations simultaneously, for The Missing Voice functions independently of your normal voice.  You may use The Missing Voice at any time, as desired. However, if you use The Missing Voice while performing other actions, you suffer a two-Trait penalty on the resolution of challenges due to your split concentration."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Phantom Speaker",
+            "effect" : "You can project speech or song to anyone you know",
+            "description" : "No longer limited to sending your voice to a place you can see, you can project speech or song to anyone you know. As long as it is night at the subject's location, you make your voice heard to your target.  The words and music of Phantom Speaker are audible only to your target, unless an eavesdropper with at least the Intermediate level of Auspex manages to listen in by defeating you in a Mental Challenge.  You must expend one Blood Trait to project your voice for a single turn."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Madrigal",
+            "effect" : "Raise or lower emotions of listener",
+            "description" : "The crashing waves of your song carry the force of your own emotions. With inspiring verses, you raise others to the heights of passion; black melancholy afflicts the victims of your works of despair.  You must make a Social Challenge against every target that you wish to affect with your Madrigal -- you can affect anyone within hearing range, at your discretion. Willpower can be used to retest in defense against this power, as usual for Social Challenges. If you choose to affect multiple people, use a mass challenge as described in mob combat. Anyone who succumbs suffers the effects of an overwhelming surge of emotion, directed by your choice of song. The subjects should roleplay this wave of emotion as long as you perform no action other than singing.  You must sing for a full turn for Madrigal to take effect. The player need not actually sing to invoke this Discipline, though players so talented are certainly encouraged to do so."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Siren's Beckoning",
+            "effect" : "Cause derrangement in target",
+            "description" : "Pulling out the roots of turmoil and despair in a subject, you awaken insanity from the soul. Like the legends of faerie singers and mermaids, you can drive your target into desperation with your melodies.  You must make a Social Challenge against your target to use the Siren's Beckoning. If you win, the victim suffers from one randomly chosen derangement. You may carry about a stack of cards with various derangements and allow the victim to choose one at random, or you may have the derangement relate to the song you sang (such as regression for a children's songor megalomania for a national anthem). This derangement lasts for the rest of the night. "
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Virtuosa",
+            "effect" : "You can extend your powers of Phantom Speaker or Siren's Beckoning to multiple subjects.",
+            "description" : "Though most Daughters of Cacophony are limited to affecting a single target with hidden speech or insanity, your performance carries your music to as many listeners as you desire. You can extend your powers of Phantom Speaker or Siren's Beckoning to multiple subjects.  You need only expend one Blood Trait to use Phantom Speaker or Siren's Beckoning on up to five targets at once. If you use Phantom Speaker, every subject hears the same words or music that you project. If you use Siren's Beckoning, you make a mass Social Challenge against all of the victims at once. In either case, you can only use one power at a time you cannot use Virtuosa to project speech to some people while singing to others simultaneously."
+        }
+    ]    
+}

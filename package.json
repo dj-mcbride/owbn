@@ -30,7 +30,7 @@
     "jsdoc-to-markdown": "^4.0.1",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
-    "testdouble": "^3.12.0" 
+    "testdouble": "^3.12.0"
   },
   "dependencies": {
     "@angular/cli": "^7.3.9",

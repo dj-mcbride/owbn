@@ -1,0 +1,44 @@
+{
+    "name" : "The Sepulchre Path",
+    "type" : "Path",
+    "source" : "Necromancy",
+    "description" : "Necromancers generally begin their studies with the Sepulchre Path, the means of controlling ghosts. Through the Sepulchre Path, the vampire delves into the names of wraiths and the means by which they may be compelled to service. Many Giovanni call on "family wraiths" that have worked in service to the necromancers for several years, especially since most novices lack the ability to see or communicate with wraiths that they do not summon and control directly.  The Sepulchre Path uses the Occult Ability for retests. Storytellers may choose to use Wraith Lore as a specialized Ability instead.",
+    "retests" : "Occult",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Insight",
+            "effect" : "View a corposes last minute of life",
+            "description" : "Gazing into the eyes of a corpse, you can see the image burned into its death. A moment's concentration allows you to call up the memories of death itself.  You need only expend a Mental Trait while gazing into the eyes of a corpse in order to use this power. You immediately see the last minute of the individual's existence, generally as flashes of vision and startling sensations. This power can even be used on the corpse of a vampire who has reached Final Death, as long as he had not achieved Golconda and is not in a state of advanced decomposition. However, it does not function on vampires that are still ambulatory."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Summon Soul",
+            "effect" : "Summon a ghost",
+            "description" : "By calling out the names of the dead, you pull them to attendance. Combined with power over their artifacts from life, you can force them to answer your summons, appearing and obeying your will.  To call a ghost, you must know its name, or at least have a clear image of its persona from The Spirit's Touch. You must also have an object with which the ghost had some contact while it was alive. If this object has particular importance to the wraith (a Fetter), you gain a free retest on your attempt to Summon Soul. Some wraiths cannot be summoned regardless of your efforts; many ghosts are lost in the eternal storm of the Underworld, or go on to their final rewards. Vampires who were diablerized or who achieved Golconda before Final Death likewise cannot be summoned in this fashion.  You must make a Mental Challenge against the wraith that you call If the wraith wishes to be summoned, it can appear voluntarily. The wraith finds itself pulled to your location, and it becomes visible and audible to you. You may ask a single question of the ghost, which it must answer truthfully. After a single turn, the ghost fades away unless it chooses to remain or is coerced with further Necromancy. Even if the ghost stays nearby, you must use other Necromancy powers to see and hear it again, unless you exercise Summon Soul on it again."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Compel Soul",
+            "effect" : "Force ghost to obey you",
+            "description" : "By binding a ghost with its name and your strength of will, you can force it to obey your commands. Once you have summoned a wraith, you may use Compel Soul to make it answer your questions and serve your bidding.  You must first use Summon Soul to cause a wraith to appear for you, then engage in a Social Challenge for the turn in which it manifests. The wraith may expend its Pathos (see Oblivion) to resist, forcing you to expend a Social Trait for each Pathos Trait spent. If you win the challenge, the wraith is bound to obey your commands for an entire hour. The wraith must answer your questions truthfully and act as you direct. During this time, the ghost remains visible and audible to you as well.  If you successfully Compel Soul, you may expend a temporary Willpower Trait to force the wraith to obey you for the entire evening. Expending a permanent Willpower Trait causes the wraith to be bound to your will for a year and a day."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Haunting",
+            "effect" : "Force a ghost to remain in a particular location",
+            "description" : "Your powers of necromantic compulsion allow you to force a ghost to remain in a particular location, or near a specific object. With a cryptic phrase and a powerful command, you bind the wraith so that it may not leave.  You must engage a wraith in a Social Challenge in order to link it to a particular location. If you win, the wraith cannot leave the room (or move more than 10 feet from a particular object) for the remainder of the evening. By spending a temporary Willpower Trait at the time of the Haunting, you can force the wraith to remain in the location for a full week; a permanent Willpower Trait extends this time to a year. If the wraith attempts to leave the location, it suffers one aggravated level of damage per turn outside the confines of the Haunting until it returns or is destroyed utterly."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Torment",
+            "effect" : "Inflict actual damage on the dead",
+            "description" : "There is a reason that ghosts fear the most puissant necromancers of the Giovanni. Through the use of Torment, the necromancer can inflict actual damage on the dead, punishing them for their indiscretions.  Though you remain in the physical world, you can make Physical Challenges against wraiths. You lash out with supernatural energies, though many Giovanni choose to direct the blow by striking physically. Your attacks inflict lethal damage on the wraith; a wraith discorporated with this power is banished to the deeper levels of the Underworld for a full month, unable to return."
+        }
+    ]
+}

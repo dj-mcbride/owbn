@@ -1,0 +1,107 @@
+{
+    "id" : "",
+    "name" : "Vincent Ivey",
+    "player" : "DeeJay McBride",
+    "homeGame" : "Dark Colony: Hartford",
+    "clan" : "Malkavian",
+    "generation" : 8,
+    "sect" : "camarilla",
+    "sire" : "Unknown",
+    "age" : "78",
+    "position" : "None",
+    "nature" : "Architect",
+    "demeanor" : "Confidant",
+    
+    "traits" : {
+        "physicalTraits" : [
+            "Graceful",
+            "Nimble",
+            "Athletic",
+            "Tough",
+            "Tough",
+            "Tough",
+            "Tough"
+        ],
+        "socialTraits" : [
+            "Empathetic",
+            "Empathetic",
+            "Persuasive", 
+            "Persuasive",
+            "Persuasive",
+            "Persuasive",
+            "Commanding",
+            "Commanding",
+            "Charming",
+            "Charming",
+            "Charming",
+            "Friendly", 
+            "Friendly",
+            "Friendly"
+        ],
+        "mentalTraits" : [
+            "Clever",
+            "Clever",
+            "Cunning",
+            "Cunning",
+            "Cunning",
+            "Cunning",
+            "Insightful",
+            "Insightful",
+            "Attentive",
+            "Attentive",
+            "Observant",
+            "Observant",
+            "Observant",
+            "Observant",
+        ]
+    },
+
+    "negTraits" : {
+        "negPhysicalTraits" : [
+            "Cowardly",
+            "Docile"
+        ],
+        "negSocialTraits" : [
+            "Callous",
+            "Tactless"
+        ],
+        "negMentalTraits" : [
+            "Shortsighted"
+        ]  
+    },
+
+    "abilities" : {
+        "Stealth" : { "rank" : 5 },
+        "Empathy" : { "rank" : 5 },
+        "Investigation" : { "rank" : 5 },
+        "Intimidation" : { "rank" : 5 },
+        "Awareness" : { "rank" : 1 },
+        "MalkTime" : { "rank" : 5 },
+        "Investigation" : { "rank" : 1, "specalization" : "auspex" },
+        "Empathy" (Dementation) 1
+        "Academics" 1
+        "Psychology" 3
+        "Intimidation" (Dominate) 1
+        "Asura Lore" 2
+        "Hunting" 2
+        "Leadership" 4
+    },
+    "disciplines" : [],
+    "backgrounds" : [],
+    "influences" : [],
+    "merits" : [],
+    "flaws" : [],
+    "status" : [],
+
+    "moralityPath" : "",
+    
+    "virtues" : {
+        "conscienceConviction" : "",
+        "selfControlInstinct" : "",
+        "courage" : "" 
+},
+    "blood" : "",
+    "willpower" : "",
+    "health" : ""
+
+}

@@ -1,0 +1,48 @@
+{
+    "description" : "Blood is the power that fuels all vampires. Unable to enjoy the pleasures of mortal flesh or the comfort of more mundane gratification, only blood offers sustenance to Cainites. Vampires must consume blood to survive, and it is with the life contained in blood that a vampire draws on the strengths of the undead condition.  Blood Traits do not have adjectives. Rather, each Trait simply represents a quantity of blood. In general, a vampire is assumed to have 10 pints of vitae in her system when full. Elder vampires, however, concentrate their blood more efficiently, and thus they have more than 10 Traits.  Blood Traits can be represented with cards. When a character gains Blood Traits by feeding, take the cards from the victim. When Blood Traits are spent, give the cards to a Narrator or Storyteller.  Your starting Blood Trait total is determined by your generation. When you come into play for an evening's game, make a test with a Narrator as you pick up your character sheet. If you win, you come into play with all of your Blood Traits, as determined by generation. If you tie, you have half your generational limit of Blood Traits, rounded up. If you lose, you come into play with only four Blood Traits. Certain Merits, Flaws, clan disadvantages or other circumstances may alter your number of Blood Traits at the beginning of play, and possession of the Herd Background allows you to come into play with more Blood Traits, up to your generation limit.   When you have expended a great deal of blood, you become hungry. A hungry vampire is susceptible to the Beast and to frenzy due to the ravenous lust for vitae. You are considered hungry if at five or fewer Blood Traits; you may be susceptible to frenzy at the sight, smell or taste of blood (see Self-Control Instinct, on p. 109). If you have two or fewer Blood Traits, you are ravenous, and your difficulty to resist frenzy due to hunger goes up by one Trait, making it very likely that you enter frenzy at the first opportunity to feed.  Feeding is the only way to replenish blood. You can take Blood Traits from mortals, other vampires or other creatures with blood, such as animals or Lupines. When you bite someone to drain blood, you invoke the Kiss; your bite causes a rapturous helplessness in normal mortals, and it is pleasurable even to other creatures. However, each Blood Trait drained inflicts a level of lethal damage on the victim. Up to three Blood Traits may be drained each turn. You can close the wound by licking it to seal up traces of your feeding, You may only heal such wounds that were made by your fangs.",
+    "spending" : {
+        "sustenance" : {
+            "name" : "Sustenance",
+            "cost" : 1,
+            "description" : "You must spend a Blood Trait each night at sunset, for simple sustenance.",
+            "action" : false
+        },
+        "healing" : {
+            "name" : "Healing",
+            "cost" : 1,
+            "description" : "One Blood Trait can heal one health level of bashing or two levels of lethal damage. You are still limited to your generation limits of blood expenditure (so most young vampires cannot heal more than one health level of damage in a turn). Healing in this fashion requires your concentration and a full turn.",
+            "action" : true
+        },
+        "physicalTraits" : {
+            "name" : "Physical Traits",
+            "cost" : 1,
+            "description" : "You must spend a Blood Trait each night at sunset, for simple sustenance.",
+            "example" : "Romero de la Salle, Lasombra antitribu scourge, wants to augment his already mighty Potence by increasing his Physical Traits over his usual 14. As he is of the Seventh Generation, he can normally have up to 16 Traits in a category. Shane marks off three Blood Tras; Romero goes up to 17 Traits for the hem, and even after the timends, he has 16 Traits for the rest of the conflict (assuming that he doesn't lose any challenges). Even if he loses some Physical Traits, he can spend more blood to bring his total back up to 16.",
+            "action" : false
+        },
+        "ghouling" : {
+            "name" : "Ghouling",
+            "cost" : 1,
+            "description" : "One Blood Trait-generally measured as a full pint is sufficient to turn a mortal into a ghoul. This state lasts for a month; after that time, the ghoul must be fed more blood, lest he revert back to mortality.",
+            "action" : true
+        },
+        "appearingHuman" : {
+            "name" : "Appearing Human",
+            "cost" : "1, plus one for each point of humanity below 5",
+            "description" : "One Blood Trait enables a vampire to take on a semblance of humanity for a scene. The vampire flushes and becomes capable of mimicking human activity. (such blinking, sneezing or having cool skin rather than cold) Doing so is difficult for vampires with low Humanity, a vampire must spend an extra Blood Trait for each Trait that her Humanity is below five-a vampire with four Humanity Traits must spend two Blood Traits to appear mortal, a vampire with three Humanity Traits spends three Blood Traits to masquerade and so on. Vampires following Paths of Enlightenment cannot do this trick at all. You can take on a mortal visage while performing other tasks. If you must spend multiple Traits to perform this feat but your generation prohibits spending enough blood at once, you must spend the Blood Traits over successive turns. That is, a 13th-generation vampire with a Humanity of three Traits would have to spend three tums, spending one Blood Trait pertum, although he would still be able to perform other actions.",
+            "action" : false
+        },
+        "healAggravated" : {
+            "name" : "Healing aggravated",
+            "cost" : 3,
+            "description" : "Three Blood Traits can be spent to heal one level of aggravated damage. This damage heals over the day, as the vampire sleeps. Blood Traits spent this way can be accumulated; that is, you need not spend the three Traits all at once, or even all in the same day. You should note Traits expended in this fashion with marks next to your level of aggravated damage; once you have spent three Blood Traits on the injury, it heals the next time the sun sets. You can only heal one level of aggravated damage per day in this fashion, though, unless you also spend a Willpower Trait for each extra wound healed in the same rest period.",
+            "action" : false
+        },
+        "disciplines" : {
+            "name" : "Using disciplines",
+            "cost" : 1,
+            "description" : "Many Disciplines require the expenditure of Blood Traits, as listed in their individual descriptions. If a particular Discipline costs multiple Blood Traits but your generation prohibits you from spending all of the blood at once, you must spend the blood on successive tums Spending blood in this fashion is usually reflexive, though the Discipline itself may require an action. For instance, activating Celerity is reflexive, you spend a Blood Trait and still get your normal action, plus extra actions from Cdericy. Casting a Thamategy effect, on the other hand, requires your full tum in addition to the blood expenditure.",
+            "action" : false
+        }
+    }
+}

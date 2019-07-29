@@ -1,0 +1,43 @@
+{
+    "name" : "The Path of Conjuring",
+    "type" : "Path",
+    "description" : "Creating objects from nothingness is a simple power with The Path of Conjuring. Just a few words and a mental image of the desired item allow for the sudden appearance of nearly any object. Any conjured object or creature is literally produced from nowhere.  Objects created with The Path of Conjuring are generic, with no distinguishing marks, and are always exactly the same every time they are conjured. You cannot conjure anything larger or heavier than yourself. Also, you must have a working familiarity with the object in question. Making this power its most effective may require you to possess certain Abilities. You would need a few levels of Firearms and Crafts: Gunsmith to make an Uzi, for instance, or Science and Medicine to conjure artificial pharmaceuticals. All such objects are conjured from Platonic ideals, not as sums of parts. Therefore, if the object is broken up into components, melted, altered or otherwise violated, the spell is broken and the substance dissolves into a viscous sludge that fades into nothingness.  Using The Path of Conjuring requires a full turn to create any one effect. Retests with The Path of Conjuring, when necessary, use the Occult Ability",
+    "retests" : "Occult",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Summon the Simple Form",
+            "effect" : "Make an item of inanimate matter of one sort",
+            "description" : "Your rudimentary conjuring skills allow you to create basic objects made of a single homogenous material. These items are little more than chunks of matter, possibly crudely fashioned and lacking in any complex or moving parts. You can thus conjure a rod of metal, a club, a wooden stake, a rock or a lump of coal.  When you Summon the Simple Form, you can only make an item of inanimate matter of one sort. You cannot conjure living or undead creatures, nor can you make something built from multiple substances.  After you have conjured an item with this power, you must spend a Mental Trait at the beginning of every new turn in which you wish to keep it in existence. If you do not, the object vanishes instantly. Youshould record your current Mental Traits at the time that you create an object with this power, in case it is dispelled later with Reverse Conjuration."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Permanency",
+            "effect" : "Create real and permanent objects",
+            "description" : "Simple objects that you conjure can now be invested with your power, making them real and permanent. You need not make an item permanent, but if you choose to do so, it remains without any further concentration or effort on your part.  Exercising Permanency on an item conjured with Summon the Simple Form requires that you spend three Blood Traits in the process of conjuring, instead of the usual one. The object is then considered whole and real, and it does not disappear unless banished with Reverse Conjuring."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Magic of the Smith",
+            "effect" : "Create complicated objects, mixed materials",
+            "description" : "Complicated objects, mixed materials and moving parts are now within your purview. As long as you are familiar with an object's workings, you can make a copy of it. The Magic of the Smith can make knives, guns, clothes, medicines and other such useful items, and they all have permanent and lasting substance.  Creating an object with Magic of the Smith costs five Blood Traits instead of the usual one. Record your current Mental Traits on the item card at the time of creation, in case the object is later challenged with Reverse Conjuration."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Reverse Conjuration",
+            "effect" : "Send conjured objects back to the nether planes",
+            "description" : "You can send conjured objects back to the nether planes from which they come. Any item that you can see or feel can be subjected to this power with only a few words and simple gestures.  To use Reverse Conjuration on an item, you must make a MentalChallenge against the Traits recorded at the item's creation. This power works only on conjured objects, but you have no special way of telling a conjured item from a "real" one. You may banish any of your own creations without a challenge (although it still takes a full turn)."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Power Over Life",
+            "effect" : "Conjure creations that bear a semblance of life",
+            "description" : "Though you cannot make true life, you can conjure creations that bear a semblance of life. Power Over Life lets you make any creature up to your own size. Such creatures have no independent will, though. They obey your commands mindlessly instead.  You must expend a phenomenal 10 Blood Traits to conjure a living creature, These simulacra last only for a week, after which time they dissolve back into nothingness. A creature that is killed similarly vanishes, as do any parts that are removed from the being (including blood)."
+        }
+    ]
+}

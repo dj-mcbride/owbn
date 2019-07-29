@@ -1,0 +1,329 @@
+{
+    "assamites" : { 
+        "mainBloodline" : {
+            "name" : "Assamites",  
+            "startingSect" : "Independent",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Dreaded Assassins from the Middle East, the Assamites hunt other Cainites for vitae and study powers of silent death.",
+            "disciplines" : [ "Celerity", "Obfuscate", "Quietus" ],
+            "advantage" : "Free dot in either Brawl or Melee. Access to weapons and equiptment from their clan.",
+            "flaw" : "Addiction to Kindred vitae."
+        },
+        "antitribu" : {
+            "name" : "Assamite Antitribu",  
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat" ],
+            "description" : "Dreaded Assassins from the Middle East, the Assamites hunt other Cainites for vitae and study powers of silent death.",
+            "disciplines" : [ "Celerity", "Obfuscate", "Quietus" ],
+            "advantage" : "Free dot in either Brawl or Melee. Access to weapons and equiptment from their bloodline.",
+            "flaw" : "Addiction to Kindred vitae."
+        },
+        "vizier" : {
+            "name" : "Assamite Vizier",  
+            "startingSect" : "Independent",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Dreaded Assassins from the Middle East, the Assamites hunt other Cainites for vitae and study powers of silent death.",
+            "disciplines" : [ "Thaumaturgy", "Obfuscate", "Quietus" ],
+            "advantage" : "Free dot of Occult.",
+            "flaw" : "Addiction to Kindred vitae. Costs one additional blood to cast blood magic."
+        }
+    },
+    "brujah" : { 
+        "mainBloodline" : {
+            "name" : "Brujah", 
+            "startingSect" : "Camarilla",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Ideological revolutionaries and rebels, the Rabble serve their causes with passion.",
+            "disciplines" : [ "Celerity", "Potence", "Presence" ],
+            "advantage" : "One free Trait in Political, University or Street Influence, and an associated Ability Trait of Politics, Academics or Streetwise. A “call to arms” draws Brujah together for common cause even in spite of personal differences",
+            "flaw" : "One-Trait penalty on Virtue Tests of Self-Control/ Instinct."
+        },
+        "antitribu" : {
+            "name" : "Brujah Antitribu", 
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat" ],
+            "description" : "Ideological revolutionaries and rebels, the Rabble serve their causes with passion.",
+            "disciplines" : [ "Celerity", "Potence", "Presence" ],
+            "advantage" : "One free Trait in Political, University or Street Influence, and an associated Ability Trait of Politics, Academics or Streetwise. A “call to arms” draws Brujah together for common cause even in spite of personal differences",
+            "flaw" : "One-Trait penalty on Virtue Tests of Self-Control/ Instinct."
+        }
+    }, 
+    "followersOfSet" : { 
+        "mainBloodline" : {
+            "name" : "Followers of Set", 
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Distrust and suspicion follow the Serpents in their quest for forbidden knowledge and service to a sleeping god.",
+            "disciplines" : [ "Obfuscate", "Presence", "Serpentis" ],
+            "advantage" : "One bonus Streetwise Ability Trait and a level of Political, Street or Underworld Influence. ",
+            "flaw" : "Exposure to sunlight always inflicts an extra health level of damage on Setites. Bright lights are uncomfortable, causing the Setite to suffer a one-Trait penalty on all challenges."  
+        }, 
+        "setiteWarriors" : {
+            "name" : "Followers of Set", 
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Distrust and suspicion follow the Serpents in their quest for forbidden knowledge and service to a sleeping god.",
+            "disciplines" : [ "Potence", "Presence", "Serpentis" ],
+            "advantage" : "One bonus Streetwise Ability Trait and a level of Political, Street or Underworld Influence. ",
+            "flaw" : "Exposure to sunlight always inflicts an extra health level of damage on Setites. Bright lights are uncomfortable, causing the Setite to suffer a one-Trait penalty on all challenges."  
+        } 
+    },    
+    "gangrel" : { 
+        "mainBloodline" : {
+            "name" : "Gangrel", 
+            "startingSect" : "Independent",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "No city holds sway over the Outlanders, who wander the wilderness and survive as vampiric predators among animals.",
+            "disciplines" : [ "Animalism", "Fortitude", "Protean" ],
+            "advantage" : "Gain a free level of Ability in each of Animal Ken and Survival. Camarilla and Sabbat alike tend to give free rein to Gangrel wanderlust, and the sects rarely demand any sort of presentation or recognition.Can learn Lupine Lore.",
+            "flaw" : "Gain a new animalistic feature when they frenzy. No more than five Negative Traits can be gained with this Disadvantage"
+        },
+        "country" : {
+            "name" : "Country Gangrel", 
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat", "Anarch", "Independent" ],
+            "description" : "No city holds sway over the Outlanders, who wander the wilderness and survive as vampiric predators among animals.",
+            "disciplines" : [ "Animalism", "Fortitude", "Protean" ],
+            "advantage" : "Gain a free level of Ability in each of Animal Ken and Survival. Camarilla and Sabbat alike tend to give free rein to Gangrel wanderlust, and the sects rarely demand any sort of presentation or recognition.Can learn Lupine Lore.",
+            "flaw" : "Gain a new animalistic feature when they frenzy. No more than five Negative Traits can be gained with this Disadvantage"
+        },
+        "city" : {
+            "name" : "City Gangrel", 
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat", "Anarch", "Independent" ],
+            "description" : "No city holds sway over the Outlanders, who wander the wilderness and survive as vampiric predators among animals.",
+            "disciplines" : [ "Obfuscate", "Celerity", "Protean" ],
+            "advantage" : "Gain a free level of Ability in each of Animal Ken and Survival. Camarilla and Sabbat alike tend to give free rein to Gangrel wanderlust, and the sects rarely demand any sort of presentation or recognition.Can learn Lupine Lore.",
+            "flaw" : "Gain a new animalistic feature when they frenzy. Tends to resemble urban animals. No more than five Negative Traits can be gained with this Disadvantage"
+        }
+    },
+    "giovanni" : { 
+        "mainBloodline" : {
+            "name" : "Giovanni", 
+            "startingSect" : "Independent",
+            "availableSects" : [ "Independent" ],
+            "description" : "The Necromancers keep a veneer of businesslike respectability over their family's dark practices.",
+            "disciplines" : [ "Dominate", "Necromancy", "Potence" ],
+            "advantage" : "Start with an automatic Influence level in Finance or Health, and they can either  take a further additional level in one of those Influences or else gain an automatic one Trait Retainer — a wraith.",
+            "flaw" : "Bite causes pain. Blood drained with a bite inflicts an extra level of damage for each Blood Trait stolen. No extra damage caused when biting to attack."
+        }
+    },
+    "lasombra" : { 
+        "mainBloodline" : {
+            "name" : "Lasombra", 
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat" ],
+            "description" : "The majestic and terrible Keepers control spiritual darkness itself in seeking to manipulate mortal and undead societies.",
+            "disciplines" : [ "Dominate", "Obtenebration", "Potence" ],
+            "advantage" : "Gain one Trait of Church, Political or Underworld Influence. Automatically gain one free Status Trait.",
+            "flaw" : "Gain the flaw Cast No Reflection. Take an additional level of damage from sunlight."
+        },
+        "antitribu" : {
+            "name" : "Lasombra Antitribu", 
+            "startingSect" : "Camarilla",
+            "availableSects" : [ "Camarilla" ],
+            "description" : "The majestic and terrible Keepers control spiritual darkness itself in seeking to manipulate mortal and undead societies.",
+            "disciplines" : [ "Dominate", "Obtenebration", "Potence" ],
+            "advantage" : "Gain one Trait of Church, Political or Underworld Influence. Automatically gain one free Status Trait.",
+            "flaw" : "Gain the flaw Cast No Reflection. Take an additional level of damage from sunlight."
+        }
+    },
+    "malkavians" : { 
+        "mainBloodline" : {
+            "name" : "Malkavians", 
+            "startingSect" : "Camarilla",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "The deranged Lunatics claim a fractured insight into the workings of reality.",
+            "disciplines" : [  "Auspex", "Dementation", "Obfuscate" ],
+            "advantage" : "Gain a free level of Awareness. Access to the Malkavian Madness Network.",
+            "flaw" : "All Malkavians have a permanent derangement which cannot be bought off."
+        },
+        "antitribu" : {
+            "name" : "Malkavian Antitribu", 
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat" ],
+            "description" : "The deranged Lunatics claim a fractured insight into the workings of reality.",
+            "disciplines" : [  "Auspex", "Dementation", "Obfuscate" ],
+            "advantage" : "Gain a free level of Awareness. Access to the Malkavian Madness Network.",
+            "flaw" : "All Malkavians have a permanent derangement which cannot be bought off."
+        },
+        "dominate" : {
+            "name" : "Dominate Malkavians", 
+            "startingSect" : "Camarilla",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "The deranged Lunatics claim a fractured insight into the workings of reality.",
+            "disciplines" : [  "Auspex", "Dominate", "Obfuscate" ],
+            "advantage" : "Gain a free level of Awareness. Access to the Malkavian Madness Network.",
+            "flaw" : "All Malkavians have a permanent derangement which cannot be bought off."
+        }
+    },
+    "nosferatu" : { 
+        "mainBloodline" : {
+            "name" : "Nosferatu", 
+            "startingSect" : "Camarilla",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "The hideous curse of blood warps the physical visage of each of the Sewer Rats, but others respect and fear their mastery of hidden byways and secret-gathering.",
+            "disciplines" : [ "Animalism", "Obfuscate", "Potence" ],
+            "advantage" : "Gain one Trait of both Stealth and Survival at no cost at creation.",
+            "flaw" : "May never have any appearance related traits. Gain the negative Trait Repugnent x 3 which may never be removed. May never initiate social challenges except to intimidate while using their normal visage."
+        },
+        "antitribu" : {
+            "name" : "Nosferatu Antitribu", 
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat" ],
+            "description" : "The hideous curse of blood warps the physical visage of each of the Sewer Rats, but others respect and fear their mastery of hidden byways and secret-gathering.",
+            "disciplines" : [ "Animalism", "Obfuscate", "Potence" ],
+            "advantage" : "Gain one Trait of both Stealth and Survival at no cost at creation.",
+            "flaw" : "May never have any appearance related traits. Gain the negative Trait Repugnent x 3 which may never be removed. May never initiate social challenges except to intimidate while using their normal visage."
+        }
+    },
+    "ravnos" : { 
+        "mainBloodline" : {
+            "name" : "Ravnos", 
+            "startingSect" : "Independent",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Claiming kinship to Gypsies, the wandering Deceivers hail from India with power over illusions.",
+            "disciplines" : [ "Animalism", "Chimerstry", "Fortitude" ],
+            "advantage" : " Ravnos can often get away with cons and deceptions that would land other Cainites in a great deal of trouble. Ravnos gain one level of Streetwise Ability for free. They also have a level of Street Influence or Transportation Influence.",
+            "flaw" : "Once each game session, the Ravnos must make an attempt to indulge in the particular vice, unless a test of Self-Control/ Instinct (difficulty of three Traits) can be made"
+        },
+        "antitribu" : {
+            "name" : "Ravnos Antitribu", 
+            "startingSect" : "Sabbat",
+            "availableSects" : [ "Sabbat" ],
+            "description" : "Claiming kinship to Gypsies, the wandering Deceivers hail from India with power over illusions.",
+            "disciplines" : [ "Animalism", "Chimerstry", "Fortitude" ],
+            "advantage" : " Ravnos can often get away with cons and deceptions that would land other Cainites in a great deal of trouble. Ravnos gain one level of Streetwise Ability for free. They also have a level of Street Influence or Transportation Influence.",
+            "flaw" : "Once each game session, the Ravnos must make an attempt to indulge in the particular vice, unless a test of Self-Control/ Instinct (difficulty of three Traits) can be made"
+        },
+        "phuriDae" : {
+            "name" : "Phuri DaeRavnos", 
+            "startingSect" : "Independent",
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Claiming kinship to Gypsies, the wandering Deceivers hail from India with power over illusions.",
+            "disciplines" : [ "Animalism", "Chimerstry", "Auspex" ],
+            "advantage" : " Ravnos can often get away with cons and deceptions that would land other Cainites in a great deal of trouble. Ravnos gain one level of Streetwise Ability for free. They also have a level of Street Influence or Transportation Influence.",
+            "flaw" : "Once each game session, the Ravnos must make an attempt to indulge in the particular vice, unless a test of Self-Control/ Instinct (difficulty of three Traits) can be made"
+        }
+    },
+    "toreador" : { 
+        "mainBloodline" : {
+            "name" : "Toreador", 
+            "startingSect" : "Camarilla", 
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Protectors of culture and promoters of art make up the Degenerates, but they also include sycophants and pleasureseekers in their ranks.",
+            "disciplines" : [ "Auspex", "Celerity", "Presence" ],
+            "advantage" : "Begins with Academics, Crafts, Performance or Subterfuge Abilities (one Trait each of any two, or two Traits of one). May spend and 15 minutes out of game and expend the aforementioned abilities to gain a blood trait on a one for one basis.",
+            "flaw" : "Become entranced in a fugue state by great works of art (crafts, expression, performance, etc), with a rating of 3 or higher. May break out by expending a mental trait, or if they are attacked."
+        },
+        "antitribu" : {
+            "name" : "Toreador Antitribu", 
+            "startingSect" : "Camarilla", 
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Protectors of culture and promoters of art make up the Degenerates, but they also include sycophants and pleasureseekers in their ranks.",
+            "disciplines" : [ "Auspex", "Celerity", "Presence" ],
+            "advantage" : "Begins with Academics, Crafts, Performance or Subterfuge Abilities (one Trait each of any two, or two Traits of one). May spend and 15 minutes out of game and expend the aforementioned abilities to gain a blood trait on a one for one basis.",
+            "flaw" : "Act out scenes of horror when confronted with great horror themed art (crafts, expression, performance, etc), with a rating of 3 or higher. May break out by expending a mental trait, or if they are attacked."
+        }
+    },
+    "tremere" : { 
+        "mainBloodline" : {
+            "name" : "Tremere", 
+            "startingSect" : "Camarilla", 
+            "availableSects" : [ "Camarilla" ],
+            "description" : "Ruthless and insular, the Warlocks and their potent blood magic are untrusted, but grudgingly respected.",
+            "disciplines" : [ "Auspex", "Dominate", "Thaumaturgy" ],
+            "advantage" : "Gain one Occult Ability and one Occult Influence automatically.",
+            "flaw" : "All new Tremere are forced to drink from a chalice containing the blood of seven elders of the clan. This binds them to the clan as a whole."
+        },
+        "antitribu" : {
+            "name" : "Tremere Antitribu", 
+            "startingSect" : "Sabbat", 
+            "availableSects" : [ "Sabbat" ],
+            "description" : "Ruthless and insular, the Warlocks and their potent blood magic are untrusted, but grudgingly respected. Note: this bloodline was wiped out in 1999.",
+            "disciplines" : [ "Auspex", "Dominate", "Thaumaturgy" ],
+            "advantage" : "Gain one Occult Ability and one Occult Influence automatically.",
+            "flaw" : "All new Tremere are forced to drink from a chalice containing the blood of seven elders of the clan. This binds them to the clan as a whole."
+        },
+        "telyavelic" : {
+            "name" : "Telyavelic Tremere", 
+            "startingSect" : "Camarilla", 
+            "availableSects" : [ "Camarilla" ],
+            "description" : "Ruthless and insular, the Warlocks and their potent blood magic are untrusted, but grudgingly respected. Note: this bloodline was wiped out before the 17th Century.",
+            "disciplines" : [ "Auspex", "Presence", "Thaumaturgy" ],
+            "advantage" : "Gain one Occult Ability and one Occult Influence automatically.",
+            "flaw" : "All new Tremere are forced to drink from a chalice containing the blood of seven elders of the clan. This binds them to the clan as a whole."
+        }
+    },
+    "tzimisce" : { 
+        "mainBloodline" : {
+            "name" : "Tzimisce", 
+            "startingSect" : "Sabbat", 
+            "availableSects" : [ "Sabbat" ],
+            "description" : "Hailing from Eastern Europe, the inhuman Fiends study mortal and vampire alike with clinical coldness and utter ruthlessness.",
+            "disciplines" : [ "Animalism", "Auspex", "Vicissitude" ],
+            "advantage" : "Start with one free Ability Trait of Occult, and they can also purchase Lore Abilities with greater ease than most vampires — at Storyteller discretion, the Fiends may learn the first two levels of any Lore Ability without the need for extensive work or specialized resources. Tzimisce may have revenants as Retainers. A revenant Retainer can be treated like a ghoul, except that the revenant does not require regular upkeep with vitae.",
+            "flaw" : "Must sleep with at least 2 handfuls of dirt from their grave or homeland every night. Gain a cumulative one trait penalty for each night they fail to do so. Remove one point's worth of penalties per night they successfully sleep with the aforementioned dirt."
+        },
+        "koldun" : {
+            "name" : "Tzimisce Koldun", 
+            "startingSect" : "Sabbat", 
+            "availableSects" : [ "Sabbat" ],
+            "description" : "Hailing from Eastern Europe, the inhuman Fiends study mortal and vampire alike with clinical coldness and utter ruthlessness.",
+            "disciplines" : [ "Animalism", "Auspex", "Vicissitude" ],
+            "advantage" : "Start with one free Ability Trait of Occult, and they can also purchase Lore Abilities with greater ease than most vampires — at Storyteller discretion, the Fiends may learn the first two levels of any Lore Ability without the need for extensive work or specialized resources. Tzimisce may have revenants as Retainers. A revenant Retainer can be treated like a ghoul, except that the revenant does not require regular upkeep with vitae.",
+            "flaw" : "Must sleep with at least 2 handfuls of dirt from their grave or homeland every night. Gain a cumulative one trait penalty for each night they fail to do so. Remove one point's worth of penalties per night they successfully sleep with the aforementioned dirt."
+        }
+    },
+    "ventrue" : { 
+        "mainBloodline" : {
+            "name" : "Ventrue",
+            "startingSect" : "Camarilla", 
+            "availableSects" : [ "Camarilla", "Anarch", "Independent" ],
+            "description" : "Rulers of board room and battlefield, the Blue Bloods lead other Kindred as their right and responsibility.",
+            "disciplines" : [ "Dominate", "Fortitude", "Presence" ],
+            "advantage" : "Begin play with an extra Trait of the Resources Background that can never be lost permanently. Gain one Trait of Finance, High Society or Political Influence. Knowledge of Ventrue lineage.",
+            "flaw" : "Ventrue may only feed from mortal blood meeting with their particular dietary restriction. Start game with one less blood."
+        },
+        "antitribu" : {
+            "name" : "Ventrue Antitribu",
+            "startingSect" : "Sabbat", 
+            "availableSects" : [ "Sabbat" ],
+            "description" : "Rulers of board room and battlefield, the Blue Bloods lead other Kindred as their right and responsibility.",
+            "disciplines" : [ "Dominate", "Fortitude", "Presence" ],
+            "advantage" : "Begin play with an extra Trait of the Resources Background that can never be lost permanently. Gain one Trait of Finance, High Society or Political Influence. Knowledge of Ventrue lineage.",
+            "flaw" : "Ventrue may only feed from mortal blood meeting with their particular dietary restriction. Start game with one less blood."
+        }
+    },
+    "daughtersOfCacophony" : { 
+        "mainBloodline" : {
+            "name" : "Daughters of Cacophony", 
+            "startingSect" : "Independent", 
+            "availableSects" : [ "Camarilla", "Sabbat", "Anarch", "Independent" ],
+            "description" : "Heralds of song and voice, the Sirens music leads others to enlightenment or madness.",
+            "disciplines" : [ "Fortitude", "Melpominee", "Presence" ],
+            "advantage" : "Gain one ability of Performance: Singing for free at character creation. Additionally, the player may take an additional Performance ability or ",
+            "flaw" : "In any test of perception, the Daughter suffers a two-Trait penalty on challenge resolution. No Daughter of Cacophony can ever have more than two perception-related Mental Traits."
+        }
+    },
+    "salubri" : { 
+        "mainBloodline" : {
+            "name" : "Salubri", 
+            "startingSect" : "Independent", 
+            "availableSects" : [ "Anarch", "Independent" ],
+            "description" : "Reviled as soul-stealers and diablerists, the Cyclops flee from persecution while hunting spiritual insight. In truth, the Salubri are healers and pacifists.",
+            "disciplines" : [ "Auspex", "Fortitude", "Obeah" ],
+            "advantage" : "A Salubri receives two bonus Traits that she may put toward decreasing her generation.",
+            "flaw" : "A Salubri who takes blood from an unwilling or resisting victim automatically loses one temporary Willpower Trait immediately, and he must make a Conscience/ Conviction Virtue Test with a difficulty of three Traits. "
+        }
+    },
+    "samedi" : { 
+        "mainBloodline" : {
+            "name" : "Samedi", 
+            "startingSect" : "Independent",
+            "availableSects" : [ "Camarilla", "Sabbat", "Anarch", "Independent" ],
+            "description" : "Rotting and monstrous, the Stiffs claim terrifying control over the processes of death and the secrets of immortality.",
+            "disciplines" : [ "Fortitude", "Obfuscate", "Thanatosis" ],
+            "advantage" : "Samedi can learn the Necromancy Discipline and its paths without need for a Giovanni instructor.  Samedi necromancers start with the Sepulchre Path.",
+            "flaw" : "May never have any appearance related traits. Gain the negative Trait Repugnent x 3 which may never be removed. May never initiate social challenges except to intimidate while using their normal visage."
+        }
+    } 
+} 

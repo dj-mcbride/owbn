@@ -1,0 +1,22 @@
+
+Several tests are currently broken:
+ - Unit Tests for calculators.js
+   - Unit Tests for IPCalculator
+     - getCoreSubnets
+       - should throw an error when the calculations yield invalid addresses
+       - should resolve slipedData.current_config.access_subnet, csr_system_subnet; !(cornetSubnet[1] -127 < 0)
+     - getSystemIPs
+       - should apply the appropriate values to ng_rtr_pair_system_IP_pwe1/2
+     - generateIPs
+       - should call baseIps, standardIps, and SystemIps, then return the result.
+       - should return the expected data given valid inputs
+ - Unit Tests for mopCheck.js
+   - Function:constructor
+     - Should take in and store all inputs in object under keys of same name
+ - Unit Tests rehomeRequest.js
+   - Class : InterRehomeRequest
+     - Method : _getActionObject
+       - This call should return a valid object when passed a commit
+       - This call should return a valid object when passed a dry-run
+       - This call should return a valid object when passed a partial-sync
+       - It should parse a successful NSO Result message

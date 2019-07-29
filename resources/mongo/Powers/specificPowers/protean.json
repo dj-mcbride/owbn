@@ -1,0 +1,43 @@
+{
+    "name" : "Protean",
+    "type" : "Discipline",
+    "description" : "Survival in the wild is difficult indeed for vampires, who must find means to avoid sunlight, hunt and evade marauding Lupines. The shapeshifting Gangrel, though, have mastered this craft, and their Protean Discipline is thought to be a large factor in their success. With Protean, the vampire can alter parts of her body to draw on the strength of natural forces.  Retests for Protean, if applicable, should use the Survival Ability,",
+    "retests" : "Survival",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Eyes of the Beast",
+            "effect" : "See in darkness",
+            "description" : "With a moment's pause, you can make your eyes able to see in absolute darkness. An eerie red glow emanates from your eyes, and you can see perfectly well in pitch-blackness.  You need only declare your intent to use Eyes of the Beast, and at the end of the turn, the change is complete. You suffer no penalties at all for natural darkness while using this Discipline. However, you do suffer the Negative Trait Bestial due to your red, glowing eyes, unless you take steps to conceal them (most commonly, with sunglasses). Using this power is also a rather obvious breach of the Masquerade."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Feral Claws",
+            "effect" : "Unarmed does aggrivated damage",
+            "description" : "Like a wolf or bear, you have powerful claws capable of rending flesh. You can grow these claws at will with a simple effort; they sprout mystically from your otherwise normal hands, and similarly retract when you desire.  By expending a Blood Trait, you cause Feral Claws to extend from your hand (and feet, if you so desire) at the end of the turn. These claws have the bonus Trait Sharp, useable in combat or in climbing, and they inflict aggravated damage."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Earth Meld",
+            "effect" : "Meld into soil",
+            "description" : "For a traveler in the wilds, Earth Meld is an invaluable power. With this Discipline, you sink into the bosom of the earth, able to sleep mystically undisturbed within the soil.  You must be touching raw soil to Earth Meld; you cannot sink through stone, wood, concrete or other substances. You immediately begin sinking eerily into the earth itself, taking with you only your clothing and small personal possessions that you carry (such as a cellular phone or a small pistol). Using the power protects you completely from daylight and allows you to sleep undisturbed. You remain unaware of what transpires around you, and indeed, you are not fully of the material world at all. While in this state, you cannot move, except to rise at will.  While bonded with the earth, you remain in a semi-tangible state, partially diffused into spirit by your connection to the soil. Thus, you cannot be readily detected either physically or with spirits. If you patch of soil is disrupted in any fashion, you immediately return to physical form and complete wakefulness, shooting up to the surface and showering dirt in all directions. You cannot act during the first turn that you rise from the soil in this fashion, though if you rise up of your own accord (which you may do at any time), you are fully aware and able to act normally.  You must expend a Blood Trait to Earth Med. Sinking into the ground requires a full tum, during which time you can do nothin gelse (because you are descending slowly into the ground)."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Shape of the Beast",
+            "effect" : "Turn into animal",
+            "description" : "Ancient tales of vampires tell that they assume the forms of wolves and bats. Though most vampires consider this nonsense, elder Gangrel sometimes possess the transmutive power to change into animal forms. With Shape of the Beast, you can shift your physical body into that of an undead beast, mimicking a normal animal. Most vampires change into wolves or bats, though some possess different forms dependent on their cultural and geographic ties --jackals in Africa, dingoes in Australia or giant rats in major cities have all been reported.  Shifting into animal form costs one Blood Trait and takes three full turns (each additional Blood Trait spent lowers the transformation time by one turn, to a minimum of one turn with three Blood Traits). You remain in beast form until the next dawn, or until you decide to change back. Clothing and small personal possessions change with you.  In animal form, you can use any of your normal Disciplines except Necromancy, Serpentis, Thaumaturgy and Vicissitude (the inability to speak may make Dominate difficult, of course). Wolf form grants you the bonus Mental Traits Alert and Attentive, as well as the effects of Feral Claws and improved running speed. Bat form grants you flight capability and the benefits of the Merit: Acute Hearing, though you possess a maximum of three Physical Traits in that form.  The animal forms granted by this power are in all ways physically identical to normal animals, though of course they are dead, animated corpses as befits a vampire."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Mist Form",
+            "effect" : "Turn into mist",
+            "description" : "Your control over your physical form is so complete that you can dissolve into a fine cloud of mist. You disperse into a floating cloud, still able to sense your surroundings and able to move about as you desire. This cloud form can slip through tiny cracks and holes, and it cannot be dispersed by the mightiest of natural winds.  Assuming Mist Form costs one Blood Trait and takes three full turns (additional Blood Traits reduce this time at a one-for-one cost, with a minimum of one full turn at three Blood Traits). You may change back instantly at any time. You are immune to mundane physical attacks in this form, and you take one less level of damage from fire and sunlight automatically. You are still affected normally by mystical attacks, though of course you have no blood in this form, so much of Thaumaturgy is useless against you. Though you cannot affect the world physically, you can still use Disciplines that do not require a physical form (you cannot use Dominate, for instance, because you have no eyes, but you could exert Presence). While in Mist Form, you may move as desired at the pace of a brisk walk, although you can be pushed about by strong winds."
+        }
+    ]
+}

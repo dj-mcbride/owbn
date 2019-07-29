@@ -1,0 +1,508 @@
+{
+    "description" : "As optional Traits to flesh out your character, Merits and Flaws allow you to specify particular advantages or disadvantages that are not covered by Attributes, Abilities or Backgrounds. All Merits and Flaws are organised into specific categories, according to their type. To purchase a Merit, you must expend Free Traits equal to the cost of the Merit; taking a Flaw,conversely, hinders you with a handicap of some sort, but it offers additional Free Traits. You can take up to seven Traits each of Merits and Flaws. Some elder characters may have more; certainly, very old vampires may develop potential capabilities and resources outstripping their younger childer, or they may succumb to more terrible illnesses of body and mind.  Normally, you must purchase Merits and Flaws during character creation. However, with an appropriate story, you may be able to buy a new Merit (with Experience equal to double its value) or overcome a Flaw (again, with Experience equal to double its value).",
+    "physicalMerits" : { 
+        "acuteSense" : { 
+            "name" : "Acute Sense",
+            "cost" : 1,
+            "description" : "You have a particularly sharp sense (specify which one). In all tests with that sense, you are two Traits up on challenge-resolution. Combined with the Anspex power of Heightened Senses, this Merit can gift you with truly superhuman acuity. You may have multiple Acute Senses, but you may only take this Merit once for each sense.",
+            "specialization" : true            
+        },
+        "ambidextrous" : { 
+            "name" : "Ambidextrous",
+            "cost" : 1,
+            "description" : "You have a high degree of coordination, and you can use both of your hands equally well. Normally, you suffer a two-Trait penalty for performing tasks with your \"off\" hand. With this Merit, you have no penalty for using either hand. Of course, if you use both hands, you still suffer the coordination penalty for both"        
+        },
+        "catlikeBalance" : { 
+            "name" : "Catlike Balance",
+            "cost" : 1,
+            "description" : "You almost never slip, stumble, fall or even get dizzy. Your sense of balance is so well-developed that you can walk with ease even on a narrow ledge or wire. You are two Traits up on resolution of challenges where your balance is a deciding factor."      
+        },
+        "eatFood" : { 
+            "name" : "Eat Food",
+            "cost" : 1,
+            "description" : "Perhaps you developed this capacity after your Embrace, or maybe you never lost the ability to eat food. Whatever the case, your atrophied organs can still stomach solids. You do not digest such food, however, and you gain no sustenance from it; you must regurgitate the food at a later time. Having this Merit can be invaluable in maintaining the Masquerade."       
+        },
+        "blushOfHealth" : { 
+            "name" : "Blush of Health",
+            "cost" : 2,
+            "description" : "Unlike other vampires who become pallid and gaunt, you retain a flush of life to your skin. Your appearance is still healthy, and you only feel slightly cool. This Merit is a great boon in blending in with mortals, though you still suffer Negative Traits from low Humanity or Path ratings (as those are more a result of your innate monstrousness than your appearance)."      
+        },
+        "enchantingVoice" : { 
+            "name" : "Enchanting Voice",
+            "cost" : 2,
+            "description" : "Your voice is naturally resonant and commanding. All uses of your voice grant you two Bonus Traits; you can seduce, intimidate and cajole with just a few well chosen words. This gift is most effective in combination with Presence or Melpominee.",
+            "specialization" : false            
+        },
+        "daredevil" : { 
+            "name" : "Daredevil",
+            "cost" : 3,
+            "description" : "Not only do you take outrageous risks, you survive them. Whenever you take a risky (some would say foolhardy) course of action-one with a Static difficulty of at least eight Traits or a potentially harmful outcome--you get one Bonus Traiton the attempt. This bonus applies only to combats where you are outnumbered or sorely outclassed (Narrator's discretion)."          
+        },
+        "efficientDigestion" : { 
+            "name" : "Efficient Digestion",
+            "cost" : 3,
+            "description" : "You manage to draw extra nourishment out of blood while feeding. You gain three Blood Traits for every two that you drain from a mortal (rounding fractions down). This efficiency applies only to mortal blood, and you cannot take more than your normal Blood Trait maximum."          
+        },
+        "hugeSize" : { 
+            "name" : "Huge Size",
+            "cost" : 4,
+            "description" : "Nearly seven feet tall and hundreds of pounds in weight, you tower over most adversaries (and allies). You have one extra Bruised health level. You should represent your incredible mass appropriately - wearing bulky clothing is a good start."         
+        }
+    },
+    "physicalFlaws" : { 
+        "hardOfHearing" : { 
+            "name" : "Hard of Hearing",
+            "cost" : 1,
+            "description" : "You have some difficulty hearing. You suffer a two-Trait penalty on all tests of hearing. Obviously, you cannot have this Flaw and the Merit: Acute Sense: Hearing."          
+        },
+        "short" : { 
+            "name" : "Short",
+            "cost" : 1,
+            "description" : "You have trouble seeing over things, interacting with tall people and escaping notice due to your proportions. You can only take two steps in an action instead of three, due to your small size. You also have trouble reaching countertops and manipulating objects designed for normal people like cars). You should wear a tag to note your condition if you are not actually that short."           
+        },
+        "smellOfTheGrave" : { 
+            "name" : "Smell of the Grave",
+            "cost" : 1,
+            "description" : "You exude the unconcealable stench of wet earth, which puts you one Trait down on social interactions with mortals automatically. Your loamy scent is quite distinctive to those familiar with you"         
+        },
+        "badSightGlasses" : { 
+            "name" : "Bad Sight : Glasses",
+            "cost" : 1,
+            "description" : "Defective sight causes you no end of trouble. Any time you are called on to perform a challenge that involves careful eyesight, you suffer a two-Trait penalty. Your vision problem is correctable with glasses or contact lenses.   You cannot have the Merit: Acute Vision: Sight with this Flaw."          
+        },
+        "badSightUncorrectable" : { 
+            "name" : "Bad Sight : Uncorrectable",
+            "cost" : 3,
+            "description" : "Defective sight causes you no end of trouble. Any time you are called on to perform a challenge that involves careful eyesight, you suffer a two-Trait penalty.  Your vision is so bad that glasses or contact lenses provide no help.  You cannot have the Merit: Acute Vision: Sight with this Flaw."           
+        },
+        "fourteenthGeneration" : { 
+            "name" : "Fourteenth Generation",
+            "cost" : 2,
+            "description" : "Embraced in the modern age, your blood is thin beyond even that of most Caitiff. You are no more than five years as a vampire, created by one of the 13th generation. You have 10 Blood Traits, but you can only use eight of them, the other two are inert, treated like mortal blood. You must take the Flaw: Thin Blood (although you do get Free Traits for it), and you are most likely Caitiff, for your blood is too weak to pass the distinguishing characteristics of clan, You may not take the Backgrounds of Generation with this Flaw.",
+            "prerequisite" : { "meritFlaw" : "thinBlood" }
+        },
+        "disfigured" : { 
+            "name" : "Disfigured",
+            "cost" : 2,
+            "description" : "A hideous disfigurement afflicts you, twisting your countenance in a memorable fashion. You cannot take any Appearance-related Social Traits. Furthermore, you suffer a two-Trait penalty on all Social Challenges except intimidation."        
+        },
+        "oneEye" : { 
+            "name" : "One Eye",
+            "cost" : 2,
+            "description" : "Whether by injury or defect, you are missing an eye or one of your eyes does not function. You are two Traits down on tests of depth perception, including ranged combat. Depending on the nature of your eye damage, you may choose to wear an eyepatch, or you may simply have one blind eye."        
+        },
+        "addiction" : { 
+            "name" : "Addiction",
+            "cost" : 1,
+            "description" : "Some chemical or biological substance hooked you, and now you crave it in the blood. You try to feed from people whose blood will satiate your cravings. This substance generally has negative effects on you-alcohol or depressants may give you the Negative Trait: Lethargic for the rest of the evening after feeding, or amphetamines may cause you to suffer from the Negative Trait Impatient. You can only draw nourishment from blood with your \"fix\" in it; you vomit up any other blood."         
+        },
+        "child" : { 
+            "name" : "Child",
+            "cost" : 3,
+            "description" : "You were embraced as a child, between five and 10 years of age. Your age causes some decided problems: you cannot have more than six Physical Traits normally, and you suffer a two-Trait penalty on tests of authority with adults. Since you never age or grow up, this Flaw will probably be with you forever. You must additionally take the Flaw: Shory (though you do get Free Traits for it).",
+            "prerequisite" : { "meritFlaw" : "short" }      
+        },
+        "deformity" : { 
+            "name" : "Deformity",
+            "cost" : 3,
+            "description" : "A physical deformity of some sort not only mars your appearance, but it makes physical activity difficult for you. You have a one-Trait penalty on challenge resolution for Physical tests, and two for Social tests. You should work with the Storyteller to define the nature of your deformity (be it a hunchback, club foot, withered limb etc.)."         
+        },
+        "infectionsBite" : { 
+            "name" : "Infections Bite",
+            "cost" : 3,
+            "description" : "Due to enzymes, a disease or just some unknown mystical factor, you cannot heal your bite simply by licking the wound. In fact, mortals can be infected with a serious disease if you feed on them if you fail a Simple Test after leaving a mortal alive but bitten, the mortal contracts a serious disease"         
+        },
+        "lame" : { 
+            "name" : "Lame",
+            "cost" : 3,
+            "description" : "More than simply suffering from a twitchy limb like the Lame Negative Physical Trait, you have severe damage to your legs. You can only take one step per action, you cannot run and you should take the Negative Trait Lame as well. You should roleplay this Flaw with a cane or a set of leg braces."          
+        },
+        "monstrous" : { 
+            "name" : "Monstrous",
+            "cost" : 3,
+            "description" : "Something about you became wholly monstrous when you were Embraced. Your outward form twists to reflect your inner Beast. You cannot initiate Social Challenges, except ones concerning intimidation, when your true form is apparent, and you may not take Appearance-related Traits, such as Alluring or Gorgeous. Nosferatu and Samedi may not take this Flaw.",
+            "restriction" : { "trait" : "appearance" }    
+        },
+        "permanentWound" : { 
+            "name" : "Permanent Wound",
+            "cost" : 3,
+            "description" : "Before your Embrace, you suffered some sort of wound which your transformation failed to repair. As a result, you rise each night with the same affliction. You wake up each evening at your first Wounded health level with lethal damage, although this damage may be healed normally."     
+        },
+        "slowHealing" : { 
+            "name" : "Slow Healing",
+            "cost" : 3,
+            "description" : "Your blood is not very efficient in healing your wounds, or maybe you just never really learned to direct your vitae for regeneration. Repairing one level of damage costs you two Blood Traits, and you can only restore one aggravated level of damage per week (though you can bank your blood for healing)"        
+        },
+        "deaf" : { 
+            "name" : "Deaf",
+            "cost" : 4,
+            "description" : "You are completely deaf. You must use sign language or some other form of communication. You cannot hear Dominate commands, and so you are usually immune to them (unless they are implanted telepathically or otherwise without voice), but you suffer a three-Trait penalty on tests of perception and alertness. You cannot have Acute Sense: Hearing, and you are surprised automatically by anyone who approaches you from outside your line of sight."          
+        },
+        "diseaseCarrier" : { 
+            "name" : "Disease Carrier",
+            "cost" : 4,
+            "description" : "You suffer from a fatal disease, and you spread it readily to anyone who drinks your blood. Though it has little effect on Cainites, it does require you to spend an extra Blood Trait when awakening in the evening if you wish to avoid suffering its debilitating symptoms. Furthermore, other vampires who feed on you must make two Simple Tests - if both tests are lost, the vampire contracts your disease as well."     
+        },
+        "mute" : { 
+            "name" : "Mute",
+            "cost" : 4,
+            "description" : "You cannot speak at all. To communicate, you may need to sign or write out your thoughts. You can explain actions to a Storyteller, but that is the limit of your speaking. Without Linguistics, you may not even be able to sign. This Flaw can be difficult to roleplay, so choose carefully."         
+        },
+        "thinBlood" : { 
+            "name" : "Thin Blood",
+            "cost" : 4,
+            "description" : "The curse of Caine is weak in your vitae. As a result, your blood sustains you only poorly. All costs for Blood Traits are doubled, and may require you to spend multiple turns when powering Disciplines or healing. You cannot create a blood bond, and you can only Embrace someone if you win (not tie) a Simple Test-otherwise, the victim simply dies."          
+        },
+        "fleshOfTheCorpse" : { 
+            "name" : "Flesh of the Corpse",
+            "cost" : 5,
+            "description" : "When you suffer injury, your flesh knits with terrible scars and puckering seams. Every time you take a wound, you suffer from the Negative Trait Repugnant, and it persists even after you heal the injury. After a day's sleep, your skin finally restores itself, but the marks are still a difficulty when dealing with the Masquerade before you have slept."         
+        },
+        "blind" : { 
+            "name" : "Blind",
+            "cost" : 6,
+            "description" : "The world of sight is lost to you. You automatically lose all ties where sight would be a factor (tests of manual dexterity, for instance). You fail any challenge requiring sight automatically. You cannot be affected by Dominate because you cannot see the opponent's gaze, but that is about the limit of the benefits. If you have this Flaw, you should wear a special tag or glasses to indicate its nature. Interestingly, you can still use the Auspex Discipline power of Aura Perception, though you perceive the aura through other senses (smell, sound, etc.)."         
+        }
+    },
+    "mentalMerits" : { 
+        "commonSense" : { 
+            "name" : "Common Sense",
+            "cost" : 1,
+            "description" : "You still have a lot of gut insight and everyday practicality. Whenever you're about to do something that runs counter to common sense, the Storyteller or Narrator can make suggestions about the action. This merit is excellent for new players who are not familiar with the intricacies of the game."          
+        },
+        "concentration" : { 
+            "name" : "Concentration",
+            "cost" : 1,
+            "description" : "You can shut out distractions and annoyances that would hinder others. Whenever penalty Traits are assigned for some outside phenomenon (harsh lighting, rain, loud noise, etc.), you suffer none of the penalty."         
+        },
+        "timeSense" : { 
+            "name" : "Time Sense",
+            "cost" : 1,
+            "description" : "You can estimate time accurately to the nearest one or two minutes without the use of a watch or clock. This merit is obviously very useful in getting back to safety before sunrise."         
+        },
+        "codeOfHonor" : { 
+            "name" : "Code of Honor",
+            "cost" : 2,
+            "description" : "A specific code of behavior and ethics, separate from your Path of Enlightenment, guides your actions. This code is very personal, shaped by your own experiences. You should work with your Storyteller to build an appropriate code (which should include some hindrances and prohibited activity in addition to beliefs and passions). You gain one free retest whenever facing a Mental or Social situation that might cause you to violate your code, be it supernatural persuasion or possible frenzy."           
+        },
+        "eideticMemory" : { 
+            "name" : "Eidetic Memory",
+            "cost" : 2,
+            "description" : "Your memory is nearly perfect, and you recall almost everything you experience with incredible clarity. A single turn of attention is sufficient to commit a page, picture or short conversation to memory. If you are involved in combat or otherwise distracted, you must make a Static Mental Challenge, difficulty of six Traits, to successfully memorize the contents of your subject of scrutiny. You should keep a *cheat sheet* of your memories to aid you and the Storyteller in *recollection.*"       
+        },
+        "lightSleeper" : { 
+            "name" : "Light Sleeper",
+            "cost" : 2,
+            "description" : "While most vampires sleep soundly during the day, you are still sensitive to your surroundings. You wake easily and instantly at any sign of disturbance. You also suffer no limit to your Traits due to sleepiness during the day, regardless of your Morality Trait total."         
+        },
+        "naturalLinguist" : { 
+            "name" : "Natural Linguist",
+            "cost" : 2,
+            "description" : "You have a remarkable grasp with any languages that you speak or write (as per your Linguistics Ability). You gain three Bonus Traits on all challenges related to language."         
+        },
+        "calmHeart" : { 
+            "name" : "Calm Heart",
+            "cost" : 3,
+            "description" : "Though the Beast moves in you, it is more subdued than in other vampires. You control your passions better than most, or you are just naturally more temperate. You are one Trait up on resolution of Self-Control Instinct and Courage Virtue Tests. Brujah may not take this Merit"        
+        },
+        "ironWill" : { 
+            "name" : "Iron Will",
+            "cost" : 1,
+            "description" : "When your mind is set, your will is not broken easily. If you are affected with the Dominate Discipline, you may expend a Willpower Trait to retest the effect. If you win, the effect is negated and you receive a five-minute immunity to further Dominate. If mind-altering magic or Thaumahogy with a Mental Challenge affects you, you get three Bonus Traits in defense. Note that this Merit does not defend against Presence or other social manipulations."         
+        }
+    },
+    "mentalFlaws" : { 
+        "deepSleeper" : { 
+            "name" : "Deep Sleeper",
+            "cost" : 1,
+            "description" : "You are even more sluggish than the normal vampire during the day. You have great difficulty awakening, even at signs of danger. During the day, waking up is a Static Mental Challenge versus 10 Traits."          
+        },
+        "nightmares" : { 
+            "name" : "Nightmares",
+            "cost" : 1,
+            "description" : "Hideous nightmares (daymares?) flit through your mind whenever you slumber. At a Narrator's discretion, you may suffer nightmares so bad that you are unable to sleep restfully, causing you to lose one Trait on all challenges for the evening. A crafty Storyteller is usually quick to take advantage of this Flaw."         
+        },
+        "preyExclusion" : { 
+            "name" : "Prey Exclusion",
+            "cost" : 1,
+            "description" : "For some reason, you refuse to hunt a certain class of prey, such as children, clergy or police. If you accidentally feed on your excluded subject, you immediately enter frenzy and must make a four-Trait Conscience Conviction Challenge or lose a Morality Trait. Furthermore, if you witness someone else feeding on your excluded type, you must make a Self-Control Instinct Virtue Test as if provoked. Ventrue cannot take this Flaw, due to their more restrictive clan diet.",
+            "specialization" : false            
+        },
+        "shy" : { 
+            "name" : "Shy",
+            "cost" : 1,
+            "description" : "Unlike the Negative Trait Shy, which indicates difficulty dealing with other individuals, you have a specific problem with large groups of people. You take a twoTrait penalty on all Social Challenges with three or more people, three Traits for groups of 10 or more.",
+            "specialization" : false            
+        },
+        "softHearted" : { 
+            "name" : "Soft Hearted",
+            "cost" : 1,
+            "description" : "You cannot abide suffering, because of the emotional disturbance or pain that it causes you. You must avoid causing pain or suffering to anyone; only by spending a Willpower Trait can you overcome this limitation for a scene (one hour).",
+            "restriction" : "Four Humanity or more"            
+        },
+        "speechImpediment" : { 
+            "name" : "Speech Impediment",
+            "cost" : 1,
+            "description" : "A stammer, Tourette's Syndrome or other speech deficiency makes communication difficult for you. Roleplay your deficiency, and suffer a two-Trait penalty on all verbal communication.",
+            "restriction" : { "merit" : "enchantingVoice" }       
+        },
+        "amnesia" : { 
+            "name" : "Amnesia",
+            "cost" : 2,
+            "description" : "The past is a blank slate. You know nothing of your history, family, friends or foes. Your Storyteller makes up your character's history, including the reasons for your Amnesia. The Storyteller may even keep your character record partially hidden, only revealing your Abilities, Disciplines, Merits and Flaws when you try to use them. In general, the only things obvious to you are the things you can see in the mirror. "        
+        },
+        "lunacy" : { 
+            "name" : "Lunacy",
+            "cost" : 1,
+            "description" : "The cycles of the moon shift your moods, making you unpredictable and wild. Under a crescent, half or gibbous moon, you suffer a one-Trait penalty to all SelfControl Instinct Virtue Tests; under a full moon, this penalty increases to two Traits."         
+        },
+        "phobia" : { 
+            "name" : "Phobia",
+            "cost" : 2,
+            "description" : "Some object, creature or circumstance fills you with dread. This fear goes far beyond the normal level of phobias: Your vampiric Beast instinctively flees the thing, treating it as a dire threat. When confronted by the object of your fear, you must make a Courage Virtue Test with a difficulty of at least three Traits (more if the Narrator decides that the circumstances are particularly severe). Should you fail, you suffer the usual penalties of failed Courage and Rotschreck."       
+        },
+        "shortFuse" : { 
+            "name" : "Short Fuse",
+            "cost" : 2,
+            "description" : "Even for a vampire, your temper is ferocious. You suffer a one-Trait penalty on all Virtue Tests of Self-Control Instinct. Brujah cannot take this Flaw."       
+        },
+        "territorial" : { 
+            "name" : "Territorial",
+            "cost" : 2,
+            "description" : "You stake out a particular area and claim it as your hunting grounds. You do not tolerate trespassers, especially other predators (vampires and Lupines). If you catch another vampire entering your turf uninvited, you must make a Self-Control Instinct Virtue Test as if provoked, or fly into a frenzy and attack. You generally dislike leaving your home for extended periods; roleplay this reticence."        
+        },
+        "vengeful" : { 
+            "name" : "Vengeful",
+            "cost" : 2,
+            "description" : "You want to even a score, either from your mortal days or with some group or individual thereafter. You plan ways to get your revenge constantly, and if presented with an opportunity for vengeance, you must spend a Willpower Trait to take some other action for the scene. "          
+        },
+        "weakWilled" : { 
+            "name" : "Weak-Willed",
+            "cost" : 3,
+            "description" : "Mind-altering powers like Dominate or even simple threats can break you easily. You get notest against the Dominate Discipline (although you are still immune to uses of Dominate from Cainites of weaker generation). You also suffer a two-Trait penalty on all Mental and Social Challenges. You cannot exceed a total of three Willpower Traits, regardless of your generation, unless you overcome this Flaw.", 
+            "restriction" : { "willpower" : ">3"  }
+        },
+        "conspicuousConsumption" : { 
+            "name" : "Conspicuous Consumption",
+            "cost" : 4,
+            "description" : "The organs and blood-bearing tissue of your victims are staples of your diet. You believe that you must consume the liver, kidneys, heart and other pieces in order to sustain yourself. You must purchase the Eat Food Merit so that you can devour the meaty bits. You can only absorb Blood Traits by eating these organs, blood drunk from other sources is vomited back up. This hunger will necessitate the deaths of your victims, and it could lead to interesting problems with the Masquerade and maintaining Morality.",
+            "prerequisite" : { "meritFlaw" : "eatFood" }   
+        },
+        "derangement" : {
+            "name" : "Deragement",
+            "cost" : 2,
+            "description" : "Mental instability and insanity plague many vampires, who are gripped by their guilt, remorse and inability to deal with the changing world. Derangements represent specific mental problems that sometimes crop up in situations of stress",
+            "prerequisite" : { "derangements" : "==1" }
+        }
+    },
+    "socialMerits" : { 
+        "naturalLeader" : { 
+            "name" : "Natural Leader",
+            "cost" : 1,
+            "description" : "Natural magnetism and leadership capabilities spring from your actions and words. Others want to follow you, and you easily take charge. You gain two Bonus Traits on tests of leadership (including most Presence tests). You must have at least six Social Traits to take this Merit."          
+        },
+        "prestigiousSire" : { 
+            "name" : "Prestigious Sire",
+            "cost" : 1,
+            "description" : "Your sire is well-known in Cainite society, and he is held in some esteem. You gain a small measure of prestige due to your sire's fame, even if you no longer have any contact with her. Many other vampires treat you with at least a modicum of respect, as they fear or revere your sire. You are generally treated as if you possess one Status Trait more than you really have, although this Trait is not actually used - it shows that people accord you slightly greater standing."          
+        },
+        "debtOfGratitudeMinor" : { 
+            "name" : "Debt Of Gratitude : Minor",
+            "cost" : 1,
+            "description" : "An elder owes you prestation due to a favor performed by you or your sire. In keeping with the strictures of Cainite society, there is no easy way for the vampire to get out of this debt without repaying you. This elder owes you a minor boon. Work with your Storyteller to create the circumstances of the debt."          
+        },
+        "debtOfGratitudeMajor" : { 
+            "name" : "Debt Of Gratitude : Major",
+            "cost" : 2,
+            "description" : "An elder owes you prestation due to a favor performed by you or your sire. In keeping with the strictures of Cainite society, there is no easy way for the vampire to get out of this debt without repaying you. This elder owes you a major boon. Work with your Storyteller to create the circumstances of the debt."          
+        },
+        "debtOfGratitudeBlood" : { 
+            "name" : "Debt Of Gratitude : Blood",
+            "cost" : 3,
+            "description" : "An elder owes you prestation due to a favor performed by you or your sire. In keeping with the strictures of Cainite society, there is no easy way for the vampire to get out of this debt without repaying you. This elder owes you a blood boon. Work with your Storyteller to create the circumstances of the debt."          
+        }
+    },
+    "socialFlaws" : { 
+        "enemy1" : { 
+            "name" : "Enemy : Rank One",
+            "cost" : 1,
+            "description" : "A particular enemy is out to ruin you, or worse, to kill you. You may even have a group of powerful enemies hounding your steps. The value of this Flaw depends on the power of the enemy: A single vampire of power similar to your own is worth one Trait, while a cabal of mages or an entire organization of hunters would be worth five Traits. The Storyteller will ensure that your enemy figures into plots. He may not appear every game, but his machinations will be there."       
+        },
+        "enemy2" : { 
+            "name" : "Enemy : Rank Two",
+            "cost" : 2,
+            "description" : "A particular enemy is out to ruin you, or worse, to kill you. You may even have a group of powerful enemies hounding your steps. The value of this Flaw depends on the power of the enemy: A single vampire of power similar to your own is worth one Trait, while a cabal of mages or an entire organization of hunters would be worth five Traits. The Storyteller will ensure that your enemy figures into plots. He may not appear every game, but his machinations will be there."       
+        },
+        "enemy3" : { 
+            "name" : "Enemy : Rank Three",
+            "cost" : 3,
+            "description" : "A particular enemy is out to ruin you, or worse, to kill you. You may even have a group of powerful enemies hounding your steps. The value of this Flaw depends on the power of the enemy: A single vampire of power similar to your own is worth one Trait, while a cabal of mages or an entire organization of hunters would be worth five Traits. The Storyteller will ensure that your enemy figures into plots. He may not appear every game, but his machinations will be there."       
+        },
+        "enemy4" : { 
+            "name" : "Enemy : Rank Four",
+            "cost" : 4,
+            "description" : "A particular enemy is out to ruin you, or worse, to kill you. You may even have a group of powerful enemies hounding your steps. The value of this Flaw depends on the power of the enemy: A single vampire of power similar to your own is worth one Trait, while a cabal of mages or an entire organization of hunters would be worth five Traits. The Storyteller will ensure that your enemy figures into plots. He may not appear every game, but his machinations will be there."       
+        },
+        "enemy5" : { 
+            "name" : "Enemy : Rank Five",
+            "cost" : 5,
+            "description" : "A particular enemy is out to ruin you, or worse, to kill you. You may even have a group of powerful enemies hounding your steps. The value of this Flaw depends on the power of the enemy: A single vampire of power similar to your own is worth one Trait, while a cabal of mages or an entire organization of hunters would be worth five Traits. The Storyteller will ensure that your enemy figures into plots. He may not appear every game, but his machinations will be there."       
+        },
+        "darkSecret" : { 
+            "name" : "Dark Secret",
+            "cost" : 1,
+            "description" : "You have some sort of secret that, if exposed, would cause you great embarrassment or hardship. The Storyteller will work to make sure that your secret could be exposed in the course of play. If the secret gets out, you may either buy off the Flaw immediately by taking a Negative Trait (Untrustworthy is a good one), or by the loss of a Status Trait, depending on the circumstances."          
+        },
+        "infamousSire" : { 
+            "name" : "Infamous Sire",
+            "cost" : 1,
+            "description" : "Your sire is well-known and well-hated among vampires of your sect. You are treated as if you have one less Status Trait than you actually possess. This penalty does not affect your true amount of Status; it simply means that others treat you with scom for your lineage."           
+        },
+        "mistakenIdentity" : { 
+            "name" : "Mistaken Identity",
+            "cost" : 1,
+            "description" : "Another Cainite happens to bear a striking resemblance to you. Worse, others in your area have heard descriptions of this person or even met your lookalike, causing no end of confusion. You should wear a tag that indicates your Mistaken Identity. This Flaw can be especially problematic if your look-alike is particularly powerful or notorious in Cainite society"          
+        },
+        "siresResentment" : { 
+            "name" : "Sire's Resentment",
+            "cost" : 1,
+            "description" : "For whatever reason, your sire has decided that your Embrace was a mistake, and she wishes you ill. You are unlikely to have a Mentor or any allies of note among Cainites, and your site will attempt to hinder your plans at any opportunity."          
+        },
+        "hunted" : { 
+            "name" : "Hunted",
+            "cost" : 4,
+            "description" : "A powerful and dangerous mortal hunter has decided you are a danger to the world, and he seeks to snuff out your existence. The mortal has the contacts and skills necessary to make your unlife dangerous and unpleasant (and very short, if you aren't careful). Your friends, allies and other associates may all be at risk if the hunter decides to turn his eye on them."         
+        },
+        "probationarySectMember" : { 
+            "name" : "Probationary Sect Member",
+            "cost" : 4,
+            "description" : "You turned your back on your former organization, and now you stand with another. You may be a Camarilla turcoat, a Sabbat refugee or an independent who joined with one of the greater sects. As long as you have this Flaw, you are suspect within your new organization. You can have Status normally, but elders are likely to cast a suspicious eye over you regardless of your actual standing (treating you as if you had only one Status Trait). Even those with whom you associate may be judged tainted."
+        }
+    },
+    "supernaturalMerits" : { 
+        "magicResistance" : { 
+            "name" : "magicResistance",
+            "cost" : 2,
+            "description" : "The magical forms and rituals of Thaumaturgy and other magic seem to have difficulty affecting you. You gain two Bonus Traits when testing against any form of magic, though this bonus applies to both benevolent and harmful effects. You can never learn Thaumaturgy if you have this Merit.",
+            "restriction" : { "discipline" : "thaumaturgy" } 
+        },
+        "medium" : { 
+            "name" : "Medium",
+            "cost" : 2,
+            "description" : "The voices of the dead sometimes come across the Shroud to haunt you. Ghosts flock to give you messages for the living world, and you can sense their presence in a room without using any special powers. Although you cannot normally see wraiths, you can always hear them, and you can communicate with them for favors or information. Of course, the Restless Dead always want something in return. "         
+        },
+        "lucky" : { 
+            "name" : "Lucky",
+            "cost" : 3,
+            "description" : "You were born lucky - or the Devil looks after his own. Either way, you get three retests per story (for which you bid a Lucky Trait: \"I got Lucky -- you missed me last time.\"), though you may not use more than one retest on any challenge."          
+        },
+        "oracularAbility" : { 
+            "name" : "Oracular Ability",
+            "cost" : 3,
+            "description" : "The signs and portents of everyday life are clear to you, offering up the course of the future. Once per session, you may attempt to read a particular omen by making a Static Mental Challenge with a difficulty of eight or more Traits (Narrator's discretion). If you succeed, you receive some insight into the current situation, allowing you to claim one retest at some point during the night as you draw on the visions that you interpreted."          
+        },
+        "spiritMentor" : { 
+            "name" : "Spirit Mentor",
+            "cost" : 3,
+            "description" : "A ghostly companion and guide follows you about, exercising its powers on your behalf. Maybe it's a deceased lover or friend, or maybe it's just curious about you. Its exact powers are up to the Storyteller (it's recommended that you build a basic wraith with the Oblivion rulebook to represent this character). If it really exerts itself, it can sometimes affect the material world. More often, it provides advice and company. "            
+        },
+        "unbondable" : { 
+            "name" : "unbondable",
+            "cost" : 3,
+            "description" : "The blood bond cannot take hold on you. No matter how much blood you drink, you will never be bound, even partially." 
+        },
+        "trueLove" : { 
+            "name" : "True Love",
+            "cost" : 4,
+            "description" : "You have found (and perhaps lost) a True Love, a piece of comfort and companionship in an otherwise despairing world. When confronted by adversity, the thought of your True Love provides strength and peace of mind. You effectively gain one extra Willpower Trait each session, spent as a True Love Trait. (These Traits are not cumulative; you cannot save them up.) However, your True Love may require rescuing or assistance from time to time, "          
+        },
+        "nineLives" : { 
+            "name" : "Nine Lives",
+            "cost" : 6,
+            "description" : "You have nine chances to cheat death. Your Storyteller should keep a tally of your lives (you can also mark them on your character sheet). Any time that a lost challenge would result in your death, you get a retest. You can keep retesting, even on the same challenge, until you survive or until you use up all of your Nine Lives."          
+        },
+        "trueFaith" : { 
+            "name" : "True Faith",
+            "cost" : 7,
+            "description" : "The light of God, Allah, Buddha or whatever name you use for the Almighty shines from your soul. You have one Trait of True Faith, which can be used in a variety of ways. You can use your Faith Trait as a Willpower Trait. You can also repel other vampires with a Social Challenge, saying, \"In the name of __\"and brandishing a holy symbol. If you win the Social Challenge, the other vampire flees, and even if you lose, the opponent cannot approach closer than 10 feet of you unless he overbids you in a test of Willpower against Willpower. You must maintain a Morality of five Humanity Traits to keep this Merit. This Merit is exceedingly rare among the Damned, and the Storyteller will demand a very good explanation from you."          
+        }
+    },
+    "supernaturalFlaws" : { 
+        "curse1" : { 
+            "name" : "Curse : Rank One",
+            "cost" : 1,
+            "description" : "A powerful curse - other than vampirism-afflicts you. The number of Traits in this Flaw determines the power and tenacity of the curse. A one-Trait curse might cause you to stumble whenever you cross a doorsteps a three-Trait curse could cause any weapon you use to break after one strike; a five-Trait curse may result in all your best efforts being eventually turned against you. The exact particulars of the curse, as well as any way to overcome it, are up to the Storyteller."
+        },
+        "curse2" : { 
+            "name" : "Curse : Rank Two",
+            "cost" : 2,
+            "description" : "A powerful curse - other than vampirism-afflicts you. The number of Traits in this Flaw determines the power and tenacity of the curse. A one-Trait curse might cause you to stumble whenever you cross a doorsteps a three-Trait curse could cause any weapon you use to break after one strike; a five-Trait curse may result in all your best efforts being eventually turned against you. The exact particulars of the curse, as well as any way to overcome it, are up to the Storyteller."
+        },
+        "curse3" : { 
+            "name" : "Curse : Rank Three",
+            "cost" : 3,
+            "description" : "A powerful curse - other than vampirism-afflicts you. The number of Traits in this Flaw determines the power and tenacity of the curse. A one-Trait curse might cause you to stumble whenever you cross a doorsteps a three-Trait curse could cause any weapon you use to break after one strike; a five-Trait curse may result in all your best efforts being eventually turned against you. The exact particulars of the curse, as well as any way to overcome it, are up to the Storyteller."
+        },
+        "curse4" : { 
+            "name" : "Curse : Rank Four",
+            "cost" : 4,
+            "description" : "A powerful curse - other than vampirism-afflicts you. The number of Traits in this Flaw determines the power and tenacity of the curse. A one-Trait curse might cause you to stumble whenever you cross a doorsteps a three-Trait curse could cause any weapon you use to break after one strike; a five-Trait curse may result in all your best efforts being eventually turned against you. The exact particulars of the curse, as well as any way to overcome it, are up to the Storyteller."
+        },
+        "curse5" : { 
+            "name" : "Curse : Rank Five",
+            "cost" : 5,
+            "description" : "A powerful curse - other than vampirism-afflicts you. The number of Traits in this Flaw determines the power and tenacity of the curse. A one-Trait curse might cause you to stumble whenever you cross a doorsteps a three-Trait curse could cause any weapon you use to break after one strike; a five-Trait curse may result in all your best efforts being eventually turned against you. The exact particulars of the curse, as well as any way to overcome it, are up to the Storyteller."
+        },
+        "castNoReflection" : { 
+            "name" : "Cast No Reflection",
+            "cost" : 1,
+            "description" : "Like the Lasombra, you cast no reflection in mirrors or silvered surfaces. Obviously, this Flaw constitutes a breach of the Masquerade, and it can draw a great deal of attention in certain circumstances. Lasombra cannot take this Flaw for free Traits.",
+            "restriction" : { "clan" : "lasombra" }    
+        },
+        "repulsedByGarlic " : { 
+            "name" : "Repulsed by Garlic ",
+            "cost" : 1,
+            "description" : "Even the smallest whiff of garlic is sufficient to send you from the room. When you are confronted with a bit of garlic, you must expend a Willpower Traitor else be forced at least 10 feet away. If you spend the Willpower, you are able to abide the stench for one scene."
+        },
+        "touchOfFrost" : { 
+            "name" : "Touch of Frost",
+            "cost" : 1,
+            "description" : "Your chilling caress pulls away heat and kills plants. This Flaw is mostly an eerie effect, though you should certainly mention your ice-cold touch to anyone who has physical contact with you."
+        },
+        "eeriePresence" : { 
+            "name" : "Eerie Presence",
+            "cost" : 2,
+            "description" : "You radiate an otherworldly air that causes nervousness and unease in everyone around you. You suffer a two-Trait penalty in all Social Challenges with mortals. Furthermore, your unusual nature is apparent to anyone who interacts with you; you should wear a tag or armband to indicate your Eerie Presence. "
+        },
+        "cantCrossRunningWater" : { 
+            "name" : "Can't Cross Running Water",
+            "cost" : 3,
+            "description" : "As per the old folk tales, you believe that you cannot cross running water, and indeed, something prevents you from doing so. You must be at least 50 feet above a body of water to cross it. Running water is considered to be any body of water at least two feet wide in any direction and not completely stagnant and enclosed (thus, sewer lines under the street don't count)."
+        },
+        "haunted" : { 
+            "name" : "Haunted",
+            "cost" : 3,
+            "description" : "A malicious ghost, possibly of one of your victims, has decided to torment you from beyond the grave. Though it usually limits itself to phantasmal moaning, eerie manifestations and the occasional push, it does its best to make your unlife difficult. The Storyteller should make up the spirit, and possibly assign a Narrator to follow you and make sure that you pay for the Flaw. (Use of Oblivion is highly recommended.) "
+        },
+        "repelledByCrosses" : { 
+            "name" : "Repelled By Crosses",
+            "cost" : 3,
+            "description" : "You may have some residual religious guilt, or perhaps you take vampire legends too seriously. Whatever the reason, the sight of the cross causes you to flee unless you expend a Willpower Trait (in which case you can resist it for the rest of the scene). If you are struck by a cross on your bare skin, you take one level of aggravated damage for each blow, and you cannot reduce this damage with Fortitude. (This Flaw pertains to the actual religious symbol, not two crossed popsicle sticks or whatever else.)"
+        },
+        "gripOfTheDamned" : { 
+            "name" : "Grip Of The Damned",
+            "cost" : 4,
+            "description" : "There is no ecstasy in your Embrace-only terror and pain. When you bite to feed, you do not cause the Kiss, so your victims scream and struggle. This Flaw necessitates some method of restraining your prey. The torture that you inflict on your victims can be considered a form of suffering, and it may be inimical to vampires with high Humanity Traits."
+        },
+        "darkFate" : { 
+            "name" : "Dark Fate",
+            "cost" : 5,
+            "description" : "Some horrible end awaits you, and you cannot avert it. Worse still, you have glimpses or some foreknowledge of your demise or eternal torment. The Storyteller will determine a particular fate, which will invariably strike you, removing your character from play. Furthermore, in any particular session where the Storyteller deems appropriate, you may receive a vision of your impending misery. You must spend a Willpower Trait to shake off the experience, or you are a Trait down on all challenges for the rest of the session. This Flaw can be difficult to roleplay, and players are advised to think carefully before choosing it. Some may believe that this Flaw removes free will, but foreknowledge of one's demise can be quite liberating."
+        },
+        "lightSensitive" : { 
+            "name" : "Light Sensitive",
+            "cost" : 5,
+            "description" : "You are even more vulnerable to light than most vampires. Sunlight inflicts double damage, and even moonlight hurts - direct moonlight causes one level of lethal damage per turn. You must use sunglasses to shield your eyes, and you tend to stick to dark places out of habit and safety."
+        }
+    }
+}

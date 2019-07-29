@@ -1,0 +1,33 @@
+{
+    "description" : "Willpower Traits measure the strength of your character's resolve and sense of self. By exerting your Willpower, you can withstand otherwise untenable conditions, renew your commitment to a course of action and empower certain difficult Disciplines.  Willpower Traits are not described with adjectives. You simply have permanent Willpower your normal limit of Willpower Traits- and temporary Willpower, your expendable Traits. Your starting permanent and temporary Willpower are determined by your generation; your generation also determines the maximum level to which you can improve your permanent Willpower. When you expend temporary Willpower Traits or raise your permanent Willpower, you regain temporary Traits at a rate of one per game session (though your Storyteller may vary this pace to suit the needs of her game or to simplify bookkeeping).  Expending a Willpower Trait allows for one of any number of effects. Generally, Willpower Traits allow you to keep self-determination and to empower extremely difficult or complex actions. Using Willpower is almost always a reflexive action, and does not count as your turn.",
+    "spending" : {
+        "refreshTraits" : {
+            "name" : "Refresh Traits",
+            "description" : "A Willpower Trait can be spent to refresh all of your lost Traits in one Attribute category-Physical, Social or Mental. You may do so once per category per game session."
+        },
+        "retest" : {
+            "name" : "Refresh in social/mental challenge",
+            "description" : "Expenditure of a Willpower Trait allows you to gain a retest when defending against a Mental or Social Challenge. Trait loss works as normal for such retests. Note that certain Disciplines or powers may override this stipulation for instance, you can not use Willpower to see through Obfuscate."          
+        },
+        "fakeAbility" : {
+            "name" : "Test without ability",
+            "description" : "Spending one Willpower Trait enables you to enter a challenge for which you lack an appropriate Ability. Thus, you can make a test even if you would normally require a specific Ability that you don't have or have used up."          
+        },
+        "controlFrenzy" : {
+            "name" : "Control frenzy",
+            "description" : "You can spend a Willpower Trait to try to control yourself briefly while in frenzy. You are able to act normally for one tum when you spend Willpower in this fashion, though you otherwise keep all the other stipulations of frenzy - ignoring wound penalties and soon. You do not actually regain control so much as you fight mightily to direct yourself for a few moments in the face of overwhelming rage or terror, roleplay your actions appropriately."          
+        },
+        "ignoreWounds" : {
+            "name" : "Ignore wound penalties",
+            "description" : "You can expend a Willpower Trait to ignore all wound penalties, up to and including Incapacitated, for the duration of one full turn."
+        },
+        "suppressDerangement" : {
+            "name" : "Suppress a derangement",
+            "description" : "Spending a Willpower Trait lets you suppress a derangement temporarily. If you spend enough Willpower Traits on suppressing a derangement, you may overcome it eventually. Malkavians cannot overcome their primary derangement this way."
+        },
+        "disciplines" : {
+            "name" : "Disciplines",
+            "description" : "Certain Disciplines or powers require the expenditure of Willpower."
+        }
+    }
+}

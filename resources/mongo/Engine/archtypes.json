@@ -1,0 +1,33 @@
+{
+    "name" : "Archtypes",
+    "description" : "Each Archetype describes an essential form of personality. Though a character is more than a simple set of drives, an Archetype provides a basic springboard from which the character's motives and behaviors can develop. An archetypal Nature shows the underlying elements making up a personality, while archetypal Demeanor is the face the character shows to the world around him.  In game play, a character's Nature Archetype serves to provide concrete goals and codes of behavior, which means that a character can call for a retest on a Virtue Test automatically if a frenzy would violate the character's Nature. However, if someone discovers your character's Nature, it can be used against you in the same way a Negative Trait might be, forcing you into a challenge.",
+    "example" : [
+        "Ian, a Malkavian with a Fanatic Nature and a fervent hatred of the Sabbat, is leading five other Kindred against a marauding pack. One of the pack brandishes a Molotov cocktail at lan, who tests for frenzy and fails. However, Ian's player calls for a retest based on lan's Nature — he's too driven to let some shovelhead punk fresh out of the ground try to scare him with a cheap tactic. The player makes a second test and wins. Ian pauses only for a moment at the sight of the Molotov before launching himself at the startled pack member.",
+        "Later, Ian is wounded and winded, and the prince asks him to lead another charge. Ian is in no shape to do so, and he refuses. The prince commands him angrily: \"I am your prince and too Commanding for you to refuse.\" The prince then adds, \"You're too much of a Fanatic, lan, to let these rabble run unchecked through the city.\" The prince's player calls for a Social Challenge, and because he guessed lan's Nature correctly, lan’s player must advance two Traits. The challenge is made, and lan loses. Wearily, the Lunatic rises to his feet and prepares for the next assault."
+    ],
+    "archtypes" : {
+        "Architect" : "You hope to leave a lasting legacy, to build something for the future. • Autocrat —You want to take charge, since nobody else can do the job right. • Bon Vivant - Only a good time can assuage your otherwise empty existence.",
+        "Bravo" : "Other people only get in your way of doing things, and you do not hesitate to bully them into line.",
+        "Caregiver" : "You protect and comfort others. . Celebrant — You find that joy springs from your overriding passion. • Child — You need others to nurture and help you. • Competitor — Everything is a contest, and you plan to win.",
+        "Conformist" : "You take the lead and the cues from someone else, letting others handle the responsibility.",
+        "Conniver" : "There's no point to doing it yourself when you can get someone else to put in the effort.",
+        "Curmudgeon" :  "Nothing's perfect, everything sucks and you're going to make sure that everybody knows it.",
+        "Deviant" : "Normal? What's that? You have no use for social norms and mores. • Director - You feel an overriding need to impose order.",
+        "Fanatic" : "One cause, one truth, one purpose — you serve and proselytize with absolute conviction.",
+        "Gallant" : "Everything you do is geared toward flamboyance and excess, since you need the attention of those around you.",
+        "Judge" : "You have a deep sense of right and wrong, and you seek justice measured by your principles.",
+        "Loner" : "You just don't belong, either by choice or by nature. • Martyr -Everyone benefits when you shoulder the burdens of your ideals.",
+        "Masochist" : "You test yourself through suffering, and find meaning in enduring pain.",
+        "Monster" : "Build your purpose from a malignant drive to showcase evil through your actions.",
+        "Pedagogue" : "Everyone can learn from your example and experiences; you were born to teach others.",
+        "Penitent" : "You have sinned, and you cannot rest until you atone for it.",
+        "Perfectionist" : "You do everything with wholehearted zeal aimed at immaculate completion. There's no excuse for flawed efforts.",
+        "Rebel" : "Whether from habit or drive, you lash out at the system and try to break it down",
+        "Rogue" : "First and foremost, you look out for number one. ",
+        "Survivor" : "Nothing stops you, for your drive to pull through is indomitable. ",
+        "Thrill-Seeker" : "You're always after the next high, by pushing danger to the edge. ",
+        "Traditionalist" : "The old ways are the best ways, so you preserve and protect them.",
+        "Trickster" : "Existence is absurd, so you fill it with humor and irreverence to avoid looking too deeply at the pain.",
+        "Visionary" : "A goal fills your mind, and your dreams bring faith to others."
+    }
+}

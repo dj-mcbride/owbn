@@ -1,0 +1,43 @@
+{
+    "name" : "Quietus",
+    "type" : "Discipline",
+    "description" : "The deadly assassins of the Assamite clan study the Quietus Discipline. By transmuting their blood into poison, they deliver death to their targets in terrible silence and agony. This Discipline has become significantly altered since the report of the broken blood curse, and those Kindred familiar with the clan whisper that such powers have not been seen in centuries.  Though many uses of Quietus may involve striking with a blood-covered hand or spitting vitae at one's foes, this transformed blood is more of an alchemical poison than a form of vitae. Thus, blood used with this Discipline cannot later be gathered and used to form blood bonds or as a focus for Thaumaturgy.  Most Quietus powers are not directly opposed, so they do not use tetests. Using Quietus with a physical attack, for instance, simply involves the normal uses of Brawl, Melee and similar Abilities in the attack. If spitting blood at an opponent (a function of several different powers), use Athletics for a retest.",
+    "retests" : "Athletics",
+    "powers" : [  
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Silence of Death",
+            "effect" : "Create field of silence",
+            "description" : "The first skill learned by a true assassin is the ability to travel in complete stealth. The mystical Silence of Death permits you to extend a field of silence about yourself, blocking all screams, gunshots, explosions and so on.  When you use Silence of Death, you muffle all sound within 10 feet of yourself. Although sound from outside can still come into this radius and be heard, no sound emanates from anything or anyone close to you. Using this power costs one Blood Trait to invoke, and the effect lasts for a scene or an hour."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Scorpion's Touch",
+            "effect" : "Turn your blood into poison",
+            "description" : "With the deadly venom and toxins of your studies, you can transmute your blood into a substance that weakens and poisons your victims. You can then coat weapons with this foul ichor, spit it at your foes or simply bring it to the surface of your skin to affect your victim by touch. Unwary foes may actually drink such tainted vitae.  Each Blood Trait that you spend on this power is converted into a dangerous poison. If this tainted vitae touches a victim or is otherwise ingested into her system, she loses one Physical Trait automatically. Thus, you can strike someone with your hand (and a Physical Challenge) and cause the victim to lose an additional Trait due to your venom. You can coat weapons of dagger-size or larger with this poisonous blood, or even kiss your opponent. You can even make a Physical Challenge against anyone within 10 feet to spit this blood at a victim. (Do not actually spit at your foe, of course -simply make your intentions known before making the challenge.)  Mortals who lose all of their physical Traits in this fashion become deathly ill by the next night, and they do not heal normally. See the effects of severe illness in Laws of the Hunt. Otherwise, all lost Physical Traits return at the next game session, as usual.  Any given attack may only use one Trait of blood with this power, though multiple attackers with poisoned weapons could wreak deadly havoc on a single victim. Similarly, you can only spit a single Trait of this tainted vitae or strike unarmed with a single Blood Trait in each action. Altering your blood in this fashion does not require an action on your part - you can strike an opponent with your hand, for instance, and then declare the use of Scorpion's Touch with a single Blood Trait. You can concentrate multiple Blood Traits onto a single weapon, though each strike uses only one Trait of blood and thus reduces only one Physical Trait from the victim). Of course, preparing yourself thus is a legitimate tactic if you think you will be in a protracted fight and you want a weapon sufficient for several strikes."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Dagon's Call",
+            "effect" : "Infect a victim with your blood",
+            "description" : "With a touch, you can infect a victim with a small quantity of your own vitae; later, with a bit of concentration, you cause that very blood to burst forth from the victim, tearing her apart from the inside.  You must touch your target physically before using this power (which may require a Physical Challenge). Thereafter, at any point in the same scene or within the next hour, you can issue Dagon's Call - you need not even be able to see the target. You expend at least one Willpower Trait and call for the aid of a Narrator. Each Willpower Trait that you spend at that point then forces the target to make one Static Physical Challenge; the Narrator will take note of your Physical Traits and go to perform the tests against your subject. Each test that the victim fails indicates one level of lethal damage as her very blood tears its way through her vessels and organs. You must declare all Willpower Traits that you expend at once; once you have activated this power, you cannot invoke it again on the same subject until you manage to touch her again."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Baal's Caress",
+            "effect" : "Turn blood into stronger poison",
+            "description" : "The toxins in your vitae are sufficient to burn through any flesh, living or undead. This poison melts through flesh once it comes in contact with the bloodstream, leaving other materials unharmed. Indeed, even Cainites without blood in their systems can be affected if the poison enters through a wound.  To use Baal's Caress, you must spend a turn to transform your vitae into poison and then put that blood on an object or weapon of dagger-site or larger. Each Trait of blood so placed on a bladed or piercing weapon causes that weapon to inflict aggravated damage with one strike. Thus, if you place three Traits of blood on a knife with this power, then the next three successful strikes with the knife inflict aggravated wounds. The weapon in question must penetrate the victim's flesh with a successful blow, blunt weapons or unarmed strikes, for instance, cannot use this vitae with any appreciable effect. Blood cannot be placed on bullets; not enough can be applied for appreciable damage, and most of it will be lost during the flight and initial impact.  Note that you must actually place this blood on something and it must enter the target's system in order to have any effect. You cannot randomly bleed on a subject and inflict damage."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Taste of Death",
+            "effect" : "Spit blood at foe",
+            "description" : "Your concentrated blood is so powerfully toxic that you can merely spit it at a foe and watch it burn through her skin. The ichor evoked with this power does not affect metal or stone, but melts through flesh and bone, reducing it to smoking sludge.  You can spit a single Blood Trait at a victim with this power (this counts as a single action). If you successfully strike with a Physical Challenge, the victim takes one level of aggravated damage. You must directly spew this blood out; if it misses the victim or is placed on an object, it loses its toxicity within the turn. Note that the blood must be deliberately converted into a poison in this fashion - your own blood can still be drained from your body without poisoning the drinker."
+        }
+    ]
+}

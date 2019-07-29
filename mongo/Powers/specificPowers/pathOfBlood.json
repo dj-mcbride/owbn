@@ -1,0 +1,43 @@
+{
+    "name" : "Path of Blood",
+    "type" : "Path",
+    "description" : "Almost every Tremere studies the path of Blood as a primary form of magic. Espousing the clan's strengths in subterfuge, detection, manipulation and control, this path allows you to alter the properties of blood within your own system or to detect features of the blood of others.",
+    "retests" : "Occult",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "A Taste for Blood",
+            "effect" : "Determine traits of another vampire",
+            "description" : "With but a small sample of vitae, you can determine a foe's capabilities and weaknesses. You need only taste a bit of blood in order to recognize many salient characteristics.  A Taste for Blood allows you determine a few traits of another individual, simply by tasting a single Blood Trait. From one Blood Trait, you can learn: How much vitae is currently in the subject's system (Blood Traits, whether mortal or vampire); how recently he has fed, if a vampire; generation, if a vampire and whether the Cainite in question is a diablerist (within the usual limits of detection time).  Using 'A Taste for Blood' requires you to actually ingest the vitae that you test, so it can be dangerous if the blood is tainted or if you have already sampled some of the subject's blood"
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Blood Rage",
+            "effect" : "Force another vampire to spend blood",
+            "description" : "With but a touch you can stir up another Cainite's blood. Thus, you force the subject to expend blood in any fashion that you mentally decide when you touch the victim.  Blood Rage requires a light contact, which may necessitate a Physical Challenge against a wary subject. If you manage to get a firm grip, you can immediately force the subject to spend a single Blood Trait in any fashion that you desire, even beyond the usual limits of blood expenditure for the vampire. Thus, you can force a Cainite to increase his physical strength (gaining Physical Traits with Blood Traits), heal wounds (possibly even recovering from torpor) or even to sweat blood from his pores."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Blood of Potency",
+            "effect" : "Lower caster's generation",
+            "description" : "You can mystically concentrate the vitae within your system, making it more potent for a short time. Doing so affords you many of the benefits of a generation superior to your natural one. You need only murmur for a moment, and your blood distills down to a more concentrated form.  Your Blood of Potency lasts for the duration of the scene or for the next hour, whichever ends first. You can expend Mental Traits to gain a 'virtual generation', improving your maximum number of Blood Traits and making your Dominate Discipline able to affect more powerful Cainites. Each generation that you artificially lower costs two Mental Traits, to a maximum of six Traits for three generations.  Once you have used Blood of Potency in a night, you may not invoke it again until the next night. As soon as the power wears off, any Blood Traits that you possess in excess of your normal limits dilute immediately, leaving you at your normal Blood Trait limit.  If you are diablerized during this time, or if you Embrace childer, your real generation is used, not your virtual generation. Thus, even if you are virtually 10th generation while normally 12th, your childer are still 13th generation, and other vampires gain no benefit from diablerie if they are 12th generation or lower."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Theft of Vitae",
+            "effect" : "Draw forth the vitae in a victim's system",
+            "description" : "Focusing on the call of blood, you can draw forth the vitae in a victim's system. You need only see your target and concentrate. The blood bursts from the victim's pores in a rushing flow, soaring through the air to be mystically absorbed into your own flesh.  You must be able to see a subject within 50 feet in order to use Theft of Vitae. As long as no intervening barriers stop the transfer of blood, the fluid rushes out of the victim (doing no damage to Cainites, but probably startling them) and sinks into your body. Essentially, you are able to ingest blood from a victim while at range. Using Theft of Vitae requires you to expend a number of Mental Traits equal to the amount of blood that you try to steal, up to a maximum of three Traits. You must make a challenge of your Mental Traits against the subject's Physical Traits after this expenditure, with success indicating that you tear forth a number of Blood Traits equal to the Mental Traits expended previously (subject to the limit of the victim's actual amount of blood). Blood stolen in this fashion has all of its normal properties -drinking three times from one vampire creates a blood bond, poisoned blood still sickens you, and so on.  Needless to say, this rather unsettling power is considered a breach of the Masquerade when used in public."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Cauldron of Blood",
+            "effect" : "Boil blood of target",
+            "description" : "The blood within any creature is vulnerable to your manipulations. Instead of controlling or stealing blood from a victim, you can bring it to a rolling boil with but a touch. Red mist rises from the victim's body as bubbling blood seeps from his pores and orifices. Few Cainites can withstand this internal furnace, and mortals are almost inevitably killed by such an attack.  Using Cauldron of Blood as an action, you must make a Physical Challenge to grasp your target. Then, for each Mental Trait that you expend, up to three, you can boil one Blood Trait in the victim's system (subject to the limit of the victim's actual blood, of course). Each Blood Trait boiled in this fashion inflicts one aggravated level of damage on the target."
+        }
+    ]
+}

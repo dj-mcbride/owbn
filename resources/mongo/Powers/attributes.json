@@ -1,0 +1,520 @@
+{
+    "physicalTraits" : { 
+        "agile" : { 
+            "name" : "Agile",
+            "description" : "You have a well-honed and flexible body. You can bend, twist, run and jump with ease.",
+            "uses" : [ "Acrobatics", "Athletics", "Competitive events", "Dodging" ],
+            "relation" : "miscellaneous"
+        },
+        "brawny" : {
+            "name" : "Brawny",
+            "description" : "Bulky muscular strength.",
+            "uses" : [ "Punching", "kicking", "Grappling", "Power-lifting", "All feats of strength" ], 
+            "discipline" : "potence",
+            "relation" : "strength"
+        },
+        "brutal" : { 
+            "name" : "Brutal",
+            "description" : "You are capable of taking nearly any action in order to survive.",
+            "uses" : [ "Fighting an obviously superior enemy" ] 
+        },
+        "dexterous" : {   
+            "name" : "Dexterous",
+            "description" : "General adroitness and skill involving the use of one's hands.",
+            "uses" : [ "Weapon-oriented combat (Melee or Firearms)", "Pickpocketing", "Punching", "Celerity" ],
+            "relation" : "dexterity"
+        },
+        "enduring" : {      
+            "name" : "Enduring", 
+            "description" : "A persistent sturdiness against physical opposition.",
+            "uses" : [ "When your survival is at stake, this Trait is a good one to risk as a second, or successive, bid." ], 
+            "discipline" : "fortitude",
+            "relation" : "stamina"
+        },
+        "energetic" : { 
+            "name" : "Energetic", 
+            "description" : "A powerful force of spirit. A strong internal drive propels you and, in physical situations, you can draw on a deep reservoir of enthusiasm and zeal.",
+            "uses" : [ "Combat" ],
+            "relation" : "miscellaneous"
+        },
+        "ferocious" : { 
+            "name" : "Ferocious",
+            "description" : "Possession of brutal intensity and extreme physical determination.",
+            "uses" : [ "Any time that you intend to do serious harm", "When in frenzy"],
+            "discipline" : "potence",
+            "relation" : "strength"
+        },
+        "graceful" : { 
+            "name" : "Graceful",
+            "description" : "Control and balance in the motion and use of the entire body.", 
+            "uses" : [ "Combat defense", "Whenever you might lose your balance" ],
+            "discipline" : "celerity",
+            "relation" : "dexterity"
+        },
+        "lithe" : { 
+            "name" : "Lithe", 
+            "description" : "Characterized by flexibility and suppleness",
+            "uses" : [ "Acrobatics", "Gymnastics", "Dodging", "Dancing"], 
+            "discipline" : "celerity",
+            "relation" : "dexterity"
+        },
+        "nimble" : { 
+            "name" : "Nimble", 
+            "description" : "Light and skillful; able to make agile movements.",
+            "uses" : [ "Dodging", "Jumping", "Rolling", "Acrobatics", "Hand-to-hand combat" ], 
+            "discipline" : "celerity",
+            "relation" : "dexterity"
+        },
+        "quick" : { 
+            "name" : "Quick", 
+            "description" : "Speedy, with a fast reaction time.",
+            "uses" : [ "Defending against a surprise attack", "Running", "Dodging", "Attacking" ], 
+            "discipline" : "celerity",
+            "relation" : "dexterity"
+        },
+        "resilient" : { 
+            "name" : "Resilient", 
+            "description" : "Characterized by strength of health; able to recover quickly from bodily harm.",
+            "uses" : [ "Resisting adverse environments", "Defending against damage in an attack" ], 
+            "discispline" : "fortitude",
+            "relation" : "stamina"
+        },
+        "robust" : { 
+            "name" : "Robust", 
+            "description" : "Resistant to physical harm and damage.",
+            "uses" : [ "Defending against damage in an attack", "Endurance-related actions that could take place over a period of time" ], 
+            "discipline" : "fortitude",
+            "relation" : "stamina"
+        },
+        "rugged" : { 
+            "name" : "Rugged", 
+            "description" : "Hardy, rough and brutally healthy. Able to shrug off wounds and pain to continue struggling.",
+            "uses" : [ "When resisting damage, any challenge that you enter while injured", "Earth Melding" ], 
+            "discipline" : "fortitude",
+            "relation" : "stamina"
+        },
+        "stalwart" : { 
+            "name" : "Stalwart", 
+            "description" : "Physically strong and uncompromising against opposition",
+            "uses" : [ "Resisting damage", "Standing your ground against overwhelming odds"], 
+            "discipline" : "potence",
+            "relation" : "strength"
+        },
+        "steady" : { 
+            "name" : "Steady", 
+            "description" : "More than simply physically dependable-controlled, unfaltering and balanced. You have firm mastery over your efforts.",
+            "uses" : [ "Weapon attacks", "Fighting in exotic locations" ],
+            "relation" : "miscellaneous"
+        },
+        "tenacious" : { 
+            "name" : "Tenacious", 
+            "description" : "Physically determined through force of will.",
+            "uses" : [ "Second or subsequent Physical Challenge" ],
+            "relation" : "miscellaneous"
+        },
+        "tireless" : { 
+            "name" : "Tireless", 
+            "description" : "You have a runner's stamina - you are less taxed by physical efforts than ordinary people.",
+            "uses" : [ "Any endurance-related challenge", "A second or subsequent Physical Challenge with the same foe or foes." ], 
+            "discipline" : "fortitude",
+            "relation" : "stamina"
+        },
+        "tough" : { 
+            "name" : "Tough", 
+            "description" : "A harsh, aggressive attitude and a reluctance to submit.",
+            "uses" : [ "Whenever you're wounded" ], 
+            "discipline" : "potence",
+            "relation" : "strength"
+        },
+        "vigorous" : { 
+            "name" : "Vigorous", 
+            "description" : "A combination of energy, power, intensity and resistance to harm.",
+            "uses" : [ "Combat and athletic challenges when you're on the defensive." ],
+            "relation" : "miscellaneous"
+        },
+        "wiry" : { 
+            "name" : "Wiry", 
+            "description" : "Tight, streamlined, muscular strength",
+            "uses" : [ "Punching", "Kicking", "Grappling", "Acrobatic movements", "Endurance lifting" ], 
+            "discipline" : "potence",
+            "relation" : "strength"
+        }
+    },
+    "negativePhysicalTraits" : { 
+        "clumsy" : { 
+            "name" : "Clumsy", 
+            "description" : "Lacking physical coordination, balance and grace. You are prone to stumbling and dropping objects."
+        },
+        "cowardly" : { 
+            "name" : "Cowardly", 
+            "description" : "In threatening situations, saving your own neck is all that is important. You might even flee when you have the upper hand, just out of habit."
+        },
+        "decrepit" : { 
+            "name" : "Decrepit", 
+            "description" : "You move and act as if you are old and infirm. You recover from physical damage slowly, you are unable to apply full muscular strength and you tire easily."
+        },
+        "delicate" : { 
+            "name" : "Delicate", 
+            "description" : "Frail and weak in structure; you are damaged easily by physical harm."
+        },
+        "docile" : { 
+            "name" : "Docile", 
+            "description" : "The opposite of the Ferocious and Tenacious Traits. You lack physical persistence, and you tend to submit rather than fighting long battles."
+        },
+        "flabby" : { 
+            "name" : "Flabby", 
+            "description" : "Your muscles are underdeveloped. You cannot apply your strength well against resistance."
+        },
+        "lame" : { 
+            "name" : "Lame", 
+            "description" : "You are disabled in one or more limbs. The handicap can be as obvious as a missing leg or as subtle as a dysfunctional arm."
+        },
+        "lethargic" : { 
+            "name" : "Lethargic", 
+            "description" : "Slow and drowsy. You suffer from a serious lack of energy or motivation"
+        },
+        "puny" : { 
+            "name" : "Puny", 
+            "description" : "You are weak and inferior in strength. This Trait could refer to diminutive size"
+        },
+        "sickly" : { 
+            "name" : "Sickly", 
+            "description" : "Weak and feeble. Your body responds to physical stress as if it were in the throes of a debilitating illness."
+        }
+    },
+    "socialTraits" : { 
+        "alluring" : { 
+            "name" : "Alluring", 
+            "description" : "An attractive and appealing presence that inspires desire in others.",
+            "uses" : [ "Seduction", "Convincing others" ], 
+            "relation" : "appearance"
+        },
+        "beguiling" : { 
+            "name" : "Beguiling", 
+            "description" : "The skill of deception and illusion. You can twist the perceptions of others and lead them to believe what suits you.",
+            "uses" : [ "Tricking others", "Lying under duress" ], 
+            "relation" : "manipulation"
+        },
+        "charismatic" : { 
+            "name" : "Charismatic", 
+            "description" : "The talent of inspiration and motivation, the sign of a strong leader.",
+            "uses" : [ "In a situation involving leadership or the achievement of leadership." ], 
+            "discipline" : "presence",
+            "relation" : "charisma"
+        },
+        "charming" : { 
+            "name" : "Charming", 
+            "description" : "Your speech and actions make you attractive and appealing to others.",
+            "uses" : [ "Convincing", "Persuading" ], 
+            "discipline" : "presence",
+            "relation" : "charisma"
+        },
+        "Commanding" : { 
+            "name" : "commanding", 
+            "description" : "Impressive delivery of orders and suggestions. This Trait implies skill in the control and direction of others.",
+            "uses" : [ "When you are seen as a leader." ], 
+            "relation" : "manipulation"
+        },
+        "dignified" : { 
+            "name" : "Dignified", 
+            "description" : "Something about your posture and body carriage appears honorable and aesthetically pleasing. You carry yourself well.",
+            "uses" : [ "Defending against Social Challenges." ], 
+            "discipline" : "presence",
+            "relation" : "charisma"
+        },
+        "diplomatic" : { 
+            "name" : "Diplomatic", 
+            "description" : "Tactful, careful and thoughtful in speech and deed. Few are displeased with what you say or do.",
+            "uses" : [ "Very important in intrigue", "Leadership situations" ], 
+            "relation" : "miscellaneous"
+        },
+        "elegant" : { 
+            "name" : "Elegant", 
+            "description" : "Refined tastefulness. Even though you don't need money to be elegant, you exude an air of richness and high society.",
+            "uses" : [ "High society or Toreador parties", "Might be important in some clans for advancement", "Defending against Social Challenges"], 
+            "relation" : "appearance"
+        },
+        "eloquent" : { 
+            "name" : "Eloquent", 
+            "description" : "The ability to speak in an interesting and convincing manner.",
+            "uses" : [ "Convincing others", "Swaying emotions", "Public speaking" ], 
+            "discipline" : "presence",
+            "relation" : "charisma"
+        },
+        "empathetic" : { 
+            "name" : "Empathetic", 
+            "description" : "Able to identify and understand the emotions and moods of people with whom you come in contact.",
+            "uses" : [ "Gauging the feelings of others" ], 
+            "relation" : "miscellaneous"
+        },
+        "expressive" : { 
+            "name" : "Expressive", 
+            "description" : "Able to articulate your thoughts in interesting, meaningful ways.",
+            "uses" : [ "Producing art of any kind", "Acting", "Performing", "Any social situation in which you want someone to understand your meaning" ], 
+            "relation" : "charisma"
+        },
+        "friendly" : { 
+            "name" : "Friendly", 
+            "description" : "Able to fit in with everyone you meet. Even after a short conversation, most find it difficult to dislike you.",
+            "uses" : [ "Convincing others" ], 
+            "relation" : "miscellaneous"
+        },
+        "genial" : { 
+            "name" : "Genial", 
+            "description" : "Cordial, kindly, warm and pleasant. You are pleasing to be around.",
+            "uses" : [ "Mingling at parties", "Generally used in a second or later Social Challenge with someone" ], 
+            "discipline" : "presence",
+            "relation" : "charisma"
+        },
+        "gorgeous" : { 
+            "name" : "Gorgeous", 
+            "description" : "Beautiful or handsome. You were born with a face and body that is good-looking to most people you meet.",
+            "uses" : [ "Modeling", "Posing"], 
+            "relation" : "appearance"
+        },
+        "ingratiating" : { 
+            "name" : "Ingratiating", 
+            "description" : "Able to gain the favor of people who know you.",
+            "uses" : [ "Dealing with elders in a social situation", "Defending against Social Challenges" ], 
+            "relation" : "manipulation"
+        },
+        "intimidating" : { 
+            "name" : "Intimidating", 
+            "description" : "A frightening or awesome presence that causes others to feel timid. This Trait is particularly useful when attempting to cow opponents.",
+            "uses" : [ "Inspiring common fear", "Ordering others" ], 
+            "relation" : "miscellaneous"
+        },
+        "magnetic" : { 
+            "name" : "Magnetic", 
+            "description" : "People feel drawn to you; those around you are interested in your speech and actions.",
+            "uses" : [ "Seduction", "First impressions" ], 
+            "relation" : "appearance"
+        },
+        "persuasive" : { 
+            "name" : "Persuasive", 
+            "description" : "Able to propose believable, convincing and correct arguments and requests. Very useful when someone else is undecided on an issue.",
+            "uses" : [ "Persuading others",  "Convincing others" ], 
+            "relation" : "manipulation"
+        },
+        "seductive" : { 
+            "name" : "Seductive", 
+            "description" : "Able to entice and tempt. You can use your good looks and your body to get what you want from others.",
+            "uses" : [ "Subterfuge", "Seduction" ], 
+            "relation" : "appearance"
+        },
+        "witty" : { 
+            "name" : "Witty", 
+            "description" : "Cleverly humorous. Jokes and jests come easily to you, and you are perceived as a funny person when you want to be",
+            "uses" : [ "At parties", "Entertaining someone", "Goading or insulting someone" ], 
+            "relation" : "miscellaneous"
+        }
+    },
+    "negativeSocialTraits" : { 
+        "bestial" : { 
+            "name" : "Bestial", 
+            "description" : "You have started to resemble the Beast of your vampiric nature. Maybe you have clawlike fingernails, heavy body hair or a feral glint in your eyes; however your Beast manifests, you definitely seem inhuman."
+        },
+        "callous" : { 
+            "name" : "Callous", 
+            "description" : "Callous: You are unfeeling, uncaring and insensitive to the suffering of others."
+        },
+        "condescending" : { 
+            "name" : "Condescending", 
+            "description" : "You just can't help it; your contempt for others is impossible to hide."
+        },
+        "dull" : { 
+            "name" : "Dull", 
+            "description" : "Those with whom you speak usually find you boring and uninteresting. Conversing with you is a chore. You do not present yourself well to others."
+        },
+        "feral" : { 
+            "name" : "Feral", 
+            "description" : "The animalistic predator in you is evident in your actions. You scratch yourself, sniff at people or otherwise behave in a primitive fashion."
+        },
+        "naive" : { 
+            "name" : "Naive", 
+            "description" : "You lack the air of worldliness, sophistication or maturity that most carry. Obnoxious: You are annoying or unappealing in speech, action or appearance."
+        },
+        "repugnant" : { 
+            "name" : "Repugnant", 
+            "description" : "Your appearance disgusts everyone around you. Needless to say, you make a terrible first impression with strangers."
+        },
+        "shy" : { 
+            "name" : "Shy", 
+            "description" : "You are timid, bashful, reserved and socially hesitant."
+        },
+        "tactless" : { 
+            "name" : "Tactless", 
+            "description" : "You are unable to do or say things that others find appropriate to the social situation."
+        },
+        "untrustworthy" : { 
+            "name" : "Untrustworthy", 
+            "description" : "You are rumored or perceived to be unreliable, whether or not you really are. "
+        }
+    },
+    "mentalTraits" : { 
+        "alert" : { 
+            "name" : "Alert", 
+            "description" : "Mentally prepared for danger and able to react quickly when it occurs.",
+            "uses" : [ "Preventing surprise attacks", "Defending against Dominate" ], 
+            "relation" : "wits"
+        },
+        "attentive" : { 
+            "name" : "Attentive", 
+            "description" : "You pay attention to everyday occurrences around you. When something extraordinary happens, you are usually ready for it.",
+            "uses" : [ "Preventing surprise attacks", "Seeing through Obfuscate when you don't expect it", "Preventing Dominate" ], 
+            "relation" : "perception"
+        },
+        "clever" : { 
+            "name" : "Clever", 
+            "description" : "Quick-witted resourcefulness. You think well on your feet.",
+            "uses" : [ "Using a Mental Challenge against another" ], 
+            "relation" : "wits"
+        },
+        "creative" : { 
+            "name" : "Creative", 
+            "description" : "Your ideas are original and imaginative, which implies an ability to produce unusual solutions to your difficulties. You can create artistic pieces. A requirement for any true artist.",
+            "uses" : [ "Defending against Auspex", "Creating anything" ], 
+            "relation" : "miscellaneous"
+        },
+        "cunning" : { 
+            "name" : "Cunning", 
+            "description" : "Crafty and sly, possessing a great deal of ingenuity.",
+            "uses" : [ "Tricking others" ], 
+            "relation" : "intelligence"
+        },
+        "dedicated" : { 
+            "name" : "Dedicated", 
+            "description" : "You give yourself over totally to your beliefs. When one of your causes is at stake, you stop at nothing to succeed.",
+            "uses" : [ "Useful in any Mental Challenge when your beliefs are at stake "], 
+            "relation" : "miscellaneous"
+        },
+        "determined" : { 
+            "name" : "Determined", 
+            "description" : "When it comes to mental endeavors, you are fully committed. Nothing can divert your intentions to succeed once you have made up your mind.",
+            "uses" : [ "Staredowns", "Useful in a normal Mental Challenge." ], 
+            "relation" : "miscellaneous"
+        },
+        "discerning" : { 
+            "name" : "Discerning", 
+            "description" : "Discriminating, able to pick out details, subtleties and idiosyncrasies. You have clarity of vision.",
+            "uses" : [ "Auspex", "Investigation and tracking" ], 
+            "discipline" : "auspex",
+            "relation" : "perception"
+        },
+        "disciplined" : { 
+            "name" : "Disciplined", 
+            "description" : "Your mind is structured and controlled. This rigidity gives you an edge in battles of will.",
+            "uses" : [ "Thaumaturgy", "Staredowns", "Useful in a Mental Challenge" ], 
+            "discipline" : "thaumaturgy",
+            "relation" : "intelligence"
+        },
+        "insightful" : { 
+            "name" : "Insightful", 
+            "description" : "The power of looking at a situation and gaining an understanding of it.",
+            "uses" : [ "Investigation (but not defense against it)", "Auspex" ], 
+            "discipline" : "auspex",
+            "relation" : "perception"
+        },
+        "intuitive" : { 
+            "name" : "Intuitive", 
+            "description" : "Knowledge and understanding somehow come to you without conscious reasoning, as if by instinct.",
+            "uses" : [ "Spontaneous deduction" ], 
+            "relation" : "wits"
+        },
+        "knowledgeable" : { 
+            "name" : "Knowledgeable", 
+            "description" : "You know copious and detailed information about a wide variety of topics. This Trait represents \"book-learning.\"",
+            "uses" : [ "Forgetful Mind tests", "Remembering information your character might know", "Employing Thaumaturgy" ], 
+            "discipline" : "thaumaturgy",
+            "relation" : "intelligence"
+        },
+        "observant" : { 
+            "name" : "Observant", 
+            "description" : "Depth of vision, the power to look at something and notice the important aspects of it.",
+            "uses" : [ "Auspex", "Picking up on subtleties that others might overlook." ], 
+            "discipline" : "auspex",
+            "relation" : "perception"
+        },
+        "patient" : { 
+            "name" : "Patient", 
+            "description" : "Tolerant, persevering and steadfast. You can wait out extended delays with composure.",
+            "uses" : [ "Staredowns",  "Mental battles after another Trait has been bid." ], 
+            "relation" : "miscellaneous"
+        },
+        "rational" : { 
+            "name" : "Rational", 
+            "description" : "You believe in logic, reason, sanity and sobriety. Your ability to reduce concepts to a mathematical level helps you analyze the world.",
+            "uses" : [ "Defending against emotion-oriented mental attacks", "Defending against an aura-reading", "Not used as an initial bid" ], 
+            "relation" : "intelligence"
+        },
+        "reflective" : { 
+            "name" : "Reflective", 
+            "description" : "Meditative self-recollection and deep thought. The Trait of the serious thinker, Reflective enables you to consider all aspects of a conundrum.",
+            "uses" : [ "Meditation", "Remembering information", "Defending against most Mental Challenges" ], 
+            "relation" : "intelligence"
+        },
+        "shrewd" : { 
+            "name" : "Shrewd", 
+            "description" : "Astute and artful, able to keep your wits about you and accomplish mental feats with efficiency and finesse.",
+            "uses" : [ "Defending against a Mental Discipline" ], 
+            "relation" : "wits"
+        },
+        "vigilant" : { 
+            "name" : "Vigilant", 
+            "description" : "Watchful. You have the disposition of a guard dog; your attention misses little",
+            "uses" : [ "Defending against investigation", "Defending against Forgetful Mind", "Seeing through Obfuscate.", "Auspex", "More appropriate for mental defense than for attack" ], 
+            "discipline" : "auspex",
+            "relation" : "perception"
+        },
+        "wily" : { 
+            "name" : "Wily", 
+            "description" : "Sly and full of guile. Because you are wily, you can trick and deceive easily.",
+            "uses" : [ "Tricking others", "Lying under duress", "Confusing mental situations" ], 
+            "relation" : "wits"
+        },
+        "wise" : { 
+            "name" : "Wise", 
+            "description" : "An overall understanding of the workings of the world.",
+            "uses" : [ "Giving advice", "Dispensing snippets of Zen" ], 
+            "relation" : "miscellaneous"
+        }
+    },
+    "negativeMentalTraits" : { 
+        "forgetful" : { 
+            "name" : "Forgetful", 
+            "description" : "You have trouble remembering even important things."
+        },
+        "gullible" : { 
+            "name" : "Gullible", 
+            "description" : "Easily deceived, duped or fooled. Ignorant: Uneducated or misinformed, never seeming to know anything."
+        },
+        "impatient" : { 
+            "name" : "Impatient", 
+            "description" : "Restless, anxious and generally intolerant of delays. You want everything to go your way — immediately."
+        },
+        "oblivious" : { 
+            "name" : "Oblivious", 
+            "description" : "Unaware and unmindful. You'd be lucky if you noticed an airplane flying through your living room."
+        },
+        "predictable" : { 
+            "name" : "Predictable", 
+            "description" : "Because you lack originality or intelligence, even strangers can figure out what you intend to do next."
+        },
+        "shortsighted" : { 
+            "name" : "Shortsighted", 
+            "description" : "Lacking foresight. You rarely look beyond the superficial; details of perception are usually lost on you."
+        },
+        "submissive" : { 
+            "name" : "Submissive", 
+            "description" : "No backbone; you relent and surrender at any cost rather than stand up for yourself."
+        },
+        "violent" : { 
+            "name" : "Violent", 
+            "description" : "An extreme lack of self-control. You fly into rages at the slightest provocation, and frenzy is always close to the surface. This Trait is a Mental one because it represents mental instability."
+        },
+        "witless" : { 
+            "name" : "Witless", 
+            "description" : "Lacking the ability to process information quickly. Foolish and slow to act when threatened."
+        }
+    }
+}

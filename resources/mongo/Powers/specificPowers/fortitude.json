@@ -1,0 +1,43 @@
+{
+    "name" : "Fortitude",
+    "type" : "Discipline",
+    "description" : "All vampires are supernaturally resilient, capable of surviving blows, slashes, bullet wounds and falls with impunity. Some few, however, are even more powerfully resilient, able to shrug off the most severe wounds and even resist the powers of fire and sunlight for a short time. The Discipline of Fortitude represents such resilience, and its mastery allows survival of situations that would otherwise cause Final Death in lesser Cainites.  The nomadic Gangrel and Ravnos clans, who must survive the rigors of the wilderness and travel, most commonly possess Fortitude. The Ventrue also exhibit this Discipline, often leading their charges into battle while shrugging off terrible attacks.  Retests on Fortitude powers use the Survival Ability.",
+    "retests" : "Survival",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Endurance",
+            "effect" : "You do not suffer any wound penalties from anything past the Bruised health level",
+            "description" : "While most Kindred still suffer the fatigue and pain of their injuries, you shrug off such hardships. Even the searing injuries of fire and sunlight can barely slow you.  You do not suffer any wound penalties from anything past the Bruised health level, until you are struck into torpor or Final Death. When most vampires lose all ties due to being Wounded, or remain insensible and Incapacitated, you simply suffer the usual penalties of being Bruised."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Mettle",
+            "effect" : "You gain one additional health level",
+            "description" : "Wounds that would slow other vampires mean nothing to you. You can shrug off damage from most sources, ignoring pain and damage alike. Your body resists harm with incredible strength.  On achieving this Discipline, you gain one additional health level, which functions just like an extra Healthy line on your health level chart. This health level can be lost and healed like any other."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Resilience",
+            "effect" : "Convert aggravated damage to normal damage",
+            "description" : "Even the banes to most Cainites, fire and sunlight, rarely injure you. You can endure punishment that would reduce other Cainites to ash, albeit for a brief time.  When you suffer aggravated damage, you may immediately make a Simple Test to try to reduce the severity of the damage. If you succeed, you reduce the injury to lethal damage. Before making the test, you may choose to expend a stamina-related Physical Trait, allowing you to reduce injury on a win or a tie. Otherwise, you must win the test outright. Use of Resilience is reflexive; it does not count as an action.  You may only attempt to use this Discipline once on any given attack. Thus, if you suffer two or more levels of aggravated damage from a particular attack, you may test to reduce only one level to lethal damage."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Resistance",
+            "effect" : "Resist some incoming damage",
+            "description" : "Your vampiric endurance far surpasses that of any mortal, or even most other Cainites. You shrug off injury without noticeable effect. Blows that would stagger or kill a mortal may not even scratch you.  When you suffer lethal or bashing damage, you may make a Simple Test immediately to avoid some of the damage. If you succeed, you remove one level of the damage from the amount suffered. Before making the test, you may choose to expend a stamina related Physical Trait, allowing you to avoid a level of damage on a win or tie. Otherwise, you must win the test outright. Use of Resistance is reflexive; it does not count as an action.  You may use this Discipline after reducing aggravated damage with Resilience, attempting to negate or reduce the damage entirely. Thus, if you suffer two health levels of aggravated damage from sunlight, you can test to reduce one to lethal damage with Resilience, and if successful, you may then attempt to remove that lethal damage with Resistance. You may only attempt this Discipline once on any given source of damage, so if you suffer two or more levels of damage from a single attack, you may only attempt to reduce a single level of damage from that attack."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Aegis",
+            "effect" : "Ignore all damage for one turn",
+            "description" : "Like a bar of steel, a mountain, an immutable constant, you resist all damage and survive any attack. Only truly monumental and persistent force can ever destroy you completely. Indeed, once the storm of fire and destruction has passed, you rise out of the chaos unscathed.  At any point during a tum, you may declare the use of Aegis. You must expend a permanent Willpower Traitor three permanent Physical Traits to activate this Discipline (though these Traits may be re-purchased later with Experience Traits). When you declare Aegis, you immediately revoke any damage that you suffered in the turn, and you take no damage for the remainder of the tum. You may even declare Aegis after you have been 'killed', ignoring the damage that killed you and any other injury suffered in the same turn. If you are killed, you must use Aegis in the same turn, once a new turn begins, you cannot revoke any previous damage. Use of Aegis is reflexive; it does not count as an action."
+        }
+    ]
+}

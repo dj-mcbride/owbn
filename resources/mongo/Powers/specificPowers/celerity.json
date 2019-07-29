@@ -1,0 +1,42 @@
+{
+    "name" : "Celerity",
+    "type" : "Discipline",
+    "description" : "As one of the physical augmenting Disciplines of vampires, Celerity represents preternatural speed and reflexes. When angered, stressed or consumed with need, a Cainite can use the power inherent in the blood to fuel heractions, moving with startling quickness.  If attacked by surprise (see p.200), the victim may not use Celerity in the initial challenge - she must respond with her normal reflexes, and can only draw on her vampiric speed once she has reacted to the surprise.  The Celerity Discipline is most common among the Assamite, Brujah and Toreador clans. The former two tend to use the powers of Celerity in battle, while the latter engages in feats of dance, rapid completion of artwork or to flee from danger.  Since Celerity simply grants additional actions or modifiers to speed, it does not draw retests from any Ability. Actions performed with Celerity can still be retested appropriately (if shooting a gun twice, for instance, Firearms is used normally for a retest on each shot). Additional actions with Celerity can only be used for physical feats; one cannot use rapidfire Dominate or Thaumaturgy with Celerity, for instance. As a general rule, Mental and Social Disciplines may not be activated during Celerity, except during Alacrity.  Use of Celerity at the speed of Swiftness or above is generally considered a breach of the Masquerade. Note that a vampire need not use her full level of Celerity; a vampire with Advanced Celerity could simply rely on the Basic levels if desired.",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Alacrity",
+            "effect" : "Preempt other's physical actions",
+            "description" : "Your reflexes are finely honed. Even as you watch others act, you can spring into action, completing your movements before they can respond.  By expending a Blood Trait, you gain the ability to preempt any physical actions taken in the same turn, as long as you are aware of them (a face-to-face mugging, yes - a sniper attack, no). Thus, if someone declares an attempt to pull out a hidden weapon and shoot at you, you can preempt that action to pull out your own gun and fire back instead of being relegated to dodging). Similarly, if someone attacks an ally, you can preempt the action to get in the way and fight against the aggressor instead. If you attempt to preempt someone using Celerity or a similar speed-enhancing power, the character with the highest degree of Celerity acts first."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Swiftness",
+            "effect" : "Gain one additional action (two total)",
+            "description" : "With shocking speed, you move faster than humanly possible. Even as others are recovering from events, you are making your next move.  Expend a single Blood Trait to gain one additional action in your turn, in addition to your preemptive Alacrity (the costs are not cumulative). This additional action is taken at the end of the turn, after everyone has resolved single basic actions. If multiple people have additional actions like this, they are all resolved at the same time, after basic actions. You can thus swing a sword twice, run twice as far as normal in a turn, fire a gun and then duck behind cover, or otherwise perform multiple feats."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Rapidity",
+            "effect" : "Use the Bomb in challenges of speed and agility",
+            "description" : "Even other Cainites are dazzled by your superhuman speed. You routinely catch dropped objects, and the speed of your passing whips clothes and loose debris about.  Invoking all of your Celerity, at the cost of a single Blood Trait, enables you to use the Bomb in challenges of speed and agility. When performing an action where speed is of the essence, such as dodging an attack, throwing a knife or grabbing something out of someone's hand, you can declare that you have Rapidity. Once thus declared, you may choose to use the Bomb, a fist with the thumb pointing upward; the Bomb defeats Rock and Paper, but loses to Scissors (the fuse is cut) and ties with other Bombs. This symbol is usable in any challenges of speed throughout the turn However, you are not required to use the Bomb - it is simply another option.  You may use Rapidity in any challenge where you rely on your own speed, even if your opponent attempts to use strength or stamina. Thus, if you try to use your Rapidity to dodge out of the way of someone grabbing at you, you can still use the Bomb. If the opponent possessed Might, you could still use the Bomb for speed, but the opponent would be able to use his Might retest for grappling."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Legerity",
+            "effect" : "Gain one additional action (three total)",
+            "description" : "Moving faster than the human eye can track, you blur across the landscape with the speed of a cheetah. Compared to you, bystanders are statues.  You may activate your Legerity and all other Celerity levels for the turn at the cost of one Blood Trait. Your Legerity grants you one additional normal action at the end of the turn, in addition to your action from Swiftness (thus, you have at least three actions, a preempt and the Bomb in challenges of speed). Actions gained from Legerity come after basic and Swiftness actions, at the end of the turn."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Fleetness",
+            "effect" : "Win all ties in challenges of speed",
+            "description" : "When you call on your blood, you burst into a whirlwind of motion. Your passing extinguishes small flames, whips up flurries of debris and sows confusion among slower-moving entities.  With a single Blood Trait, you activate all of your Celerity powers. You now win all ties in challenges of speed, regardless of Traits. If some other consideration would cause you to lose on ties (such as wounds or an enemy's Potence), you compare Traits normally instead of losing automatically. This benefit lasts for the duration of the entire turn in which you use your Celerity. Your Fleetness functions in all challenges where you rely on speed, even if your opponent tries to use strength or stamina. Thus, if you use the speed of Fleetness to challenge an opponent who uses the strength of Puissance, ties are determined normally (since you both have powers that would win all ties). If the opponent only had Might, you would win all ties but still be vulnerable to a Might retest."
+        }
+    ]    
+}

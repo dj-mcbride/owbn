@@ -1,0 +1,46 @@
+{
+    "id" : "",
+    "name" : "",
+    "player" : "",
+    "homeGame" : "",
+    "clan" : "",
+    "sect" : "",
+    "generation" : "",
+    "sire" : "",
+    "age" : "",
+    "position" : "",
+    "nature" : "",
+    "demeanor" : "",
+    
+    "traits" : {
+        "physicalTraits" : [],
+        "socialTraits" : [],
+        "mentalTraits" : []
+    },
+
+    "negTraits" : {
+        "negPhysicalTraits" : [],
+        "negSocialTraits" : [],
+        "negMentalTraits" : []  
+    },
+
+    "abilities" : {},
+    "disciplines" : [],
+    "backgrounds" : [],
+    "influences" : [],
+    "merits" : [],
+    "flaws" : [],
+    "status" : [],
+
+    "moralityPath" : "",
+    
+    "virtues" : {
+        "conscienceConviction" : "",
+        "selfControlInstinct" : "",
+        "courage" : "" 
+},
+    "blood" : "",
+    "willpower" : "",
+    "health" : ""
+
+}

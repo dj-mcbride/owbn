@@ -1,0 +1,57 @@
+{
+    "description" : "Vampires and mortals alike risk developing derangements when faced with overpowering conditions of extreme terror, guilt or anxiety. The Storyteller may decide a derangement is in order after any experience that generates especially intense and unpleasant emotions, or which violates a character’s beliefs or ethics severely. All derangements carry “triggers,” circumstances which cause the effects of the derangement to become active; once activated, derangements remain in effect for the rest of the scene, and players must modify their character’s Traits, attitudes and behavior in accordance with the derangement description. Characters may resist a derangement by expending a Willpower Trait — this effect lasts for one scene, however, if the trigger is still present at the end of that time, the character must spend another Willpower Trait. In the case of particularly intense mental stress, Narrators may rule additional Willpower Traits or a Static Willpower Challenge is required.  It is up to the Storyteller to determine what amount of time and Willpower is required to cure a derangement, and such cures are best left to thoughtful and involved roleplaying rather than simple Trait expenditure. Malkavians may never cure the original derangement(s) brought on by their Clan Disadvantage.  Note: There is nothing funny or arbitrary about the way a “crazy” person acts. The insane character is only reacting to the stimuli that he perceives to be real — to him, his behavior is perfectly normal. Players should never forget the Mind’s Eye Theatre rules of safety still apply when roleplaying derangements.",
+    "derangements" : {
+        "bulemia" : {
+            "name" : "Bulemia",
+            "description" : "Bulimic characters salve their guilt and insecurity by overindulging in activities that comfort them — in this instance, consuming food (or blood, for vampires). Characters with this affliction will gorge themselves as much as possible when under stress, then purge their systems through drastic means and consume more. Characters with this derangement must make a Static Conscience/ Conviction Challenge when feeding; failure means the vampire feeds until his blood pool is full, whether or not he needs the blood. If forcibly kept from feeding, the vampire must resist frenzy"
+        },
+        "crimsonRage" : {
+            "name" : "Crimson Rage",
+            "description" : "A character with this derangement is prone to experiencing fits of anger with little provocation. While the two bear certain resemblances, this state is quite different from frenzy — frenzy is the instincts of the vampiric Beast, while Crimson Rage is a character’s own feelings of helplessness and inadequacy. Characters with Crimson Rage are not protected from being pushed over the edge into frenzy while insane, however. Whenever this derangement is active, the character gains the Negative Traits: Violent x 2 and Impatient"
+        },
+        "fugue" : {
+            "name" : "Fugue",
+            "description" : "Characters suffering this affliction react to stress by adopting a specific set of behaviors; in the process they suffer “blackouts” or periods of memory loss. Whenever confronted by extreme stress, the character must win a Static Willpower Challenge; failure means the character blacks out and the player must roleplay the character’s trancelike state. Otherwise, control of the character passes to a Narrator for a scene, who dictates the actions the character takes in order to remove the stress. At the end of the fugue, the character “regains consciousness” with no memory of his actions."
+        },
+        "hysteria" : {
+            "name" : "Hysteria",
+            "description" : "Characters with this derangement are unable to properly control their emotions when subjected to stress or pressure, becoming vulnerable to wild mood swings and fits of intense violence. The vampire must test to resist frenzy any time such stress is present; in addition, whenever the vampire fails in a particularly stressful or prominent instance, she enters frenzy automatically. (Narrators have final say on what classifies as such a dramatic failure.)"
+        },
+        "immortalTerror" : {
+            "name" : "Immortal Terror",
+            "description" : "An insanity most recently identified with a certain reluctant movie vampire, this madness stems from the Cainite’s inability to deal with the true scope of his immortality. Terrified by the real implications of living forever, the vampire copes by developing a strong unconscious “death wish.” Whenever the character is confronted by direct evidence of his immortality — such as attending a funeral or watching a mortal ally die — the character must make a Static Willpower Challenge (difficulty four Traits) to avoid immediately undertaking actions that might result in his destruction. Such actions can be as indirect as breaching the Masquerade by telling a reporter about Kindred society, as long as the act carries potentially deadly consequences. Note that the vampire is not consciously aware that he seeks his own destruction, and he resists attempts to persuade him otherwise."
+        },
+        "manicDepression" : {
+            "name" : "Manic-Depression",
+            "description" : "This derangement causes a character to suffer devastating mood swings. Whenever the character fails to achieve a personal goal, she must win a Static Willpower Challenge (no Traits risked) or fall into a depressive state for a number of scenes determined by the Narrator. While depressed, her Willpower Traits are considered halved (round down, minimum one) for purposes of Trait comparison, and she may not spend Blood Traits to raise her Physical Traits. After that, she enters a period of upbeat energy and excitement, pursuing her goals obsessively for a number of scenes equal to the time spent in depression. During this manic time she is one Trait down to resist frenzy."
+        },
+        "megalomania" : {
+            "name" : "Megalomania",
+            "description" : "These individuals have made power the focus of their existence, and such characters must always be the most potent individuals in their environment; where the power stems from is irrelevant, just so long as they are dominant. They believe that other people are divided into two classes: lesser beings and beings elevated beyond their worth. Rivals are considered “competition.” Due to their supreme confidence, they are considered one Trait up on all Willpower tests while their derangement is active, but they must also make a Willpower test (difficulty six Traits) to resist any opportunity to commit diablerie during that time."
+        },
+        "multiplePersonalities" : {
+            "name" : "Multiple Personalities",
+            "description" : "A character with this derangement has suffered mental anguish so severe that his mind reacted by creating additional personas. Each personality is relevant to the trauma that caused it, and the player should work with the Storyteller to determine how many personalities are present, their Natures and what triggers a particular personality. When a personality is triggered, it assumes control until the conditions it was created to deal with have passed. Characters can manifest different Abilities and even Virtues for each personality (all such Traits must still be purchased normally — what a personality believes it can do can be different from what it is actually capable of), but any such arrangements must be worked out with the Storyteller."
+        },
+        "ocd" : {
+            "name" : "Obsessive/Compulsive",
+            "description" : "Characters suffering from this derangement are driven to control their environment. Obsessive characters keep one aspect of their life constant — personal cleanliness or keeping things quiet, for example. Compulsive characters perform specific actions or sets of actions, such as washing their hands constantly or always feeding from mortals in a ritualistic fashion. Obsessive/ compulsive characters are one Trait up to resist any attempt to Dominate or otherwise coerce them from their set behaviors, but they frenzy automatically if forcibly prevented from adhering to their derangement."
+        },
+        "paranoia" : {
+            "name" : "Paranoia",
+            "description" : "Paranoid beings believe that all their woes and suffering stem from an outside source. Many afflicted beings come up with intricate theories about just who is against them and why; those they suspect of being “one of them” are often subject to swift and brutal violence. Paranoid characters trust no one, not even those blood bound to them, and they have a difficult time interacting with others. They are one Trait down on all Social tests while their derangement is active, and any sign of suspicious activity forces them to test to resist frenzy."
+        },
+        "regression" : {
+            "name" : "Regression",
+            "description" : "Characters suffering from this affliction avoid facing responsibilities or consequences by retreating to a younger state where less was required of them. During this state they may alternate between times of whimsy and temper tantrums, but they will always seek to put a more powerful individual between them and whateveris plaguing them. Victims are two Traits down on all Mental Challenges."
+        },
+        "sanguinaryAnimism" : {
+            "name" : "Sanguinary Animism",
+            "description" : "This illness is unique to vampires, a response to guilt for feeding on mortals. Afflicted vampires believe that they do not merely consume a victim’s blood, but part of his soul as well. The vampire hears her victim’s voice inside her head and is assaulted by “memories” of the victim’s life — all created by the vampire’s subconscious. Whenever the vampire feeds on a mortal, she must make a Static Willpower Challenge; success means she is distracted as above and is one Trait down on all challenges for the remainder of the scene. Failure means the character gains a second angry, reproachful personality bent on driving her to ruin. The character is at a one-Trait penalty to all actions for the duration of the madness, and he must roleplay the inner conflict involved; this madness lasts until the moments just before dawn."
+        }, 
+        "schizophrenia" : {
+            "name" : "Schizophrenia",
+            "description" : "Individuals with this derangement have had their psyche fractured by terrible, unresolvable inner conflicts. Most people conceive of this type of disorder when they envision insanity; victims might imagine crucified rabbits floating after them, or swear that their dead father is telling them to murder their uncle. This disorder is anything but arbitrary — the player should work with the Storyteller to determine a general set of behaviors relevant to the original trauma. Kindred with this derangement are unpredictable and dangerous — in situations where their inner conflict flares up, they must automatically retest any win to resist frenzy, and they are two Traits down on all Willpower tests."
+        }
+    }
+}

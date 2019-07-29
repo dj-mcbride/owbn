@@ -1,0 +1,43 @@
+{
+    "name" : "Hands of Destruction",
+    "type" : "Path",
+    "description" : "The magicians of the Sabbat use magics designed to slay their foes brutally. The painful powers of the Hands of Destruction are one such straightforward path. Rumored to be the work of infernalists and demonic tutors, this path delivers agony and decrepitude on its victims.  Some few Camarilla vampires have unearthed this path, but it remains a rare curiosity among most thaumaturges. With the destruction of the Sabbat's Warlocks, the Hands of Destruction path is relegated to the few zealous warriors who manage to wrest its secrets from tomes or infernal pacts. A number of regents have barred practitioners of this path from their chantries on suspicion of infernalism, and many Tremere refuse to practice it because of its potentially demonic origins.  Exerting Hands of Destruction requires a single turn of casting. In some cases, it is used as a physical attack, and the spell and the attack are considered to take one turn, executed on the caster's normal action.",
+    "retests" : "",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Decay",
+            "effect" : "Inanimate matter crumbles rapidly under your touch",
+            "description" : "Inanimate matter crumbles rapidly under your touch. Even dead organic material quickly melts into a puddle of putrescence.  No test is necessary to use this power. For each turn that you maintain contact with an object, it ages a full year. Using this power reduces wood or organic matter to a rotted morass quickly, and it can weaken even metal or plastic with sufficient time. If you break contact with the object, the accelerated aging ceases. Any decrepitude that you inflict on something is permanent, though.  Although you can age the flesh of a vampire with this power, such a tactic has no functional effect. Vampires do not suffer any changes or decrepitude from this aging, as their supernaturally preserved corpses are immune to such treatment."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Gnarl Wood",
+            "effect" : "Your merest glance can swell or contract wood",
+            "description" : "Your merest glance can swell or contract wood, or twist it into strange shapes. You need not touch the wood to affect it, only see it.  You can warp up to 50 pounds of wood, rendering it gnarled and useless. This is an excellent way to burst doors, destroy furnishings and twists stakes into uselessness. If you try to gnarl an object held by someone, you must best the individual in a Mental Challenge to warp the wood. You can Gnarl Wood against multiple objects at once, as long as you can see them all and they do not total more than 50 pounds in weight."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Acidic Touch",
+            "effect" : "Your touch is caustic",
+            "description" : "Mystically altering your vitae, you cause it to become a thick, black, bilious substance, a caustic fluid that burns flesh, cloth, metal and wood alike. Your Acidic Touch has no effect on yourself, but it can leave horrible corroded marks on anything that makes the slightest contact with your coated hands.  The vitriol created with Acidic Touch inflicts aggravated damage, and it can eat through most substances (Storyteller's discretion as to time). You can exude this acid from any part of your body, thus potentially making simple contact or even a kiss painfully deadly. Each application of Acidic Touch does only one health level of damage, so you may need to use this power repeatedly over several turns to burn through a particularly recalcitrant substance (or subject). No test is necessary to use Acidic Touch, though, of course, if you try to strike someone with the acids, you must make the normal Physical Challenge to hit. The acid created with this power is thick and slimy, so it cannot be flung or spat at opponents; you must deliver it by touch."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Atrophy",
+            "effect" : "Wither the limbs of your opponents",
+            "description" : "The warping effects of your powers allow you to wither the very limbs of your opponents. A simple touch is all that is required to Atrophy a single limb, turning it into a useless, fragile husk.  You need to strike your target physically (with a Physical Challenge) in order to Atrophy a limb. If you hit, you wither one arm or leg, rendering it useless. Doing so gives the victim the Negative Traits Clumsy and Lame. Multiple attacks can wither different limbs, cumulatively crippling the victim (and adding additional Negative Traits). A victim without arms cannot grapple or wield weapons; a victim without functional legs cannot move. This effect is permanent on mortals, though vampires can heal a crippled limb as if it were a single aggravated wound."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Turn to Dust",
+            "effect" : "Amplify the process of decay to incredible speeds",
+            "description" : "Amplifying the process of decay to incredible speeds, you can reduce your victim to little more than a pile of dust. Mortals almost always die instantly and collapse to putrefied remains, while even vampires are withered.  If you manage to get a firm grip on your victim with a Physical Challenge, you can cause him to turn to dust. Each Physical Trait that you expend afterward causes the subject to age 10 years. Mortals aged more than 50 years die instantly, reduced to a mass of liquefied tissue and crumbling bone. Vampires attacked with such ferocity (aged 50 years or more) suffer the Negative Trait Repugnant for the remainder of the evening as their bodies shrivel slightly, but the immortal curse prevents any actual physical harm. Note that Turn to Dust functions only on living or undead targets, use Decay on inanimate subjects."
+        }
+    ]
+}

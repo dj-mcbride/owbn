@@ -1,0 +1,18 @@
+{
+    "attributes" : 1,
+    "abilities" : 1,
+    "backgrounds" : 1,
+    "disciplines" : {
+        "basic" : 3,
+        "intermediate" : 3,
+        "advanced" : 9
+    },
+    "moralityPath" : 2,
+    "rituals" : { 
+        "basic" : 2,
+        "intermediate" : 4,
+        "advanced" : 6
+    },
+    "virtues" : 3,
+    "willpower" : 3
+}

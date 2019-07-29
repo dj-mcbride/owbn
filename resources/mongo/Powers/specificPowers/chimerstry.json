@@ -1,0 +1,44 @@
+{
+    "name" : "Chimerstry",
+    "type" : "Discipline",
+    "description" : "The Ravnos tricksters of India live in a world of illusions and dreams. According to their philosophies, the material world itself is only a passing fantasy. Conse. quently, they wield power over perceptions, shaping their own illusions and crafting dreamstuff to their liking.  With the Chimerstry Discipline, the Ravnos call on the energy of dreams and imagination, giving it form and phantasmic substance. This Discipline's powers can conjure almost any shade that springs to mind, though plausible effects or duplications of things that the conjurer has experienced are much more likely to fool viewers and victims. With enough mastery, the vampire can even give such illusions shadow substance, causing injury to others. These illusions vanish only if dispelled by the creator, if the illusionist ceases concentrating on her creations or if they are banished by a disbelieving opponent who exerts enough presence of mind to prove the illusion's nonexistence (say, by shoving a hand through an illusory wall).  Chimerical illusions can only create, not remove - thus, they may add elements to a scene, but cannot cause something to become invisible. Chimerstry could cover up something's features but not remove selected parts. Furthermore, each illusion is a single object; one use of Chimerstry cannot create an entire host of illusory sensations or items. Chimerical creations must be free-standing items or sensory effects - a chimerical piece of clothing could conceal someone's real appearance, but achimerical stake could not suddenly materialize inside of someone's chest (though it could later seem to be thrust there).  Retests with Chimerstry use the Subterfuge Ability, as they attempt to trick, deceive and mislead.",
+    "retests" : "Subterfuge",
+    "special" : "If you are using the rules from The Shining Host, the Discipline of Chimerstry briefly shapes dreaming energy into chimerical constructs, and pulls them into a pseudo-Wyrd state where onlookers can experience them. Such creations are fully effective against changelings, who are always aware of these dream-fantasies. Thus, a chimerical knife (created with only low levels of Chimerstry and thus unable to actually injure people) can and does inflict chimerical damage on changelings. Furthermore, since these illusions are fueled by the power of the caster's blood, they cannot be dismissed with simple Banality; active resistance must disbelieve them.",
+    "powers" : [
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Ignis Fatuus",
+            "effect" : "Create a simple illusion",
+            "description" : "You generate a brief, static illusion that affects a single sense. You could cause the appearance of a rose in your hand, or make someone hear a low wind or feel the grating touch of sandpaper. This illusion has no real substance (and it cannot confine or injure your victims), but it can confound or mislead. The illusion cannot move in any fashion, although you can hold and move an illusion that you create. Thus, an illusion of a person cannot walk or fidget, but you can pick up and brandish an illusory knife.  You must expend a Willpower Trait and best your subjects in a Social Challenge to create this illusion. The illusion persists until you leave the area or until someone manages to disbelieve the effect (by passing a hand through the illusory rose, testing the air and feeling no wind, etc.). You may also dispel the illusion at your desire; doing so is immediate and requires no action."
+        },
+        { 
+            "cost" : 3,
+            "rank" : "Basic",
+            "name" : "Fata Morgana",
+            "effect" : "Your illusions appeal to all of the senses",
+            "description" : "Your illusions appeal to all of the senses. Though you still cannot harm or affect others physically with your phantasms, you can generate static constructs that seem real to any senses that you choose to affect. Thus, you can make a wall that appears solid, has a texture to the touch and smells of old dust and paint, but which has no real substance and can be passed through. Alternately, you could create a phantasm that lacks certain characteristics --you could cause a person to believe that you were holding a rose and brushing it against her cheek, provoking the feeling of the flower against the skin and the scent of the rose, when in fact you do not have a rose. These illusions are still incapable of independent movement.  You must expend a Willpower Trait and a Blood Trait to create an illusion of this nature, and you must best your subjects in a Social Challenge. These illusions remain viable under the same conditions as phantasms created with Ignis Fatuus."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Apparition",
+            "effect" : "Create complex, living illusions",
+            "description" : "No longer confined to mere static images, you can create an illusion that appeals to many senses and has its own capabilities. You must first create an illusion using one of the lesser powers of this Discipline. Then, you can give it a semblance of life. People can be made to move, water to drip and lights to shine in complex patterns. You can even create blatantly strange moving effects, like a knife that flies about threateningly or a human who comes apart and back together again.  You need only spend a single Blood Trait to give animation to an illusion. Once so imbued, you cause the phantasm to move in one specific pattern that you desire. If you spend a complete turn in concentration, you can change this pattern at no extra cost. You must be present for your illusion to sustain itself."
+        },
+        { 
+            "cost" : 6,
+            "rank" : "Intermediate",
+            "name" : "Permanency",
+            "effect" : "Illusions presist when you are not present",
+            "description" : "You no longer need to be present to sustain your illusory creations. Any illusion that you make with Chimerstry can be imbued with Permanency, allowing it to persist even if you leave the area.  Once you have created an illusion, the expenditure of a single Blood Trait grants Permanency. The phantasm remains until you dissolve it or untilsomeone sees through the illusion in some fashion. Thus, you can cast an illusion over an area and then leave, allowing the illusion to persist."
+        },
+        { 
+            "cost" : 9,
+            "rank" : "Advanced",
+            "name" : "Horrid Reality",
+            "effect" : "Create terrifyingly realistic phantasms",
+            "description" : "Your terrifying powers of deception extend directly into the mind of your victim. By focusing your efforts on one individual, you can create terrifyingly realistic phantasms. These illusions can affect the senses and move about in any fashion that you desire, but they affect only one victim. Because of the absolute realism of these phantasms, they can actually convince the victim that he has been injured or affected physically. An illusory fire created with this power burns its target, a phantom wall bars passage and a chimerical stake paralyzes a vampire if thrust through the heart.  You must expend a Willpower Trait and defeat your victim in a Social Challenge in order to use this power effectively. Once active, the nightmarish creation of this power remains for the entire scene, and its effects can last even longer-if you create a gun with this power, it remains for the scene, but wounds inflicted with it score damage that lasts until disbelieved. Since the illusion is completely under your control, it can affect the victim without recourse to additional tests, meaning that you can make a chimerical gun that always hits or a chimerical stake that seems to bend and twist toward the heart. Illusory wounds of this sort cannot kill, though they can certainly drive the victim into a comatose state. These wounds only disappear when the victim is convinced either of the illusory nature of the effect or when he is convinced that he is ‘healed.’"
+        }
+    ]
+}
