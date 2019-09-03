@@ -1,0 +1,4 @@
+cog.js
+scripts/*.js
+views/pronghorn.jsdoc.js
+scripts/*/*.js

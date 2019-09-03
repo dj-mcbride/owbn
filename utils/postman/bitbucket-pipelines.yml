@@ -1,0 +1,137 @@
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+
+image:
+  name: registry.gitlab.com/itential/devops/docker/itential-ci
+  username: $DOCKER_REGISTRY_USERNAME
+  password: $DOCKER_REGISTRY_PASSWORD
+definitions:
+  services:
+    docker:
+      memory: 6144
+pipelines:
+  default:
+    - step:
+        name: before
+        caches:
+          - node
+        script:
+          # set up npm credentials & install dependencies
+          - npm_setup
+    - parallel:
+      - step:
+          name: lint
+          caches:
+            - node
+          script:
+            - npm run lint
+      # - step:
+      #     size: 2x
+      #     name: postman
+      #     caches:
+      #       - node
+      #     services:
+      #       - docker
+      #     script:
+      #       - npm_setup
+      #       - docker_setup
+      #       - git_setup
+      #       - cd .. && git clone git@bitbucket.org:itential/postman_ci_helper.git && cd postman_ci_helper
+      #       - CUSTOMER=$(node readCustomer.js) && ID=$(node readID.js) && TITLE=$(node readTitle.js)
+      #       - cd .. && npx @itential/hearth -l -d
+      #       - cd postman_ci_helper && node editGroups.js "$TITLE" && cd ..
+      #       - rm /migrations/mongo-golden-set/groups.json && mv /migrations/mongo-golden-set/groups-modified.json /migrations/mongo-golden-set/groups.json
+      #       - rm /migrations/mongo-golden-set/accounts.json && mv postman_ci_helper/accounts.json /migrations/mongo-golden-set/accounts.json
+      #       - mkdir output/node_modules/"$CUSTOMER"
+      #       - mkdir output/node_modules/"$CUSTOMER"/"$ID"
+      #       - cd build && ls -la && cd ..
+      #       - cp -R build/* output/node_modules/"$CUSTOMER"/"$ID"
+      #       - cp -R output build && cd build/output 
+      #       - docker-compose up -d
+      #       - sleep 5
+      #       - ls /migrations/mongo-golden-set
+      #       - docker cp /migrations/mongo-golden-set mongo:/tmp/
+      #       - docker exec mongo bash -c "mongoimport --host mongo --port 27017  -c groups -d pronghorn --drop --file /tmp/mongo-golden-set/groups.json"
+      #       - cd .. && npx newman run postman.json
+      - step:
+          name: unit
+          caches:
+            - node
+          script:
+            - npm run test:unit
+      - step:
+          name: security
+          script:
+            # vulnerability check Node Security Platform  (https://nodesecurity.io/)
+            - npm i --package-lock-only
+            - npm audit --registry=https://registry.npmjs.org
+  branches:
+    master:
+      - step:
+          name: before
+          caches:
+            - node
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+      - parallel:
+        - step:
+            name: lint
+            caches:
+              - node
+            script:
+              - npm run lint
+        - step:
+            name: unit
+            caches:
+              - node
+            script:
+              - npm run test:unit
+        - step:
+            name: security
+            script:
+              - npm i --package-lock-only
+              - npm audit --registry=https://registry.npmjs.org
+      - step:
+          name: deploy
+          caches:
+            - node
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+            # run the deploy script
+            - deploy
+    release/*:
+      - step:
+          name: before
+          caches:
+            - node
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+      - parallel:
+        - step:
+            name: lint
+            caches:
+              - node
+            script:
+              - npm run lint
+        - step:
+            name: unit
+            caches:
+              - node
+            script:
+              - npm run test:unit
+        - step:
+            name: security
+            script:
+              - npm i --package-lock-only
+              - npm audit --registry=https://registry.npmjs.org
+      - step:
+          name: deploy
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+            # run the deploy script
+            - deploy

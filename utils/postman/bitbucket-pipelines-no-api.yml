@@ -1,0 +1,102 @@
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+
+image:
+  name: registry.gitlab.com/itential/devops/docker/itential-ci
+  username: $DOCKER_REGISTRY_USERNAME
+  password: $DOCKER_REGISTRY_PASSWORD
+pipelines:
+  default:
+    - step:
+        name: before
+        caches:
+          - node
+        script:
+          # set up npm credentials & install dependencies
+          - npm_setup
+    - parallel:
+      - step:
+          name: lint
+          caches:
+            - node
+          script:
+            - npm run lint
+      - step:
+          name: unit
+          caches:
+            - node
+          script:
+            - npm run test:unit
+      - step:
+          name: security
+          script:
+            # vulnerability check Node Security Platform  (https://nodesecurity.io/)
+            - npx nsp check
+  branches:
+    master:
+      - step:
+          name: before
+          caches:
+            - node
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+      - parallel:
+        - step:
+            name: lint
+            caches:
+              - node
+            script:
+              - npm run lint
+        - step:
+            name: unit
+            caches:
+              - node
+            script:
+              - npm run test:unit
+        - step:
+            name: security
+            script:
+              - npx nsp check
+      - step:
+          name: deploy
+          caches:
+            - node
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+            # run the deploy script
+            - deploy
+    release/*:
+      - step:
+          name: before
+          caches:
+            - node
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+      - parallel:
+        - step:
+            name: lint
+            caches:
+              - node
+            script:
+              - npm run lint
+        - step:
+            name: unit
+            caches:
+              - node
+            script:
+              - npm run test:unit
+        - step:
+            name: security
+            script:
+              - npx nsp check
+      - step:
+          name: deploy
+          script:
+            # set up npm credentials & install dependencies
+            - npm_setup
+            # run the deploy script
+            - deploy
