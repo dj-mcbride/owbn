@@ -31,7 +31,7 @@ describe('Character Sheet Tests', () => {
         collection = td.object();
         collection.find = td.func('collection.find');
         collection.findOne = td.func('collection.findOne');
-        collection.update = td.func('collection.update');
+        collection.update = td.func('collection.updateOne');
         collection.insertOne = td.func();
 
         // Set general DB connections
@@ -234,6 +234,7 @@ describe('Character Sheet Tests', () => {
                 expect(error).to.not.exist;
             }
         });
+
         it('should fail if insert fails to run', async () => {
             // First we need to alter our db.findOne to return a value.
             const errorMessage = { message: 'unable to insert' };
@@ -255,6 +256,7 @@ describe('Character Sheet Tests', () => {
                 expect(error).to.not.exist;
             }
         });
+
         it('should fail if character sheet already exists', async () => {
             // First we need to alter our db.findOne to return a value.
             td.when(collection.findOne(td.matchers.anything())).thenReturn(testSheet);
@@ -275,6 +277,55 @@ describe('Character Sheet Tests', () => {
                 expect(error).to.not.exist;
             }
         });
+
+        it('should fail if user name was not passed', async () => {
+            td.reset();
+            // In this update, we will forget what name to pass
+            let updateVincentNameFail = {
+                name: 'Vincent Ivey',
+                position: 'Keeper'
+            };
+
+            // Run our promise
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = createSheet(updateVincentNameFail);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('createSheet');
+                expect(response.message).to.include('Value of player name not found!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if character name was not passed', async () => {
+            // In this update, we will forget what name to pass
+            let updateVincentNameFail = {
+                player: 'DeeJay McBride',
+                position: 'Keeper'
+            };
+
+            // Run our promise
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = createSheet(updateVincentNameFail);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('createSheet');
+                expect(response.message).to.include('Value of character name not found!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
     });
 
     describe('Function: updateSheet', () => {
@@ -282,8 +333,11 @@ describe('Character Sheet Tests', () => {
         let updateVincent = {
             name: 'Vincent Ivey',
             player: 'DeeJay McBride',
-            position: 'Keeper'
+            updates: {
+                position: 'Keeper'
+            }
         };
+        td.reset();
 
         // For this we want to do a simple update of our character
         it('should succeed if no error found', async () => {
@@ -298,8 +352,6 @@ describe('Character Sheet Tests', () => {
 
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
                 expect(response.results).to.exist;
-                expect(response.results).to.include('updateSheet');
-                expect(response.user).to.include('FAKE-USER');
                 expect(response.message).to.include('Character sheet updated.');
             } catch (error) {
                 console.log(`error : ${JSON.stringify(error)}`);
@@ -378,7 +430,7 @@ describe('Character Sheet Tests', () => {
         it('should fail if character sheet was unable to be updated', async () => {
             // First we need to alter our db.findOne to return a value.
             const errorMessage = { message: 'unable to update' };
-            td.when(collection.update(td.matchers.anything())).thenThrow(errorMessage);
+            td.when(collection.updateOne(td.matchers.anything())).thenThrow(errorMessage);
 
             // First we need to alter our db.findOne to return a value.
             td.when(collection.findOne(td.matchers.anything())).thenReturn(testSheet);
@@ -390,7 +442,7 @@ describe('Character Sheet Tests', () => {
                 });
 
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
-                expect(response.message).to.include('Sheet insert failed.');
+                expect(response.message).to.include('Sheet update failed.');
                 expect(response.results).to.exist;
                 expect(response.results).to.include('updateSheet');
             } catch (error) {

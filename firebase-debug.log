@@ -1,0 +1,13 @@
+[debug] [2019-07-29T12:14:15.241Z] ----------------------------------------------------------------------
+[debug] [2019-07-29T12:14:15.245Z] Command:       /usr/bin/node /usr/bin/firebase login
+[debug] [2019-07-29T12:14:15.245Z] CLI Version:   7.2.1
+[debug] [2019-07-29T12:14:15.245Z] Platform:      linux
+[debug] [2019-07-29T12:14:15.245Z] Node Version:  v8.16.0
+[debug] [2019-07-29T12:14:15.246Z] Time:          Mon Jul 29 2019 08:14:15 GMT-0400 (EDT)
+[debug] [2019-07-29T12:14:15.246Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=855171887&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...

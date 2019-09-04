@@ -25,20 +25,20 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/characterSheet",
+				"path": "/crudCharacter",
 				"verb": "POST"
 			},
 			"roles": [
-				"admin"
+				"admin", "player", "gm", "owbn"
 			],
 			"task": true
 		},
 		{
 			"name": "characterUpdate",
-			"summary": "Create Character",
-			"description": "Character creater",
+			"summary": "Update an existing character",
+			"description": "Update an existing character.  The first two values in the passed object should be name and player, followed by an object of updates",
 			"input": [{
-					"name": "characterSheet",
+					"name": "updateObject",
 					"type": "object"
 				}
 			],
@@ -48,11 +48,11 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/characterSheet",
+				"path": "/crudCharacter",
 				"verb": "PUT"
 			},
 			"roles": [
-				"admin"
+				"admin", "player", "gm", "owbn"
 			],
 			"task": true
 		},
@@ -71,11 +71,11 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/characterSheet",
+				"path": "/crudCharacter",
 				"verb": "DELETE"
 			},
 			"roles": [
-				"admin"
+				"admin", "player", "gm", "owbn"
 			],
 			"task": true
 		},
@@ -94,11 +94,11 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/characterSheet",
+				"path": "/crudCharacter",
 				"verb": "GET"
 			},
 			"roles": [
-				"admin"
+				"admin", "player", "gm", "owbn"
 			],
 			"task": true
 		}

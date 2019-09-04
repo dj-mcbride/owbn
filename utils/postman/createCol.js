@@ -10,7 +10,6 @@ const files = ['cog.js'];
 const REPO_TYPES = {
   GitLab: 'gitlab.com',
   Bitbucket: 'bitbucket.org',
-  TMobileAppCSRRehomeNG: 'git@prdpwebit0001:7999'
 };
 
 /* The repository type is pulled from package.json's repository URL. This is

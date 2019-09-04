@@ -1,8 +1,7 @@
 /* @copyright Itential, LLC 2016 */
 /* globals log */
 const path = require('path');
-const characterSheet = require(path.join(__dirname, './lib/rpc/common/characterSheet'));
-
+const crudCharacter = require(path.join(__dirname, './lib/rpc/common/crudCharacter'));
 
 class owbn {
 
@@ -15,26 +14,57 @@ class owbn {
      * @pronghornType method
      * @name characterCreate
      * @summary Create a new character
-     * @param {object} sheet Character sheet to be created
+     * @param {object} characterSheet Character sheet to be created
      * @param {function} callback Callback function
      * @returns {object} response Response object
      * 
-     * @route {POST} /owbn/characterSheet
+     * @route {POST} /owbn/crudCharacter
      * @roles admin player gm owbn
      * @task true
      * 
      */
-    characterCreate(sheet, callback) {
-        log.debug(`Starting characterCreate for ${sheet}`);
+    async characterCreate(characterSheet, callback) {
+        log.debug('Cog : Calling: crudCharacter.createSheet');
+        let returnValue;
         try {
-            let charResults =  characterSheet.characterCreate(sheet);
-            return callback(charResults);
+            returnValue = await crudCharacter.createSheet(characterSheet);
         } catch (error) {
             error => new Response({
                     from: error
                 })
                 .errorOn([500], callback);
         }
+        log.debug(`Cog : Ended createSheet call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+        /**
+     * @description Update an existing character
+     * @pronghornType method
+     * @name characterCreate
+     * @summary Update an existing character.  The first two values in the passed object should be name and player, followed by an object of updates
+     * @param {object} updateObject Character object to be updated
+     * @param {function} callback Callback function
+     * @returns {object} response Response object
+     * 
+     * @route {PUT} /owbn/crudCharacter
+     * @roles admin player gm owbn
+     * @task true
+     * 
+     */
+    async characterUpdate(updateObject, callback) {
+        log.debug('Cog : Calling: crudCharacter.characterUpdate');
+        let returnValue;
+        try {
+            returnValue = await crudCharacter.updateSheet(updateObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended characterUpdate call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
     }
 }
 

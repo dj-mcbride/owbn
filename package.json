@@ -14,7 +14,14 @@
     "lint:fix": "eslint . --fix",
     "test:unit": "cross-env NODE_ENV=test nyc --recursive --reporter=html --reporter=text --report-dir=coverage/unit mocha test/unit/**",
     "test:integration": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text --report-dir=coverage/integration mocha test/integration/**.js",
-    "test": "npm run test:unit && npm run test:integration"
+    "test": "npm run test:unit && npm run test:integration",
+    "scp:set-host": "echo \"$1\" > .scp-host",
+    "scp": "node utils/scp.js",
+    "scp:all": "npm run scp:res && npm run scp:lib && npm run scp:root",
+    "scp:lib": "npm run scp -- lib",
+    "scp:views": "npm run scp -- views",
+    "scp:root": "npm run scp -- package.json cog.js pronghorn.json",
+    "scp:res": "npm run scp -- resources"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
