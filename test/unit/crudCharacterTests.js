@@ -32,6 +32,7 @@ describe('Character Sheet Tests', () => {
         collection.find = td.func('collection.find');
         collection.findOne = td.func('collection.findOne');
         collection.update = td.func('collection.updateOne');
+        collection.update = td.func('collection.bulkWrite');
         collection.insertOne = td.func();
 
         // Set general DB connections
@@ -45,13 +46,13 @@ describe('Character Sheet Tests', () => {
 
         // Set up our interceptors
         intercept(collection)
-            .methods('insertOne', 'updateOne', 'findOne')
+            .methods('insertOne', 'updateOne', 'findOne', 'bulkWrite')
             .into(charCollectionArgs);
 
         // Set our requirements
-        createSheet = require('../../lib/rpc/common/crudCharacter').createSheet;
-        updateSheet = require('../../lib/rpc/common/crudCharacter').updateSheet;
-        deleteSheet = require('../../lib/rpc/common/crudCharacter').deleteSheet;
+        createSheet = require('../../lib/rpc/character/crudCharacter').createSheet;
+        updateSheet = require('../../lib/rpc/character/crudCharacter').updateSheet;
+        deleteSheet = require('../../lib/rpc/character/crudCharacter').deleteSheet;
         initLogs('createSheet.test.txt');
     });
 
@@ -344,6 +345,11 @@ describe('Character Sheet Tests', () => {
             // First we need to alter our db.findOne to return a value.
             td.when(collection.findOne(td.matchers.anything())).thenReturn(testSheet);
 
+            // Set our updates to return valid data 
+            let returnGoodValue = { 'ok': 1, 'writeErrors': [] };
+            td.when(collection.updateOne(td.matchers.anything())).thenReturn(returnGoodValue);
+            td.when(collection.bulkWrite(td.matchers.anything())).thenReturn(returnGoodValue);
+
             try {
                 const response = await new Promise((resolve, reject) => {
                     const responceObject = updateSheet(updateVincent);
@@ -352,7 +358,7 @@ describe('Character Sheet Tests', () => {
 
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
                 expect(response.results).to.exist;
-                expect(response.message).to.include('Character sheet updated.');
+                expect(response.message).to.include('Character Sheet updated!');
             } catch (error) {
                 console.log(`error : ${JSON.stringify(error)}`);
                 expect(error).to.not.exist;
@@ -431,6 +437,7 @@ describe('Character Sheet Tests', () => {
             // First we need to alter our db.findOne to return a value.
             const errorMessage = { message: 'unable to update' };
             td.when(collection.updateOne(td.matchers.anything())).thenThrow(errorMessage);
+            td.when(collection.bulkWrite(td.matchers.anything())).thenThrow(errorMessage);
 
             // First we need to alter our db.findOne to return a value.
             td.when(collection.findOne(td.matchers.anything())).thenReturn(testSheet);
@@ -442,12 +449,13 @@ describe('Character Sheet Tests', () => {
                 });
 
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
-                expect(response.message).to.include('Sheet update failed.');
-                expect(response.results).to.exist;
-                expect(response.results).to.include('updateSheet');
+                expect(response.results).to.not.exist;
             } catch (error) {
-                console.log(`error : ${JSON.stringify(error)}`);
-                expect(error).to.not.exist;
+                // Sinced we are throwing an error here, we want to see this throw an 
+                // entire error
+                // console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.exist;
+                expect(error.message).to.include('unable to update');
             }
         });
     });

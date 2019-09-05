@@ -1,7 +1,9 @@
 /* @copyright Itential, LLC 2016 */
 /* globals log */
 const path = require('path');
-const crudCharacter = require(path.join(__dirname, './lib/rpc/common/crudCharacter'));
+const crudCharacter = require(path.join(__dirname, './lib/rpc/character/crudCharacter'));
+const viewCharacter = require(path.join(__dirname, './lib/rpc/character/viewCharacter'));
+const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
 
 class owbn {
 
@@ -10,18 +12,18 @@ class owbn {
     }
 
     /**
-     * @description Create the character
+     * @description Create a new character.  This will import what is passed and insert it into mongo.
      * @pronghornType method
      * @name characterCreate
      * @summary Create a new character
      * @param {object} characterSheet Character sheet to be created
      * @param {function} callback Callback function
      * @returns {object} response Response object
-     * 
+     *
      * @route {POST} /owbn/crudCharacter
      * @roles admin player gm owbn
      * @task true
-     * 
+     *
      */
     async characterCreate(characterSheet, callback) {
         log.debug('Cog : Calling: crudCharacter.createSheet');
@@ -38,11 +40,11 @@ class owbn {
         return callback(returnValue);
     }
 
-        /**
-     * @description Update an existing character
+    /**
+     * @description Update an existing character.  The first two values in the passed object should be name and player, followed by an object of updates
      * @pronghornType method
      * @name characterCreate
-     * @summary Update an existing character.  The first two values in the passed object should be name and player, followed by an object of updates
+     * @summary Update an existing character.
      * @param {object} updateObject Character object to be updated
      * @param {function} callback Callback function
      * @returns {object} response Response object
@@ -50,7 +52,7 @@ class owbn {
      * @route {PUT} /owbn/crudCharacter
      * @roles admin player gm owbn
      * @task true
-     * 
+     *
      */
     async characterUpdate(updateObject, callback) {
         log.debug('Cog : Calling: crudCharacter.characterUpdate');
@@ -64,6 +66,122 @@ class owbn {
                 .errorOn([500], callback);
         }
         log.debug(`Cog : Ended characterUpdate call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Delete an existing character.    The first two values in the passed object should be name and player, followed by an object of deletes
+     * @pronghornType method
+     * @name characterDelete
+     * @summary Delete an existing character or values on the character.
+     * @param {object} deleteObject Character object to be deleted
+     * @param {function} callback Callback function
+     * @returns {object} response Response object
+     * 
+     * @route {DELETE} /owbn/crudCharacter
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async characterDelete(deleteObject, callback) {
+        log.debug('Cog : Calling: crudCharacter.characterDelete');
+        let returnValue;
+        try {
+            returnValue = await crudCharacter.deleteSheet(deleteObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended characterDelete call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Display an existing character.  The character and player name need to be passed in the request object
+     * @pronghornType method
+     * @name characterShow
+     * @summary Display an existing character
+     * @param {object} requestObject Character object to be deleted
+     * @param {function} callback Callback function
+     * @returns {object} response Response object
+     *
+     * @route {GET} /owbn/crudCharacter
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async characterShow(requestObject, callback) {
+        log.debug('Cog : Calling: viewCharacter.viewSheet');
+        let returnValue;
+        try {
+            returnValue = await viewCharacter.viewSheet(requestObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending viewCharacter.viewSheet, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Return the a true or false, depending if you have permissions to access a character
+     * @pronghornType method
+     * @name havePermissions
+     * @summary Return permissions for a player
+     * @param {object} requestObject Character object to be polled
+     * @param {function} callback Callback function
+     * @returns {object} response Response object
+     *
+     * @route {POST} /owbn/havePermissions
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async havePermissions(requestObject, callback) {
+        log.debug('Cog : Calling: charUtils.havePermissions');
+        let returnValue;
+        try {
+            returnValue = await charUtils.havePermissions(requestObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending charUtils.havePermissions, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Sets up a character so that it is registered to a particular player
+     * @pronghornType method
+     * @name havePermissions
+     * @summary Register character with player
+     * @param {object} requestObject Character object to be polled
+     * @param {function} callback Callback function
+     * @returns {object} response Response object
+     *
+     * @route {PUT} /owbn/addCharacterToPlayer
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async addCharacterToPlayer(requestObject, callback) {
+        log.debug('Cog : Calling: charUtils.havePermissions');
+        let returnValue;
+        try {
+            returnValue = await charUtils.addCharacterToPlayer(requestObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending charUtils.havePermissions, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
     }
 }

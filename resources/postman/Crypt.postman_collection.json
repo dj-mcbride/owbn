@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "a1e90d35-86de-4972-85d4-4ebc2e43a5e3",
+		"name": "Crypt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createSheet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"characterSheet\" :         {\n            \"name\" : \"Vincent Ivey\",\n            \"player\" : \"DeeJay McBride\",\n            \"homeGame\" : \"Dark Colony: Hartford\",\n            \"clan\" : \"Malkavian\",\n            \"generation\" : 8,\n            \"sect\" : \"camarilla\",\n            \"sire\" : \"Unknown\",\n            \"age\" : \"78\",\n            \"position\" : \"None\",\n            \"nature\" : \"Architect\",\n            \"demeanor\" : \"Confidant\",\n            \n            \"traits\" : {\n                \"physicalTraits\" : [\n                    \"Graceful\",\n                    \"Nimble\",\n                    \"Athletic\",\n                    \"Tough\",\n                    \"Tough\",\n                    \"Tough\",\n                    \"Tough\"\n                ],\n                \"socialTraits\" : [\n                    \"Empathetic\",\n                    \"Empathetic\",\n                    \"Persuasive\", \n                    \"Persuasive\",\n                    \"Persuasive\",\n                    \"Persuasive\",\n                    \"Commanding\",\n                    \"Commanding\",\n                    \"Charming\",\n                    \"Charming\",\n                    \"Charming\",\n                    \"Friendly\", \n                    \"Friendly\",\n                    \"Friendly\"\n                ],\n                \"mentalTraits\" : [\n                    \"Clever\",\n                    \"Clever\",\n                    \"Cunning\",\n                    \"Cunning\",\n                    \"Cunning\",\n                    \"Cunning\",\n                    \"Insightful\",\n                    \"Insightful\",\n                    \"Attentive\",\n                    \"Attentive\",\n                    \"Observant\",\n                    \"Observant\",\n                    \"Observant\",\n                    \"Observant\"\n                ]\n            },\n        \n            \"negTraits\" : {\n                \"negPhysicalTraits\" : [\n                    \"Cowardly\",\n                    \"Docile\"\n                ],\n                \"negSocialTraits\" : [\n                    \"Callous\",\n                    \"Tactless\"\n                ],\n                \"negMentalTraits\" : [\n                    \"Shortsighted\"\n                ]  \n            },\n            \"abilities\" : {\n                \"Stealth\" : { \"rank\" : 5 },\n                \"Awareness\" : { \"rank\" : 1 },\n                \"MalkTime\" : { \"rank\" : 5  },\n                \"Investigation\" : { \"rank\" : 5, \"specalization\" : \"auspex\", \"extraXp\" : 1 },\n                \"Empathy\" : { \"rank\" : 5, \"specalization\" : \"dementation\" , \"extraXp\" : 1 },\n                \"Intimidation\" : { \"rank\" : 5, \"specalization\" : \"dominate\" , \"extraXp\" : 1 },\n                \"Academics\" : { \"rank\" : 1 },\n                \"Psychology\" : { \"rank\" : 3 },\n                \"Asura Lore\" : { \"rank\" : 2 },\n                \"Hunting\" : { \"rank\" : 2 },\n                \"Leadership\" : { \"rank\" : 4 }\n            },\n            \"disciplines\" : {\n                \"Auspex\" : { \"rank\" : 5, \"inClan\" : true },\n                \"Dementation\" : { \"rank\" : 5, \"inClan\" : true },\n                \"Obfuscate\" : { \"rank\" : 5, \"inClan\" : true },\n                \"Dominate\" : { \"rank\" : 5, \"inClan\" : true },\n                \"Presence\" : { \"rank\" : 2,  \"inClan\" : false },\n                \"Fortitude\" : { \"rank\" : 4,  \"inClan\" : false }\n            },\n            \"combodisciplines\" : [\n                \"Psychic Double\"\n            ],\n            \"customdisciplines\" : {\n                \"Song Of Mehket\" : { \"rank\" : 5, \"inClan\" : false }\n            },\n            \"backgrounds\" : {\n                \"Generation\" : { \"rank\" : 5 },\n                \"Resources\" : { \"rank\" : 4 },\n                \"Herd\" : { \"rank\" : 5 },\n                \"Retainers\" : { \"rank\" : 3 },\n                \"Mentor\" : { \"rank\" : 5, \"specalization\" : \"Mehket\" }\n            },\n            \"influences\" : {\n                \"Media\" : { \"rank\" : 5 },\n                \"Finance\" : { \"rank\" : 5 },\n                \"Health\" : { \"rank\" : 4 },\n                \"Occult\" : { \"rank\" : 5 },\n                \"Police\" : { \"rank\" : 2 }\n            },\n            \"merits\" : [\n            ],\n            \"customMerits\" : [\n                \"Coldly Logical\",\n                \"Subtle Whispers\",\n                \"Immaculate Aura\",\n                \"Sympathetic Bond\",\n                \"Sanguine Lucidity\",\n                \"Malleable Blood : Dominate\",\n                \"Aptitude : Intimidation\",\n                \"Aptitude : Empathy\",\n                \"Aptitude : Investigation\",\n                \"Aptitude : Stealth\"\n            ],\n            \"flaws\" : [\n                \"Grip of the Damned\",\n                \"Eerie Presence\",\n                \"Touch of Frost\",\n                \"Extra Derrangement\"\n            ],\n            \"status\" : [\n                \"Clever\", \n                \"Chivalrous\", \n                \"Acknowledged\",\n                \"Brave\" \n            ],\n        \n            \"moralityPath\" : \"humanity\",\n            \n            \"virtues\" : {\n                \"conscienceConviction\" : 3,\n                \"selfControlInstinct\" : 4,\n                \"courage\" : 3,\n                \"humanity\" : 3 \n        },\n            \"blood\" : 15,\n            \"willpower\" : 6,\n            \"health\" : {\n                \"Healthy\" : 3,\n                \"Bruised\" : 3, \n                \"Wounded\" : 2, \n                \"Incapacitated\" : 1, \n                \"Torpor\" : 1\n            }\n        \n        }\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/owbn/crudCharacter",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"owbn",
+						"crudCharacter"
+					]
+				},
+				"description": "Creating a character shee"
+			},
+			"response": []
+		},
+		{
+			"name": "updateSheet",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"updateObject\" : {\n    \t\"name\": \"Vincent Ivey\",\n        \"player\": \"DeeJay McBride\",\n        \"updates\": {\n        \t\"position\": \"Keeper\",\n        \t\"sect\": \"Camarilla\"\n    \t}\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/owbn/crudCharacter",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"owbn",
+						"crudCharacter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSheet",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"deleteObject\" : {\n    \t\"name\": \"Vincent Ivey\",\n        \"player\": \"DeeJay McBride\",\n        \"updates\": {\n        \t\"position\": \"Keeper\",\n        \t\"sect\": \"Camarilla\"\n    \t}\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/owbn/crudCharacter",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"owbn",
+						"crudCharacter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "viewSheet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"requestObject\" : {\n    \t\"name\": \"Vincent Ivey\",\n        \"player\": \"DeeJay McBride\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/owbn/crudCharacter",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"owbn",
+						"crudCharacter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginHost Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65c24b54-8e0e-4853-abab-be90c2c28667",
+						"exec": [
+							"postman.setEnvironmentVariable(\"pronghorn_token\", responseBody);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{\n        \"username\" : {{pronghorn_user}},\n        \"password\" : {{pronghorn_password}}\n    }\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/login",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "havePermissions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"requestObject\" : {\n    \t\"name\": \"Vincent Ivey\",\n        \"player\": \"DeeJay\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/owbn/havePermissions",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"owbn",
+						"havePermissions"
+					]
+				},
+				"description": "Creating a character shee"
+			},
+			"response": []
+		}
+	]
+}

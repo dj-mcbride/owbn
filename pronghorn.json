@@ -61,7 +61,7 @@
 			"summary": "Create Character",
 			"description": "Character creater",
 			"input": [{
-					"name": "characterSheet",
+					"name": "deleteObject",
 					"type": "object"
 				}
 			],
@@ -81,10 +81,10 @@
 		},
 		{
 			"name": "characterShow",
-			"summary": "Create Character",
-			"description": "Character creater",
+			"summary": "Show Character",
+			"description": "Return the character sheet",
 			"input": [{
-					"name": "characterSheet",
+					"name": "requestObject",
 					"type": "object"
 				}
 			],
@@ -96,6 +96,52 @@
 			"route": {
 				"path": "/crudCharacter",
 				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "havePermissions",
+			"summary": "Return permissions for a player",
+			"description": "Return the a true or false, depending if you have permissions to access a character",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/havePermissions",
+				"verb": "POST"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "addCharacterToPlayer",
+			"summary": "Register character with player",
+			"description": "Sets up a character so that it is registered to a particular player",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/addCharacterToPlayer",
+				"verb": "PUT"
 			},
 			"roles": [
 				"admin", "player", "gm", "owbn"
