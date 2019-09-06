@@ -65,6 +65,35 @@
 			"response": []
 		},
 		{
+			"name": "addCharacterToPlayer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"requestObject\" : {\n    \t\"name\": \"Feydark\",\n        \"player\": \"DeeJay\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/owbn/addCharacterToPlayer",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"owbn",
+						"addCharacterToPlayer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "deleteSheet",
 			"request": {
 				"method": "DELETE",
@@ -120,6 +149,38 @@
 					"path": [
 						"owbn",
 						"crudCharacter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "returnListOfCharacters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"requestObject\" : {\n        \"player\": \"DeeJay\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{pronghorn_domain}}/owbn/returnListOfCharacters",
+					"host": [
+						"{{pronghorn_domain}}"
+					],
+					"path": [
+						"owbn",
+						"returnListOfCharacters"
 					]
 				}
 			},

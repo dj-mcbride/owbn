@@ -184,6 +184,36 @@ class owbn {
         log.debug(`Cog : Ending charUtils.havePermissions, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
     }
+
+    /**
+     * @description Returns a list of characters the player has, along with a sum of the characters
+     * @pronghornType method
+     * @name returnListOfCharacters
+     * @summary Shows characters associated with a player
+     * @param {object} requestObject Character object to be polled
+     * @param {function} callback Callback function
+     * @returns {object} response Response object
+     *
+     * @route {GET} /owbn/returnListOfCharacters
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async returnListOfCharacters(requestObject, callback) {
+        log.debug('Cog : Calling: charUtils.returnListOfCharacters');
+        let returnValue;
+        try {
+            returnValue = await charUtils.returnListOfCharacters(requestObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending charUtils.returnListOfCharacters, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
 }
 
 module.exports = new owbn();

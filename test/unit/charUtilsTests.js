@@ -49,6 +49,7 @@ describe('Character Utility Tests', () => {
         // Set our requirements
         havePermissions = require('../../lib/rpc/player/charUtils').havePermissions;
         addCharacterToPlayer = require('../../lib/rpc/player/charUtils').addCharacterToPlayer;
+        returnListOfCharacters = require('../../lib/rpc/player/charUtils').returnListOfCharacters;
         initLogs('createSheet.test.txt');
     });
 
@@ -65,7 +66,6 @@ describe('Character Utility Tests', () => {
         // This runs after each test.
         // td.reset();
     });
-
 
     describe('Function: havePermissions', () => {
         const requestObject = {
@@ -389,6 +389,115 @@ describe('Character Utility Tests', () => {
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
                 expect(response.results).to.exist;
                 expect(response.message).to.include('Value of character name not found!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+    });
+
+    describe('Function: returnListOfCharacters', () => {
+        const requestObject = {
+            player: 'DeeJay'
+        };
+
+        const returnGoodValue = { 'ok': 1, 'writeErrors': [] };
+
+        const playerInfo = {
+            name: 'DeeJay',
+            characters: [ 
+                'Taco Person',
+                'Runner Up',
+                'Vincent Ivey'
+            ]
+        };
+
+        // Each of these tests is calling an async function not in a class.
+        // This means we don't need to create an instance of characterSheet before calling them.
+        it('should return a success and provide the list of characters and number of characters', async () => {
+            td.reset();
+            // Set up our test double
+            td.when(collection.findOne(td.matchers.anything())).thenReturn(playerInfo);
+            td.when(collection.updateOne(td.matchers.anything())).thenReturn(returnGoodValue);
+            td.when(collection.bulkWrite(td.matchers.anything())).thenReturn(returnGoodValue);
+            
+            // This is the expected responce
+            // {"step":"View Sheet","responseCode":200,"results":"viewSheet","userMessage":"","user":
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = returnListOfCharacters(requestObject);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.include('returnNumberOfCharacters');
+                expect(response.message.characters).to.include('Vincent Ivey');
+                expect(response.message.characters).to.include('Runner Up');
+                expect(response.message.characters).to.include('Taco Person');
+                expect(response.message.numberOfCharacters).to.equal(3);
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if read fails to run through a mongo failure during the read', async () => {
+            // First we need to alter our db.findOne to return a value.
+            const errorMessage = { message: 'unable to read' };
+            td.when(collection.findOne(td.matchers.anything())).thenThrow(errorMessage);
+
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = returnListOfCharacters(requestObject);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.message).to.include('Player request failed.');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if player does not exist in our playerDB', async () => {
+            td.reset();
+            // First we need to alter our db.findOne to return an empty value
+            td.when(collection.findOne(td.matchers.anything())).thenReturn();
+
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = returnListOfCharacters(requestObject);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.message).to.include('Player not found in database');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if user name was not passed', async () => {
+            td.reset();
+            // In this update, we will forget what name to pass
+            let updateVincentNameFail = {
+                name: 'Vincent Ivey'
+            };
+
+            // Run our promise
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = returnListOfCharacters(updateVincentNameFail);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.message).to.include('Value of player name not found!');
             } catch (error) {
                 console.log(`error : ${JSON.stringify(error)}`);
                 expect(error).to.not.exist;

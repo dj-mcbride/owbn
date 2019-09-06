@@ -147,6 +147,29 @@
 				"admin", "player", "gm", "owbn"
 			],
 			"task": true
+		},
+		{
+			"name": "returnListOfCharacters",
+			"summary": "Shows characters associated with a player",
+			"description": "Returns a list of characters the player has, along with a sum of the characters",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/returnListOfCharacters",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
 		}
 	],
 	"views": [        
