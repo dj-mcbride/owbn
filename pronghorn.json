@@ -103,6 +103,32 @@
 			"task": true
 		},
 		{
+			"name": "viewSelection",
+			"summary": "Show Selection",
+			"description": "Return a selection from the character sheet",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				},
+				{"name": "project",
+				"type" : "string"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewSelection",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
 			"name": "havePermissions",
 			"summary": "Return permissions for a player",
 			"description": "Return the a true or false, depending if you have permissions to access a character",

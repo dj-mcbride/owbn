@@ -103,7 +103,7 @@ class owbn {
      * @pronghornType method
      * @name characterShow
      * @summary Display an existing character
-     * @param {object} requestObject Character object to be deleted
+     * @param {object} requestObject Character object to be shown
      * @param {function} callback Callback function
      * @returns {object} response Response object
      *
@@ -153,6 +153,37 @@ class owbn {
                 .errorOn([500], callback);
         }
         log.debug(`Cog : Ending charUtils.havePermissions, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+
+    /**
+     * @description Display an existing character.  The character and player name need to be passed in the request object
+     * @pronghornType method
+     * @name viewSelection
+     * @summary Display an existing character
+     * @param {object} requestObject Character object to be shown
+     * @param {string} project Selection to be shown
+     * @param {function} callback Callback function
+     * @returns {object} response Response object
+     *
+     * @route {GET} /owbn/crudCharacter
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async viewSelection(requestObject, project, callback) {
+        log.debug('Cog : Calling: viewCharacter.viewSelection');
+        let returnValue;
+        try {
+            returnValue = await viewCharacter.viewSelection(requestObject, project);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending viewCharacter.viewSelection, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
     }
 
