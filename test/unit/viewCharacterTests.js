@@ -48,6 +48,7 @@ describe('View Character Sheet Tests', () => {
 
         // Set our requirements
         viewSheet = require('../../lib/rpc/character/viewCharacter').viewSheet;
+        viewSelection = require('../../lib/rpc/character/viewCharacter').viewSelection;
         initLogs('createSheet.test.txt');
     });
 
@@ -208,10 +209,10 @@ describe('View Character Sheet Tests', () => {
 
 
     describe('Function: viewSheet', () => {
-        let requestObject = {
+        const requestObject = {
             name: 'Vincent Ivey',
             player: 'DeeJay McBride'
-        }
+        };
 
         // Each of these tests is calling an async function not in a class. 
         // This means we don't need to create an instance of characterSheet before calling them.
@@ -321,6 +322,144 @@ describe('View Character Sheet Tests', () => {
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
                 expect(response.results).to.exist;
                 expect(response.results).to.include('viewSheet');
+                expect(response.message).to.include('Value of character name not found!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+    });
+
+    describe('Function: viewSelection', () => {
+        const requestObject = {
+            name: 'Vincent Ivey',
+            player: 'DeeJay McBride'
+        };
+        const project = 'traits.physicalTraits';
+        const responseMessage = {
+            "_id": "5d77e7d47e730a6e5880e7e1",
+            "name": "Vincent Ivey",
+            "player": "DeeJay McBride",
+            "traits": {
+                "physicalTraits": [
+                    "Graceful",
+                    "Nimble",
+                    "Athletic",
+                    "Tough",
+                    "Tough",
+                    "Tough",
+                    "Tough",
+                    "Taco"
+                ]
+            }
+        };
+
+        // Each of these tests is calling an async function not in a class. 
+        // This means we don't need to create an instance of characterSheet before calling them.
+        it('should succeed if no error found', async () => {
+            // Set up our test double
+            td.when(collection.findOne(td.matchers.anything(), td.matchers.anything())).thenReturn(responseMessage);
+            
+            // This is the expected responce
+            // {"step":"View Sheet","responseCode":200,"results":"viewSheet","userMessage":"","user":
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = viewSelection(requestObject, project);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('viewSelection');
+                expect(response.message.name).to.include('Vincent Ivey');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if read fails to run through a mongo failure', async () => {
+            // First we need to alter our db.findOne to return a value.
+            const errorMessage = { message: 'Sheet request failed.' };
+
+            td.when(collection.findOne(td.matchers.anything(), td.matchers.anything())).thenReturn(errorMessage);
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = viewSelection(requestObject, project);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('viewSelection');
+                expect(response.message).to.equal(errorMessage);
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if character sheet does not exist', async () => {
+            td.reset();
+            // First we need to alter our db.findOne to return an empty value
+            td.when(collection.findOne(td.matchers.anything(), td.matchers.anything())).thenReturn();
+
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = viewSelection(requestObject, project);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('viewSelection');
+                expect(response.message).to.include('Sheet not found in database');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if user name was not passed', async () => {
+            td.reset();
+            // In this update, we will forget what name to pass
+            let updateVincentNameFail = {
+                name: 'Vincent Ivey'
+            };
+
+            // Run our promise
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = viewSelection(updateVincentNameFail, project);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('viewSelection');
+                expect(response.message).to.include('Value of player name not found!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        it('should fail if character name was not passed', async () => {
+            // In this update, we will forget what name to pass
+            let updateVincentNameFail = {
+                player: 'DeeJay McBride'
+            };
+
+            // Run our promise
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = viewSelection(updateVincentNameFail, project);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('viewSelection');
                 expect(response.message).to.include('Value of character name not found!');
             } catch (error) {
                 console.log(`error : ${JSON.stringify(error)}`);
