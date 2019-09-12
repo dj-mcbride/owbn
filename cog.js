@@ -3,6 +3,7 @@
 const path = require('path');
 const crudCharacter = require(path.join(__dirname, './lib/rpc/character/crudCharacter'));
 const viewCharacter = require(path.join(__dirname, './lib/rpc/character/viewCharacter'));
+const crudGames = require(path.join(__dirname, './lib/rpc/games/crudGames'));
 const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
 
 class owbn {
@@ -18,7 +19,7 @@ class owbn {
      * @summary Create a new character
      * @param {object} characterSheet Character sheet to be created
      * @param {function} callback Callback function
-     * @returns {object} response Response object
+     * @returns {object} Response object
      *
      * @route {POST} /owbn/crudCharacter
      * @roles admin player gm owbn
@@ -73,10 +74,10 @@ class owbn {
      * @description Delete an existing character.    The first two values in the passed object should be name and player, followed by an object of deletes
      * @pronghornType method
      * @name characterDelete
-     * @summary Delete an existing character or values on the character.
+     * @summary Delete an existing character.
      * @param {object} deleteObject Character object to be deleted
      * @param {function} callback Callback function
-     * @returns {object} response Response object
+     * @returns {object} Response object
      * 
      * @route {DELETE} /owbn/crudCharacter
      * @roles admin player gm owbn
@@ -105,7 +106,7 @@ class owbn {
      * @summary Display an existing character
      * @param {object} requestObject Character object to be shown
      * @param {function} callback Callback function
-     * @returns {object} response Response object
+     * @returns {object} Response object
      *
      * @route {GET} /owbn/crudCharacter
      * @roles admin player gm owbn
@@ -134,7 +135,7 @@ class owbn {
      * @summary Return permissions for a player
      * @param {object} requestObject Character object to be polled
      * @param {function} callback Callback function
-     * @returns {object} response Response object
+     * @returns {object} Response object
      *
      * @route {POST} /owbn/havePermissions
      * @roles admin player gm owbn
@@ -165,7 +166,7 @@ class owbn {
      * @param {object} requestObject Character object to be shown
      * @param {string} project Selection to be shown
      * @param {function} callback Callback function
-     * @returns {object} response Response object
+     * @returns {object} Response object
      *
      * @route {GET} /owbn/crudCharacter
      * @roles admin player gm owbn
@@ -194,7 +195,7 @@ class owbn {
      * @summary Register character with player
      * @param {object} requestObject Character object to be polled
      * @param {function} callback Callback function
-     * @returns {object} response Response object
+     * @returns {object} Response object
      *
      * @route {PUT} /owbn/addCharacterToPlayer
      * @roles admin player gm owbn
@@ -223,7 +224,7 @@ class owbn {
      * @summary Shows characters associated with a player
      * @param {object} requestObject Character object to be polled
      * @param {function} callback Callback function
-     * @returns {object} response Response object
+     * @returns {object} Response object
      *
      * @route {GET} /owbn/returnListOfCharacters
      * @roles admin player gm owbn
@@ -242,6 +243,93 @@ class owbn {
                 .errorOn([500], callback);
         }
         log.debug(`Cog : Ending charUtils.returnListOfCharacters, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Create a new game.  This will import what is passed and insert it into mongo.
+     * @pronghornType method
+     * @name createInfo
+     * @summary Create a new game
+     * @param {object} newGame Game info to be created.
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {POST} /owbn/crudGame
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async createInfo(newGame, callback) {
+        log.debug('Cog : Calling: crudCharacter.createInfo');
+        let returnValue;
+        try {
+            returnValue = await crudGames.createInfo(newGame);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended createInfo call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Update an existing game
+     * @pronghornType method
+     * @name updateInfo
+     * @summary Update an existing game.
+     * @param {object} updateObject Game object to be updated
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     * 
+     * @route {PUT} /owbn/crudGame
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async updateInfo(updateObject, callback) {
+        log.debug('Cog : Calling: crudCharacter.updateInfo');
+        let returnValue;
+        try {
+            returnValue = await crudGames.updateInfo(updateObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended updateInfo call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Delete an existing Game.
+     * @pronghornType method
+     * @name deleteInfo
+     * @summary Delete an existing game.
+     * @param {object} deleteObject Character object to be deleted
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     * 
+     * @route {DELETE} /owbn/crudGame
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async deleteInfo(deleteObject, callback) {
+        log.debug('Cog : Calling: crudCharacter.deleteInfo');
+        let returnValue;
+        try {
+            returnValue = await crudGames.deleteInfo(deleteObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended deleteInfo call, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
     }
 

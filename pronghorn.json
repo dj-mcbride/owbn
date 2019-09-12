@@ -196,6 +196,75 @@
 				"admin", "player", "gm", "owbn"
 			],
 			"task": true
+		},
+		{
+			"name": "createInfo",
+			"summary": "Create a new game",
+			"description": "Create a new game.  This will import what is passed and insert it into mongo.",
+			"input": [{
+					"name": "newGame",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudGame",
+				"verb": "POST"
+			},
+			"roles": [
+				"admin", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "updateInfo",
+			"summary": "Update an existing game",
+			"description": "Update an existing game",
+			"input": [{
+					"name": "updateObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudGame",
+				"verb": "PUT"
+			},
+			"roles": [
+				"admin", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "deleteInfo",
+			"summary": "Delete an existing Game.",
+			"description": "Delete an existing Game.",
+			"input": [{
+					"name": "deleteObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudGame",
+				"verb": "DELETE"
+			},
+			"roles": [
+				"admin", "gm", "owbn"
+			],
+			"task": true
 		}
 	],
 	"views": [        
