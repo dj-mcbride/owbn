@@ -160,6 +160,33 @@
         "additionalProperties": false
       }
     },
+    "abilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "default": "Academics",
+            "examples": [
+              "Academics"
+            ]
+          },
+          "rank": {
+            "type": "integer",
+            "default": 4,
+            "examples": [
+              4
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "rank"
+        ],
+        "additionalProperties": false
+      }
+    },
     "required": [
       "name",
       "player",
@@ -170,7 +197,9 @@
       "sect",
       "sire",
       "nature",
-      "demeanor"
+      "demeanor",
+      "traits",
+      "abilities"
     ],
     "additionalProperties": true
   }
