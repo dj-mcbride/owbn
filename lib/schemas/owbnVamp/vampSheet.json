@@ -191,10 +191,6 @@
       "type": "object",
       "additionalProperties": false
     },
-    "backgrounds": {
-      "type": "object",
-      "additionalProperties": false
-    },
     "moralityPath": {
       "type": "string",
       "default": "Humanity",
@@ -256,7 +252,6 @@
       "traits",
       "abilities",
       "disciplines",
-      "backgrounds",
       "moralityPath",
       "virtues"
     ],
