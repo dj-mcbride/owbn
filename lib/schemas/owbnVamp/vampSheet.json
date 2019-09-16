@@ -134,5 +134,5 @@
       "nature",
       "demeanor"
     ],
-    "additionalProperties": false
+    "additionalProperties": true
   }
