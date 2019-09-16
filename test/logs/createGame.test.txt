@@ -1,0 +1,47 @@
+DEBUG: Starting: crudGame.createInfo. info object 
+TRACE: Starting: crudGame.createInfo. info object : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"} 
+DEBUG: Update: crudGame.createInfo. Is info currently in DB? 
+DEBUG: Update: crudGame.createInfo : Info not found in DB.   Adding Info
+DEBUG: Ending: crudGame.createInfo. validationResponse : {"step":"Create Info","responseCode":200,"results":"createInfo","userMessage":"","user":"FAKE-USER","timestamp":1568395936993,"message":"Game created!"} 
+DEBUG: Starting: crudGame.createInfo. info object 
+TRACE: Starting: crudGame.createInfo. info object : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"} 
+DEBUG: Update: crudGame.createInfo. Is info currently in DB? 
+DEBUG: Update: crudGame.createInfo : Info not found in DB.   Adding Info
+**ERROR**: Update: crudGame.createInfo : Game insert failed. : [object Object]
+DEBUG: Ending: crudGame.createInfo. validationResponse : {"step":"Create Info","responseCode":457,"results":"createInfo","userMessage":"","user":"FAKE-USER","timestamp":1568395936994,"message":"Game insert failed."} 
+DEBUG: Starting: crudGame.createInfo. info object 
+TRACE: Starting: crudGame.createInfo. info object : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"} 
+DEBUG: Update: crudGame.createInfo. Is info currently in DB? 
+DEBUG: Update: crudGame.createInfo : duplicate info, throwing error 
+DEBUG: Ending: crudGame.createInfo. validationResponse : {"step":"Create Info","responseCode":455,"results":"createInfo","userMessage":"","user":"FAKE-USER","timestamp":1568395936995,"message":"Duplicate game found!"} 
+DEBUG: Starting: crudGame.createInfo. info object 
+TRACE: Starting: crudGame.createInfo. info object : {"position":"Keeper"} 
+DEBUG: Update: crudGame.createInfo. value of game name not found!
+DEBUG: Starting: crudGame.updateInfo. info object : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater","DeeJays Character"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"} 
+DEBUG: Update: crudGame.updateInfo. Is info currently in DB? 
+DEBUG: Update: crudGame.updateInfo : Info found in DB.   Updating Info
+DEBUG: Update: crudGame.updateInfo : deviceCol : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"}
+DEBUG: Update: crudGame.updateInfo : updateOneObject : [{"updateOne":{"filter":{},"update":{},"upsert":true}}]
+DEBUG: Running: DeviceSync.querySyncTimeStamp. bulkWriteResults {"ok":1,"writeErrors":[]}
+DEBUG: Starting: crudGame.updateInfo. info object : {"name":"Vincent Ivey","position":"Keeper"} 
+DEBUG: Update: crudGame.updateInfo. Is info currently in DB? 
+DEBUG: Ending: crudGame.updateInfo : Game info not found!  Unable to update.
+DEBUG: Starting: crudGame.updateInfo. info object : {"player":"DeeJay McBride","position":"Keeper"} 
+DEBUG: Update: crudGame.updateInfo. value of game name not found!
+DEBUG: Starting: crudGame.updateInfo. info object : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater","DeeJays Character"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"} 
+DEBUG: Update: crudGame.updateInfo. Is info currently in DB? 
+DEBUG: Update: crudGame.updateInfo : Info found in DB.   Updating Info
+DEBUG: Update: crudGame.updateInfo : deviceCol : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"}
+DEBUG: Update: crudGame.updateInfo : updateOneObject : [{"updateOne":{"filter":{},"update":{},"upsert":true}}]
+DEBUG: Starting: crudGame.deleteInfo. info object : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater","DeeJays Character"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"} 
+DEBUG: Update: crudGame.deleteInfo. Is info currently in DB? 
+DEBUG: Update: crudGame.deleteInfo : Info found in DB.   Updating Info
+DEBUG: Starting: crudGame.deleteInfo. info object : {"name":"Vincent Ivey","position":"Keeper"} 
+DEBUG: Update: crudGame.deleteInfo. Is info currently in DB? 
+DEBUG: Ending: crudGame.deleteInfo : Game info not found!  Unable to delete.
+DEBUG: Starting: crudGame.deleteInfo. info object : {"player":"DeeJay McBride","position":"Keeper"} 
+DEBUG: Update: crudGame.deleteInfo. value of game name not found!
+DEBUG: Starting: crudGame.deleteInfo. info object : {"name":"Dark Colony: New Haven - Bad Moon Rising","activeCharacters":["James 'Croc' Blackwater","DeeJays Character"],"locationRegular":"","timeRegular":"Second Saturday of the Month, 7:30pm","genrePrimary":"Vampire","genreSecondary":"Sabbat"} 
+DEBUG: Update: crudGame.deleteInfo. Is info currently in DB? 
+DEBUG: Update: crudGame.deleteInfo : Info found in DB.   Updating Info
+**ERROR**: Ending: crudGame.deleteInfo : Info insert failed : {"message":"unable to update"}

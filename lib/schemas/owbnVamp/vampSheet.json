@@ -75,7 +75,7 @@
             16,
             15,
             14
-          ]
+          ],
         "examples": [
           13
         ]
@@ -120,7 +120,7 @@
         "examples": [
           "Caretaker"
         ]
-      },
+      }
     },
     "required": [
       "name",
@@ -132,7 +132,7 @@
       "sect",
       "sire",
       "nature",
-      "demeanor",
+      "demeanor"
     ],
     "additionalProperties": false
   }
