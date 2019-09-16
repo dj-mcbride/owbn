@@ -1,0 +1,530 @@
+{
+    "$id": "root",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "default": "Character Name",
+        "examples": [
+          "Brian Buckley"
+        ]
+      },
+      "player": {
+        "type": "string",
+        "default": "Player Name",
+        "examples": [
+          "David"
+        ]
+      },
+      "homeGame": {
+        "type": "string",
+        "default": "Game Name",
+        "examples": [
+          "New York by Night"
+        ]
+      },
+      "clan": {
+        "type": "string",
+        "enum": [
+            "Assamite",
+            "Baali",
+            "Brujah",
+            "Cappadocian",
+            "Caitiff",
+            "Followers of Set",
+            "Gangrel",
+            "Giovanni",
+            "Lasombra",
+            "Malkavian",
+            "Nosferatu",
+            "Ravnos",
+            "Salubri",
+            "Toreador",
+            "Tremere",
+            "Tzimisce",
+            "Ventrue"
+                ],
+        "examples": [
+          "Gangrel"
+        ]
+      },
+      "bloodline": {
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Einherjar"
+        ]
+      },
+      "generation": {
+        "type": "integer",
+        "enum": [
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            16,
+            15,
+            14
+          ]
+        "examples": [
+          13
+        ]
+      },
+      "sect": {
+        "type": "string",
+        "enum": [
+            "Camarilla",
+            "Sabbat",
+            "Anarch",
+            "Independent",
+            "Autarkis",
+            "Ashirra",
+            "Independent Alliance",
+            "Inconnu",
+            "Infernalists",
+            "Jacostians",
+            "Laibon",
+            "Order of Moloch",
+            "The Lost Tribe",
+            "Tal'Mahe'Ra"
+        ],
+        "examples": [
+          "Anarch"
+        ]
+      },
+      "sire": {
+        "type": "string",
+        "default": "Unknown",
+        "examples": [
+          "Ramona"
+        ]
+      },
+      "birthdate": {
+        "type": "string",
+        "examples": [
+          "06/15/1989"
+        ]
+      },
+      "embrace": {
+        "type": "string",
+        "examples": [
+          "05/07/2015"
+        ]
+      },
+      "cityPosition": {
+        "type": "string",
+        "examples": [
+          "Baron"
+        ]
+      },
+      "sectPosition": {
+        "type": "string",
+        "examples": [
+          "Archon"
+        ]
+      },
+      "faction": {
+        "type": "string",
+        "examples": [
+          "Status Quo"
+        ]
+      },
+      "factionPosition": {
+        "type": "string",
+        "examples": [
+          "Dean Relic Hunter"
+        ]
+      },
+      "nature": {
+        "type": "string",
+        "examples": [
+          "Survivor"
+        ]
+      },
+      "demeanor": {
+        "type": "string",
+        "examples": [
+          "Caretaker"
+        ]
+      },
+      "xpEarned": {
+        "type": "string",
+        "default": "0",
+        "examples": [
+          "0"
+        ]
+      },
+      "xpSpent": {
+        "type": "string",
+        "default": "0",
+        "examples": [
+          "0"
+        ]
+      },
+      "xpUnspent": {
+        "type": "string",
+        "default": "0",
+        "examples": [
+          "0"
+        ]
+      },
+      "traits": {
+        "type": "object",
+        "properties": {
+          "physicalTraits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "examples": [
+                "Athletic"
+              ]
+            }
+          },
+          "socialTraits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "examples": [
+                "Commanding"
+              ]
+            }
+          },
+          "mentalTraits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "examples": [
+                "Alert"
+              ]
+            }
+          }
+        },
+        "required": [
+          "physicalTraits",
+          "socialTraits",
+          "mentalTraits"
+        ],
+        "additionalProperties": false
+      },
+      "negTraits": {
+        "type": "object",
+        "properties": {
+          "negPhysicalTraits": {
+            "type": "array",
+            "enum": []
+          },
+          "negSocialTraits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "default": "Beastial",
+              "examples": [
+                "Beastial"
+              ]
+            }
+          },
+          "negMentalTraits": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "negPhysicalTraits",
+          "negSocialTraits",
+          "negMentalTraits"
+        ],
+        "additionalProperties": false
+      },
+      "abilities": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "default": "Academics",
+              "examples": [
+                "Academics"
+              ]
+            },
+            "rank": {
+              "type": "integer",
+              "default": 4,
+              "examples": [
+                4
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "rank"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "disciplines": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "combodisciplines": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "default": "Body Armory",
+          "examples": [
+            "Body Armory"
+          ]
+        }
+      },
+      "customdisciplines": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "backgrounds": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "influences": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "merits": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Huge Size"
+          ]
+        }
+      },
+      "customMerits": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Reptile Buddy"
+          ]
+        }
+      },
+      "flaws": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Permanent Fangs"
+          ]
+        }
+      },
+      "camarillaStatus": {
+        "type": "array"
+      },
+      "sabbatStatus": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "default": "",
+          "examples": [
+            "Initiated"
+          ]
+        }
+      },
+      "moralityPath": {
+        "type": "string",
+        "default": "Humanity",
+        "examples": [
+          "Feral Heart"
+        ]
+      },
+      "virtues": {
+        "type": "object",
+        "properties": {
+          "conscienceConviction": {
+            "type": "integer",
+            "enum": [1,2,3,4,5],
+            "examples": [
+              5
+            ]
+          },
+          "selfControlInstinct": {
+            "type": "integer",
+            "enum": [1,2,3,4,5],
+            "examples": [
+              5
+            ]
+          },
+          "courage": {
+            "type": "integer",
+            "enum": [1,2,3,4,5],
+            "examples": [
+              5
+            ]
+          },
+          "morality": {
+            "type": "integer",
+            "enum": [1,2,3,4,5],
+            "examples": [
+              2
+            ]
+          }
+        },
+        "required": [
+          "conscienceConviction",
+          "selfControlInstinct",
+          "courage",
+          "morality"
+        ],
+        "additionalProperties": false
+      },
+      "blood": {
+        "type": "integer",
+        "enum": [6,8,10,11,12,13,14,15,20,30,40,50,100,200],
+        "examples": [
+          14
+        ]
+      },
+      "willpower": {
+        "type": "integer",
+        "default": 2,
+        "examples": [
+          4
+        ]
+      },
+      "health": {
+        "type": "object",
+        "properties": {
+          "Healthy": {
+            "type": "integer",
+            "default": 2,
+            "examples": [
+              2
+            ]
+          },
+          "Bruised": {
+            "type": "integer",
+            "default": 3,
+            "examples": [
+              3
+            ]
+          },
+          "Wounded": {
+            "type": "integer",
+            "default": 2,
+            "examples": [
+              2
+            ]
+          },
+          "Incapacitated": {
+            "type": "integer",
+            "default": 1,
+            "examples": [
+              1
+            ]
+          },
+          "Torpor": {
+            "type": "integer",
+            "default": 1,
+            "examples": [
+              1
+            ]
+          }
+        },
+        "required": [
+          "Healthy",
+          "Bruised",
+          "Wounded",
+          "Incapacitated",
+          "Torpor"
+        ],
+        "additionalProperties": false
+      },
+      "itemCards": {
+        "type": "array",
+        "additionalProperties": false
+        }
+      },
+      "sabbatRitae": {
+        "type": "object",
+        "properties": {
+          "auctoritas": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "default": "Vaulderie",
+              "examples": [
+                "Vaulderie"
+              ]
+            }
+          },
+          "ignobilis": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "default": "Welcoming",
+              "examples": [
+                "Welcoming"
+              ]
+            }
+          }
+        },
+        "required": [
+          "auctoritas",
+          "ignobilis"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required": [
+      "name",
+      "player",
+      "homeGame",
+      "clan",
+      "bloodline",
+      "generation",
+      "sect",
+      "sire",
+      "birthdate",
+      "embrace",
+      "cityPosition",
+      "sectPosition",
+      "faction",
+      "factionPosition",
+      "nature",
+      "demeanor",
+      "xpEarned",
+      "xpSpent",
+      "xpUnspent",
+      "traits",
+      "negTraits",
+      "abilities",
+      "disciplines",
+      "combodisciplines",
+      "customdisciplines",
+      "backgrounds",
+      "influences",
+      "merits",
+      "customMerits",
+      "flaws",
+      "camarillaStatus",
+      "sabbatStatus",
+      "moralityPath",
+      "virtues",
+      "blood",
+      "willpower",
+      "health",
+      "itemCards",
+      "sabbatRitae"
+    ],
+    "additionalProperties": false
+  }

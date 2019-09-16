@@ -1,0 +1,138 @@
+{
+    "$id": "root",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "default": "Character Name",
+        "examples": [
+          "Brian Buckley"
+        ]
+      },
+      "player": {
+        "type": "string",
+        "default": "Player Name",
+        "examples": [
+          "David"
+        ]
+      },
+      "homeGame": {
+        "type": "string",
+        "default": "Game Name",
+        "examples": [
+          "New York by Night"
+        ]
+      },
+      "clan": {
+        "type": "string",
+        "enum": [
+            "Assamite",
+            "Baali",
+            "Brujah",
+            "Cappadocian",
+            "Caitiff",
+            "Followers of Set",
+            "Gangrel",
+            "Giovanni",
+            "Lasombra",
+            "Malkavian",
+            "Nosferatu",
+            "Ravnos",
+            "Salubri",
+            "Toreador",
+            "Tremere",
+            "Tzimisce",
+            "Ventrue"
+                ],
+        "examples": [
+          "Gangrel"
+        ]
+      },
+      "bloodline": {
+        "type": "string",
+        "default": "",
+        "examples": [
+          "Einherjar"
+        ]
+      },
+      "generation": {
+        "type": "integer",
+        "enum": [
+            13,
+            12,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1,
+            16,
+            15,
+            14
+          ]
+        "examples": [
+          13
+        ]
+      },
+      "sect": {
+        "type": "string",
+        "enum": [
+            "Camarilla",
+            "Sabbat",
+            "Anarch",
+            "Independent",
+            "Autarkis",
+            "Ashirra",
+            "Independent Alliance",
+            "Inconnu",
+            "Infernalists",
+            "Jacostians",
+            "Laibon",
+            "Order of Moloch",
+            "The Lost Tribe",
+            "Tal'Mahe'Ra"
+        ],
+        "examples": [
+          "Anarch"
+        ]
+      },
+      "sire": {
+        "type": "string",
+        "default": "Unknown",
+        "examples": [
+          "Ramona"
+        ]
+      },
+      "nature": {
+        "type": "string",
+        "examples": [
+          "Survivor"
+        ]
+      },
+      "demeanor": {
+        "type": "string",
+        "examples": [
+          "Caretaker"
+        ]
+      },
+    },
+    "required": [
+      "name",
+      "player",
+      "homeGame",
+      "clan",
+      "bloodline",
+      "generation",
+      "sect",
+      "sire",
+      "nature",
+      "demeanor",
+    ],
+    "additionalProperties": false
+  }
