@@ -157,7 +157,7 @@
           "socialTraits",
           "mentalTraits"
         ],
-        "additionalProperties": false
+        "additionalProperties": true
       }
     },
     "abilities": {
@@ -184,12 +184,12 @@
           "name",
           "rank"
         ],
-        "additionalProperties": false
+        "additionalProperties": true
       }
     },
     "disciplines": {
       "type": "object",
-      "additionalProperties": false
+      "additionalProperties": true
     },
     "moralityPath": {
       "type": "string",
