@@ -120,6 +120,44 @@
         "examples": [
           "Caretaker"
         ]
+      },
+      "traits": {
+        "type": "object",
+        "properties": {
+          "physicalTraits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "examples": [
+                "Athletic"
+              ]
+            }
+          },
+          "socialTraits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "examples": [
+                "Commanding"
+              ]
+            }
+          },
+          "mentalTraits": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "examples": [
+                "Alert"
+              ]
+            }
+          }
+        },
+        "required": [
+          "physicalTraits",
+          "socialTraits",
+          "mentalTraits"
+        ],
+        "additionalProperties": false
       }
     },
     "required": [
