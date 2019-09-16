@@ -157,86 +157,86 @@
           "socialTraits",
           "mentalTraits"
         ],
-        "additionalProperties": true
-      }
-    },
-    "abilities": {
-      "type": "array",
-      "items": {
+        "additionalProperties": false
+      },
+      "abilities": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "default": "Academics",
+              "examples": [
+                "Academics"
+              ]
+            },
+            "rank": {
+              "type": "integer",
+              "default": 4,
+              "examples": [
+                4
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "rank"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "disciplines": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "moralityPath": {
+        "type": "string",
+        "default": "Humanity",
+        "examples": [
+          "Feral Heart"
+        ]
+      },
+      "virtues": {
         "type": "object",
         "properties": {
-          "name": {
-            "type": "string",
-            "default": "Academics",
+          "conscienceConviction": {
+            "type": "integer",
+            "enum": [1,2,3,4,5],
             "examples": [
-              "Academics"
+              5
             ]
           },
-          "rank": {
+          "selfControlInstinct": {
             "type": "integer",
-            "default": 4,
+            "enum": [1,2,3,4,5],
             "examples": [
-              4
+              5
+            ]
+          },
+          "courage": {
+            "type": "integer",
+            "enum": [1,2,3,4,5],
+            "examples": [
+              5
+            ]
+          },
+          "morality": {
+            "type": "integer",
+            "enum": [1,2,3,4,5],
+            "examples": [
+              2
             ]
           }
         },
         "required": [
-          "name",
-          "rank"
+          "conscienceConviction",
+          "selfControlInstinct",
+          "courage",
+          "morality"
         ],
         "additionalProperties": true
       }
-    },
-    "disciplines": {
-      "type": "object",
-      "additionalProperties": true
-    },
-    "moralityPath": {
-      "type": "string",
-      "default": "Humanity",
-      "examples": [
-        "Feral Heart"
-      ]
-    },
-    "virtues": {
-      "type": "object",
-      "properties": {
-        "conscienceConviction": {
-          "type": "integer",
-          "enum": [1,2,3,4,5],
-          "examples": [
-            5
-          ]
-        },
-        "selfControlInstinct": {
-          "type": "integer",
-          "enum": [1,2,3,4,5],
-          "examples": [
-            5
-          ]
-        },
-        "courage": {
-          "type": "integer",
-          "enum": [1,2,3,4,5],
-          "examples": [
-            5
-          ]
-        },
-        "morality": {
-          "type": "integer",
-          "enum": [1,2,3,4,5],
-          "examples": [
-            2
-          ]
-        }
-      },
-      "required": [
-        "conscienceConviction",
-        "selfControlInstinct",
-        "courage",
-        "morality"
-      ],
-      "additionalProperties": false
     },
     "required": [
       "name",
