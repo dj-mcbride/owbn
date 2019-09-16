@@ -187,6 +187,61 @@
         "additionalProperties": false
       }
     },
+    "disciplines": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "backgrounds": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "moralityPath": {
+      "type": "string",
+      "default": "Humanity",
+      "examples": [
+        "Feral Heart"
+      ]
+    },
+    "virtues": {
+      "type": "object",
+      "properties": {
+        "conscienceConviction": {
+          "type": "integer",
+          "enum": [1,2,3,4,5],
+          "examples": [
+            5
+          ]
+        },
+        "selfControlInstinct": {
+          "type": "integer",
+          "enum": [1,2,3,4,5],
+          "examples": [
+            5
+          ]
+        },
+        "courage": {
+          "type": "integer",
+          "enum": [1,2,3,4,5],
+          "examples": [
+            5
+          ]
+        },
+        "morality": {
+          "type": "integer",
+          "enum": [1,2,3,4,5],
+          "examples": [
+            2
+          ]
+        }
+      },
+      "required": [
+        "conscienceConviction",
+        "selfControlInstinct",
+        "courage",
+        "morality"
+      ],
+      "additionalProperties": false
+    },
     "required": [
       "name",
       "player",
@@ -199,7 +254,11 @@
       "nature",
       "demeanor",
       "traits",
-      "abilities"
+      "abilities",
+      "disciplines",
+      "backgrounds",
+      "moralityPath",
+      "virtues"
     ],
     "additionalProperties": true
   }
