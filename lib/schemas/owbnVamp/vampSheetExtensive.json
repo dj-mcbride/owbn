@@ -452,7 +452,6 @@
       "itemCards": {
         "type": "array",
         "additionalProperties": false
-        }
       },
       "sabbatRitae": {
         "type": "object",
