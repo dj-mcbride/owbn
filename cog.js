@@ -334,7 +334,7 @@ class owbn {
         return callback(returnValue);
     }
 
-        /**
+    /**
      * @description Display an existing game.  The game name needs to be passed in the request object
      * @pronghornType method
      * @name characterShow
@@ -343,7 +343,7 @@ class owbn {
      * @param {function} callback Callback function
      * @returns {object} Response object
      *
-     * @route {GET} /owbn/viewGames
+     * @route {GET} /owbn/viewGame
      * @roles admin player gm owbn
      * @task true
      *
@@ -364,7 +364,7 @@ class owbn {
     }
 
     /**
-     * @description Display an existing game.  The game name needs to be passed in the request object
+     * @description Display an existing element of a game.  The game name needs to be passed in the request object
      * @pronghornType method
      * @name viewGameSelection
      * @summary Display an existing game
@@ -373,7 +373,7 @@ class owbn {
      * @param {function} callback Callback function
      * @returns {object} Response object
      *
-     * @route {GET} /owbn/viewGames
+     * @route {GET} /owbn/viewGameSelection
      * @roles admin player gm owbn
      * @task true
      *

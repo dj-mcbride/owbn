@@ -265,6 +265,55 @@
 				"admin", "gm", "owbn"
 			],
 			"task": true
+		},
+		{
+			"name": "gameShow",
+			"summary": "Show Character",
+			"description": "Display an existing game.  The game name needs to be passed in the request object",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudGame",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "viewGameSelection",
+			"summary": "Show Selection",
+			"description": "Display an existing element of a game.  The game name needs to be passed in the request object",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				},
+				{"name": "project",
+				"type" : "string"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewGameSelection",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
 		}
 	],
 	"views": [        
