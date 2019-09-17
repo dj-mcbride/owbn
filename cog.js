@@ -366,7 +366,7 @@ class owbn {
     /**
      * @description Display an existing game.  The game name needs to be passed in the request object
      * @pronghornType method
-     * @name viewSelection
+     * @name viewGameSelection
      * @summary Display an existing game
      * @param {object} requestObject Game object to be shown
      * @param {string} project Selection to be shown
@@ -378,18 +378,18 @@ class owbn {
      * @task true
      *
      */
-    async viewSelection(requestObject, project, callback) {
-        log.debug('Cog : Calling: viewGames.viewSelection');
+    async viewGameSelection(requestObject, project, callback) {
+        log.debug('Cog : Calling: viewGames.viewGameSelection');
         let returnValue;
         try {
-            returnValue = await viewGames.viewSelection(requestObject, project);
+            returnValue = await viewGames.viewGameSelection(requestObject, project);
         } catch (error) {
             error => new Response({
                     from: error
                 })
                 .errorOn([500], callback);
         }
-        log.debug(`Cog : Ending viewGames.viewSelection, return value is ${JSON.stringify(returnValue)}`);
+        log.debug(`Cog : Ending viewGames.viewGameSelection, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
     }
 
