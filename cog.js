@@ -4,7 +4,7 @@ const path = require('path');
 const crudCharacter = require(path.join(__dirname, './lib/rpc/character/crudCharacter'));
 const viewCharacter = require(path.join(__dirname, './lib/rpc/character/viewCharacter'));
 const crudGames = require(path.join(__dirname, './lib/rpc/games/crudGames'));
-const viewGames = require(path.join(__dirname, './lib/rpc/character/viewGames'));
+const viewGames = require(path.join(__dirname, './lib/rpc/games/viewGames'));
 const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
 
 class owbn {
