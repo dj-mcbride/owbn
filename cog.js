@@ -4,6 +4,7 @@ const path = require('path');
 const crudCharacter = require(path.join(__dirname, './lib/rpc/character/crudCharacter'));
 const viewCharacter = require(path.join(__dirname, './lib/rpc/character/viewCharacter'));
 const crudGames = require(path.join(__dirname, './lib/rpc/games/crudGames'));
+const viewGames = require(path.join(__dirname, './lib/rpc/character/viewGames'));
 const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
 
 class owbn {
@@ -330,6 +331,65 @@ class owbn {
                 .errorOn([500], callback);
         }
         log.debug(`Cog : Ended deleteInfo call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+        /**
+     * @description Display an existing game.  The game name needs to be passed in the request object
+     * @pronghornType method
+     * @name characterShow
+     * @summary Display an existing game
+     * @param {object} requestObject Game object to be shown
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {GET} /owbn/viewGames
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async characterShow(requestObject, callback) {
+        log.debug('Cog : Calling: viewGames.viewInfo');
+        let returnValue;
+        try {
+            returnValue = await viewGames.viewInfo(requestObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending viewGames.viewInfo, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Display an existing game.  The game name needs to be passed in the request object
+     * @pronghornType method
+     * @name viewSelection
+     * @summary Display an existing game
+     * @param {object} requestObject Game object to be shown
+     * @param {string} project Selection to be shown
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {GET} /owbn/viewGames
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async viewSelection(requestObject, project, callback) {
+        log.debug('Cog : Calling: viewGames.viewSelection');
+        let returnValue;
+        try {
+            returnValue = await viewGames.viewSelection(requestObject, project);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending viewGames.viewSelection, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
     }
 
