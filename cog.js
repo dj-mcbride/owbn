@@ -348,7 +348,7 @@ class owbn {
      * @task true
      *
      */
-    async characterShow(requestObject, callback) {
+    async gameShow(requestObject, callback) {
         log.debug('Cog : Calling: viewGames.viewInfo');
         let returnValue;
         try {
