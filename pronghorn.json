@@ -330,7 +330,7 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/crudItem",
+				"path": "/crudItems",
 				"verb": "POST"
 			},
 			"roles": [
@@ -353,7 +353,7 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/crudItem",
+				"path": "/crudItems",
 				"verb": "PUT"
 			},
 			"roles": [
@@ -376,7 +376,7 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/crudItem",
+				"path": "/crudItems",
 				"verb": "DELETE"
 			},
 			"roles": [
@@ -399,7 +399,7 @@
 				"description": "data"
 			},
 			"route": {
-				"path": "/crudItem",
+				"path": "/crudItems",
 				"verb": "GET"
 			},
 			"roles": [
