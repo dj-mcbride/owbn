@@ -314,6 +314,124 @@
 				"admin", "player", "gm", "owbn"
 			],
 			"task": true
+		},
+		{
+			"name": "createProperties",
+			"summary": "Create a new item",
+			"description": "Create a new item.  This will import what is passed and insert it into mongo.",
+			"input": [{
+					"name": "newItem",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudItem",
+				"verb": "POST"
+			},
+			"roles": [
+				"admin", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "updateProperties",
+			"summary": "Update an existing item",
+			"description": "Update an existing item",
+			"input": [{
+					"name": "updateObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudItem",
+				"verb": "PUT"
+			},
+			"roles": [
+				"admin", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "deleteProperties",
+			"summary": "Delete an existing Item.",
+			"description": "Delete an existing Item.",
+			"input": [{
+					"name": "deleteObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudItem",
+				"verb": "DELETE"
+			},
+			"roles": [
+				"admin", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "itemShow",
+			"summary": "Show Character",
+			"description": "Display an existing item.  The item name needs to be passed in the request object",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/crudItem",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "viewItemSelection",
+			"summary": "Show Selection",
+			"description": "Display an existing element of a item.  The item name needs to be passed in the request object",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				},
+				{"name": "project",
+				"type" : "string"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewItemSelection",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
 		}
 	],
 	"views": [        

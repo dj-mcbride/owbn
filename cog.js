@@ -393,6 +393,153 @@ class owbn {
         return callback(returnValue);
     }
 
+
+    /**
+     * @description Create a new item.  This will import what is passed and insert it into mongo.
+     * @pronghornType method
+     * @name createProperties
+     * @summary Create a new item
+     * @param {object} newItem Item properties to be created.
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {POST} /owbn/crudItem
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async createProperties(newItem, callback) {
+        log.debug('Cog : Calling: crudCharacter.createProperties');
+        let returnValue;
+        try {
+            returnValue = await crudItems.createProperties(newItem);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended createProperties call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Update an existing item
+     * @pronghornType method
+     * @name updateProperties
+     * @summary Update an existing item.
+     * @param {object} updateObject Item object to be updated
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     * 
+     * @route {PUT} /owbn/crudItem
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async updateProperties(updateObject, callback) {
+        log.debug('Cog : Calling: crudCharacter.updateProperties');
+        let returnValue;
+        try {
+            returnValue = await crudItems.updateProperties(updateObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended updateProperties call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Delete an existing Item.
+     * @pronghornType method
+     * @name deleteProperties
+     * @summary Delete an existing item.
+     * @param {object} deleteObject Character object to be deleted
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     * 
+     * @route {DELETE} /owbn/crudItem
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async deleteProperties(deleteObject, callback) {
+        log.debug('Cog : Calling: crudCharacter.deleteProperties');
+        let returnValue;
+        try {
+            returnValue = await crudItems.deleteProperties(deleteObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended deleteProperties call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Display an existing item.  The item name needs to be passed in the request object
+     * @pronghornType method
+     * @name characterShow
+     * @summary Display an existing item
+     * @param {object} requestObject Item object to be shown
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {GET} /owbn/viewItem
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async itemShow(requestObject, callback) {
+        log.debug('Cog : Calling: viewItems.viewProperties');
+        let returnValue;
+        try {
+            returnValue = await viewItems.viewProperties(requestObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending viewItems.viewProperties, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Display an existing element of a item.  The item name needs to be passed in the request object
+     * @pronghornType method
+     * @name viewItemSelection
+     * @summary Display an existing item
+     * @param {object} requestObject Item object to be shown
+     * @param {string} project Selection to be shown
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {GET} /owbn/viewItemSelection
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async viewItemSelection(requestObject, project, callback) {
+        log.debug('Cog : Calling: viewItems.viewItemSelection');
+        let returnValue;
+        try {
+            returnValue = await viewItems.viewItemSelection(requestObject, project);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending viewItems.viewItemSelection, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
 }
 
 module.exports = new owbn();
