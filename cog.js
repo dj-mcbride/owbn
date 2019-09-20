@@ -403,7 +403,7 @@ class owbn {
      * @param {function} callback Callback function
      * @returns {object} Response object
      *
-     * @route {POST} /owbn/crudItem
+     * @route {POST} /owbn/crudItems
      * @roles admin gm owbn
      * @task true
      *
@@ -432,7 +432,7 @@ class owbn {
      * @param {function} callback Callback function
      * @returns {object} Response object
      * 
-     * @route {PUT} /owbn/crudItem
+     * @route {PUT} /owbn/crudItems
      * @roles admin gm owbn
      * @task true
      *
@@ -461,7 +461,7 @@ class owbn {
      * @param {function} callback Callback function
      * @returns {object} Response object
      * 
-     * @route {DELETE} /owbn/crudItem
+     * @route {DELETE} /owbn/crudItems
      * @roles admin gm owbn
      * @task true
      *
@@ -490,7 +490,7 @@ class owbn {
      * @param {function} callback Callback function
      * @returns {object} Response object
      *
-     * @route {GET} /owbn/viewItem
+     * @route {GET} /owbn/viewItems
      * @roles admin player gm owbn
      * @task true
      *
