@@ -262,7 +262,7 @@ class owbn {
      *
      */
     async createInfo(newGame, callback) {
-        log.debug('Cog : Calling: crudCharacter.createInfo');
+        log.debug('Cog : Calling: crudGames.createInfo');
         let returnValue;
         try {
             returnValue = await crudGames.createInfo(newGame);
@@ -291,7 +291,7 @@ class owbn {
      *
      */
     async updateInfo(updateObject, callback) {
-        log.debug('Cog : Calling: crudCharacter.updateInfo');
+        log.debug('Cog : Calling: crudGames.updateInfo');
         let returnValue;
         try {
             returnValue = await crudGames.updateInfo(updateObject);
@@ -320,7 +320,7 @@ class owbn {
      *
      */
     async deleteInfo(deleteObject, callback) {
-        log.debug('Cog : Calling: crudCharacter.deleteInfo');
+        log.debug('Cog : Calling: crudGames.deleteInfo');
         let returnValue;
         try {
             returnValue = await crudGames.deleteInfo(deleteObject);
@@ -409,10 +409,12 @@ class owbn {
      *
      */
     async createProperties(newItem, callback) {
-        log.debug('Cog : Calling: crudCharacter.createProperties');
+        log.debug('Cog : Calling: crudItems.createProperties');
         let returnValue;
         try {
+            log.debug('Cog : ALERT: crudItems.createProperties');
             returnValue = await crudItems.createProperties(newItem);
+            log.debug(`Cog : END ALERT: crudItems.createProperties ${JSON.stringify(returnValue)}`);
         } catch (error) {
             error => new Response({
                     from: error
@@ -438,7 +440,7 @@ class owbn {
      *
      */
     async updateProperties(updateObject, callback) {
-        log.debug('Cog : Calling: crudCharacter.updateProperties');
+        log.debug('Cog : Calling: crudItems.updateProperties');
         let returnValue;
         try {
             returnValue = await crudItems.updateProperties(updateObject);
@@ -457,7 +459,7 @@ class owbn {
      * @pronghornType method
      * @name deleteProperties
      * @summary Delete an existing item.
-     * @param {object} deleteObject Character object to be deleted
+     * @param {object} deleteObject Items object to be deleted
      * @param {function} callback Callback function
      * @returns {object} Response object
      * 
@@ -467,7 +469,7 @@ class owbn {
      *
      */
     async deleteProperties(deleteObject, callback) {
-        log.debug('Cog : Calling: crudCharacter.deleteProperties');
+        log.debug('Cog : Calling: crudItems.deleteProperties');
         let returnValue;
         try {
             returnValue = await crudItems.deleteProperties(deleteObject);
