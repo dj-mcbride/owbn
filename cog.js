@@ -8,7 +8,8 @@ const viewGames = require(path.join(__dirname, './lib/rpc/games/viewGames'));
 const crudItems = require(path.join(__dirname, './lib/rpc/items/crudItems'));
 const viewItems = require(path.join(__dirname, './lib/rpc/items/viewItems'));
 const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
-
+const crudPlayers = require(path.join(__dirname, './lib/rpc/player/crudGames'));
+const viewPlayers = require(path.join(__dirname, './lib/rpc/player/viewGames'));
 
 class owbn {
 
@@ -542,6 +543,156 @@ class owbn {
                 .errorOn([500], callback);
         }
         log.debug(`Cog : Ending viewItems.viewItemSelection, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+
+    /**
+     * @description Create a new player.  This will import what is passed and insert it into mongo.
+     * @pronghornType method
+     * @name createPlayer
+     * @summary Create a new item
+     * @param {object} newPlayer Item properties to be created.
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {POST} /owbn/viewPlayers
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async createPlayer(newPlayer, callback) {
+        log.debug('Cog : Calling: crudPlayers.createPlayer');
+        let returnValue;
+        try {
+            log.debug('Cog : ALERT: crudPlayers.createPlayer');
+            returnValue = await crudPlayers.createPlayer(newPlayer);
+            log.debug(`Cog : END ALERT: crudPlayers.createPlayer ${JSON.stringify(returnValue)}`);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended createPlayer call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Update an existing item
+     * @pronghornType method
+     * @name updatePlayer
+     * @summary Update an existing item.
+     * @param {object} updateObject Item object to be updated
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     * 
+     * @route {PUT} /owbn/viewPlayers
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async updatePlayer(updateObject, callback) {
+        log.debug('Cog : Calling: crudPlayers.updatePlayer');
+        let returnValue;
+        try {
+            returnValue = await crudPlayers.updatePlayer(updateObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended crudPlayers.updatePlayer call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Delete an existing Player.
+     * @pronghornType method
+     * @name deletePlayer
+     * @summary Delete an existing item.
+     * @param {object} deleteObject Items object to be deleted
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     * 
+     * @route {DELETE} /owbn/viewPlayers
+     * @roles admin gm owbn
+     * @task true
+     *
+     */
+    async deletePlayer(deleteObject, callback) {
+        log.debug('Cog : Calling: crudPlayers.deletePlayer');
+        let returnValue;
+        try {
+            returnValue = await crudPlayers.deletePlayer(deleteObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended crudPlayers.deletePlayer call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+
+    /**
+     * @description Display an existing player.  The player name needs to be passed in the request object
+     * @pronghornType method
+     * @name playerShow
+     * @summary Display an existing player
+     * @param {object} requestObject Player object to be shown
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {GET} /owbn/viewPlayers
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async playerShow(requestObject, callback) {
+        log.debug('Cog : Calling: playerShow.viewProperties');
+        let returnValue;
+        try {
+            returnValue = await viewItems.viewProperties(requestObject);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending playerShow.viewProperties, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnValue);
+    }
+
+    /**
+     * @description Display an existing element of a item.  The item name needs to be passed in the request object
+     * @pronghornType method
+     * @name viewPlayerSelection
+     * @summary Display an existing item
+     * @param {object} requestObject Item object to be shown
+     * @param {string} project Selection to be shown
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {GET} /owbn/viewPlayersSelection
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async viewPlayerSelection(requestObject, project, callback) {
+        log.debug('Cog : Calling: viewPlayerSelection.viewPlayerSelection');
+        let returnValue;
+        try {
+            returnValue = await viewPlayers.viewPlayerSelection(requestObject, project);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ending viewPlayerSelection.viewPlayerSelection, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
     }
 

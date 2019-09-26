@@ -2,18 +2,18 @@ DEBUG: Starting: crudItems.createProperties. properties object
 TRACE: Starting: crudItems.createProperties. properties object : {"name":"Babe Ruth's Baseball Cap","effects":"Cancel one retest per session","weapon":[{"weapon":"false","bonusTraits":0,"negTraits":[],"damage":0,"damageType":""}],"approvedBy":["Boston","Bridgeport","Bridgewater","New Haven","New York","Fredrick","Gangrel Event"],"oneUse":"false"} 
 DEBUG: Update: crudItems.createProperties. Is properties currently in DB? 
 DEBUG: Update: crudItems.createProperties : Properties not found in DB.   Adding Properties
-DEBUG: Ending: crudItems.createProperties. validationResponse : {"step":"Create Properties","responseCode":200,"results":"createProperties","userMessage":"","user":"FAKE-USER","timestamp":1569527962556,"message":"Item created!"} 
+DEBUG: Ending: crudItems.createProperties. validationResponse : {"step":"Create Properties","responseCode":200,"results":"createProperties","userMessage":"","user":"FAKE-USER","timestamp":1569527998615,"message":"Item created!"} 
 DEBUG: Starting: crudItems.createProperties. properties object 
 TRACE: Starting: crudItems.createProperties. properties object : {"name":"Babe Ruth's Baseball Cap","effects":"Cancel one retest per session","weapon":[{"weapon":"false","bonusTraits":0,"negTraits":[],"damage":0,"damageType":""}],"approvedBy":["Boston","Bridgeport","Bridgewater","New Haven","New York","Fredrick","Gangrel Event"],"oneUse":"false"} 
 DEBUG: Update: crudItems.createProperties. Is properties currently in DB? 
 DEBUG: Update: crudItems.createProperties : Properties not found in DB.   Adding Properties
 **ERROR**: Update: crudItems.createProperties : Item insert failed. : [object Object]
-DEBUG: Ending: crudItems.createProperties. validationResponse : {"step":"Create Properties","responseCode":457,"results":"createProperties","userMessage":"","user":"FAKE-USER","timestamp":1569527962557,"message":"Item insert failed."} 
+DEBUG: Ending: crudItems.createProperties. validationResponse : {"step":"Create Properties","responseCode":457,"results":"createProperties","userMessage":"","user":"FAKE-USER","timestamp":1569527998616,"message":"Item insert failed."} 
 DEBUG: Starting: crudItems.createProperties. properties object 
 TRACE: Starting: crudItems.createProperties. properties object : {"name":"Babe Ruth's Baseball Cap","effects":"Cancel one retest per session","weapon":[{"weapon":"false","bonusTraits":0,"negTraits":[],"damage":0,"damageType":""}],"approvedBy":["Boston","Bridgeport","Bridgewater","New Haven","New York","Fredrick","Gangrel Event"],"oneUse":"false"} 
 DEBUG: Update: crudItems.createProperties. Is properties currently in DB? 
 DEBUG: Update: crudItems.createProperties : duplicate properties, throwing error 
-DEBUG: Ending: crudItems.createProperties. validationResponse : {"step":"Create Properties","responseCode":455,"results":"createProperties","userMessage":"","user":"FAKE-USER","timestamp":1569527962558,"message":"Duplicate item found!"} 
+DEBUG: Ending: crudItems.createProperties. validationResponse : {"step":"Create Properties","responseCode":455,"results":"createProperties","userMessage":"","user":"FAKE-USER","timestamp":1569527998617,"message":"Duplicate item found!"} 
 DEBUG: Starting: crudItems.createProperties. properties object 
 TRACE: Starting: crudItems.createProperties. properties object : {"position":"Keeper"} 
 DEBUG: Update: crudItem.createProperties. value of item name not found!
