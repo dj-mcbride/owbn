@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { background: #333333; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+
+header {background: #ffffff; 
+padding: 20px;}
+
+header h1 { color: red; 
+text-align: center;}
+
+.scoreboard {
+    margin: 20px auto; 
+    border: 3px white solid;
+    padding: 15px 20px;
+width: 200px;
+font-size: 48px;
+border-radius: 4px;
+text-align:center;
+position: relative;
+}
+
+.badge {background: red;
+color:white;
+font-size: 14px;
+padding: 2px 10px;}
+
+#userlabel {position: absolute;
+top: 30px;
+left: -25px;}
+
+#complabel {position: absolute;
+    top: 30px;
+right: -30px;}
+
+.result {
+    font-size: 40px;
+}
+
+.result > p { color: white; 
+    font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;}
+
+.variableRules {
+    width: 700px;
+    margin: 30px auto;}
+
+.check {display: inline-block;
+margin: 0 10px 0 0;}
+
+.check > label {margin: 0 10px 0 0;}
+
+.choices {margin: 50px 0 30px 0 ;
+    text-align: center;}
+
+#b {display:none;}
+
+.choice {
+    display:inline-block;
+    background: #666666;
+    width: 100px;
+    margin: 10px;
+    padding: 5px;
+border: 3px solid white;
+border-radius: 50%;
+}
+
+.choice:hover {background: #999999;
+cursor: grabbing;
+transition: all 0.3s ease;}
+
+.choice > img {width: 100%;}
+
+#action-message {text-align: center;
+font-size: 18px;}
