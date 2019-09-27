@@ -38,6 +38,10 @@ left: -25px;}
     top: 30px;
 right: -30px;}
 
+#tieslabel {position: absolute;
+    bottom: -8px;
+right: 75px;}
+
 .result {
     font-size: 40px;
 }
