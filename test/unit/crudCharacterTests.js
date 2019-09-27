@@ -63,13 +63,13 @@ describe('Character Sheet Tests', () => {
             homeGame: 'Dark Colony: Hartford',
             clan: 'Malkavian',
             generation: 8,
-            sect: 'camarilla',
+            bloodline: 'Main',
+            sect: 'Camarilla',
             sire: 'Unknown',
             age: '78',
             position: 'None',
             nature: 'Architect',
-            demeanor: 'Confidant',
-            
+            demeanor: 'Confidant',      
             traits: {
                 physicalTraits: [
                     'Graceful',
@@ -128,7 +128,11 @@ describe('Character Sheet Tests', () => {
                 ]
             },
             abilities : {
-                Stealth: { rank: 5 },
+                Stealth: { name: "Stealth", rank: 5 },
+                Area_Knowedge: {
+                    Cape_Cod:  { name: "Cape Cod", rank: 5, focus: "Cape Cod" },
+                    Boston: { name: "Boston", rank: 5, focus: "Boston", }
+                },
                 Awareness: { rank: 1 },
                 MalkTime: { rank: 5  },
                 Investigation: { rank: 5, specalization: 'auspex', extraXp : 1 },
@@ -201,7 +205,7 @@ describe('Character Sheet Tests', () => {
                 conscienceConviction: 3,
                 selfControlInstinct: 4,
                 courage: 3,
-                humanity: 3
+                morality: 3
             }
         };
     });
@@ -297,7 +301,7 @@ describe('Character Sheet Tests', () => {
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
                 expect(response.results).to.exist;
                 expect(response.results).to.include('createSheet');
-                expect(response.message).to.include('Value of player name not found!');
+                expect(response.message).to.include("Unable to process missing value : should have required property 'player'");
             } catch (error) {
                 console.log(`error : ${JSON.stringify(error)}`);
                 expect(error).to.not.exist;
@@ -321,7 +325,7 @@ describe('Character Sheet Tests', () => {
                 // console.log(`response : ${JSON.stringify(response, 2, null)}`);
                 expect(response.results).to.exist;
                 expect(response.results).to.include('createSheet');
-                expect(response.message).to.include('Value of character name not found!');
+                expect(response.message).to.include("Unable to process missing value : should have required property 'name'");
             } catch (error) {
                 console.log(`error : ${JSON.stringify(error)}`);
                 expect(error).to.not.exist;

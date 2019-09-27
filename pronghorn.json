@@ -432,6 +432,124 @@
 				"admin", "player", "gm", "owbn"
 			],
 			"task": true
+		},
+		{
+			"name": "createPlayer",
+			"summary": "Create a new player",
+			"description": "Create a new player.  This will import what is passed and insert it into mongo.",
+			"input": [{
+					"name": "newPlayer",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewPlayers",
+				"verb": "POST"
+			},
+			"roles": [
+				"admin", "gm", "owbn", "player"
+			],
+			"task": true
+		},
+		{
+			"name": "updatePlayer",
+			"summary": "Update an existing player",
+			"description": "Update an existing player",
+			"input": [{
+					"name": "updateObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewPlayers",
+				"verb": "PUT"
+			},
+			"roles": [
+				"admin", "gm", "owbn", "player"
+			],
+			"task": true
+		},
+		{
+			"name": "deletePlayer",
+			"summary": "Delete an existing Player.",
+			"description": "Delete an existing Player.",
+			"input": [{
+					"name": "deleteObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewPlayers",
+				"verb": "DELETE"
+			},
+			"roles": [
+				"admin", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "playerShow",
+			"summary": "Show the player info",
+			"description": "Display an existing player.  The item name needs to be passed in the request object",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewPlayers",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
+		},
+		{
+			"name": "viewPlayerSelection",
+			"summary": "Show Player Info",
+			"description": "Display an existing element of a player sheet.  The item name needs to be passed in the request object",
+			"input": [{
+					"name": "requestObject",
+					"type": "object"
+				},
+				{"name": "project",
+				"type" : "string"
+				}
+			],
+			"output": {
+				"name": "return_results",
+				"type": "object",
+				"description": "data"
+			},
+			"route": {
+				"path": "/viewPlayersSelection",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
 		}
 	],
 	"views": [        

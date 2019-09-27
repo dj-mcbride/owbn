@@ -1,0 +1,47 @@
+DEBUG: Starting: crudPlayer.createPlayer info object 
+TRACE: Starting: crudPlayer.createPlayer info object : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]} 
+DEBUG: Update: crudPlayer.createPlayer. Is info currently in DB? 
+DEBUG: Update: crudPlayer.createPlayer : Player not found in DB.   Adding Player
+DEBUG: Ending: crudPlayer.createPlayer. validationResponse : {"step":"Create Player","responseCode":200,"results":"createPlayer","userMessage":"","user":"FAKE-USER","timestamp":1569530553269,"message":"Player created!"} 
+DEBUG: Starting: crudPlayer.createPlayer info object 
+TRACE: Starting: crudPlayer.createPlayer info object : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]} 
+DEBUG: Update: crudPlayer.createPlayer. Is info currently in DB? 
+DEBUG: Update: crudPlayer.createPlayer : Player not found in DB.   Adding Player
+**ERROR**: Update: crudPlayer.createPlayer : Player insert failed. : [object Object]
+DEBUG: Ending: crudPlayer.createPlayer. validationResponse : {"step":"Create Player","responseCode":457,"results":"createPlayer","userMessage":"","user":"FAKE-USER","timestamp":1569530553270,"message":"Player insert failed."} 
+DEBUG: Starting: crudPlayer.createPlayer info object 
+TRACE: Starting: crudPlayer.createPlayer info object : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]} 
+DEBUG: Update: crudPlayer.createPlayer. Is info currently in DB? 
+DEBUG: Update: crudPlayer.createPlayer : duplicate info, throwing error 
+DEBUG: Ending: crudPlayer.createPlayer. validationResponse : {"step":"Create Player","responseCode":455,"results":"createPlayer","userMessage":"","user":"FAKE-USER","timestamp":1569530553271,"message":"Duplicate player found!"} 
+DEBUG: Starting: crudPlayer.createPlayer info object 
+TRACE: Starting: crudPlayer.createPlayer info object : {"position":"Keeper"} 
+DEBUG: Update: crudPlayer.createPlayer. value of player name not found!
+DEBUG: Starting: crudPlayer.updatePlayer. info object : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]} 
+DEBUG: Update: crudPlayer.updatePlayer. Is info currently in DB? 
+DEBUG: Update: crudPlayer.updatePlayer : Player found in DB.   Updating Player
+DEBUG: Update: crudPlayer.updatePlayer : playerCol : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]}
+DEBUG: Update: crudPlayer.updatePlayer : updateOneObject : [{"updateOne":{"filter":{},"update":{},"upsert":true}}]
+DEBUG: Running: DeviceSync.querySyncTimeStamp. bulkWriteResults {"ok":1,"writeErrors":[]}
+DEBUG: Starting: crudPlayer.updatePlayer. info object : {"name":"Vincent Ivey","position":"Keeper"} 
+DEBUG: Update: crudPlayer.updatePlayer. Is info currently in DB? 
+DEBUG: Ending: crudPlayer.updatePlayer : Player info not found!  Unable to update.
+DEBUG: Starting: crudPlayer.updatePlayer. info object : {"player":"DeeJay McBride","position":"Keeper"} 
+DEBUG: Update: crudPlayer.updatePlayer. value of player name not found!
+DEBUG: Starting: crudPlayer.updatePlayer. info object : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]} 
+DEBUG: Update: crudPlayer.updatePlayer. Is info currently in DB? 
+DEBUG: Update: crudPlayer.updatePlayer : Player found in DB.   Updating Player
+DEBUG: Update: crudPlayer.updatePlayer : playerCol : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]}
+DEBUG: Update: crudPlayer.updatePlayer : updateOneObject : [{"updateOne":{"filter":{},"update":{},"upsert":true}}]
+DEBUG: Starting: crudPlayer.deletePlayer. info object : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]} 
+DEBUG: Update: crudPlayer.deletePlayer. Is info currently in DB? 
+DEBUG: Update: crudPlayer.deletePlayer : Player found in DB.   Updating Player
+DEBUG: Starting: crudPlayer.deletePlayer. info object : {"name":"Vincent Ivey","position":"Keeper"} 
+DEBUG: Update: crudPlayer.deletePlayer. Is info currently in DB? 
+DEBUG: Ending: crudPlayer.deletePlayer : Player info not found!  Unable to delete.
+DEBUG: Starting: crudPlayer.deletePlayer. info object : {"player":"DeeJay McBride","position":"Keeper"} 
+DEBUG: Update: crudPlayer.deletePlayer. value of player name not found!
+DEBUG: Starting: crudPlayer.deletePlayer. info object : {"name":"James","firstname":"James","lastname":"Monty-Carbonari","street":"39 Hampshire Drive","address2":"","city":"Glastonbury","state":"CT","zip":"06033","timezone":"eastern","language":"english","characters":["Brian Buckley","James 'Croc' Blackwater"],"position":"player","email":"ryjak8@gmail.com","phone":"8609776869","discord":"ryjak8","playerpoints":"1","status":"active","birthdate":"1981/06/08","secretquestion":"kumquat","membership":"admin","notifications":[true,true,true,true]} 
+DEBUG: Update: crudPlayer.deletePlayer. Is info currently in DB? 
+DEBUG: Update: crudPlayer.deletePlayer : Player found in DB.   Updating Player
+**ERROR**: Ending: crudPlayer.deletePlayer : Player insert failed : {"message":"unable to update"}

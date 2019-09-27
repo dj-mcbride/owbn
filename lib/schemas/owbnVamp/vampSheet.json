@@ -160,7 +160,7 @@
         "additionalProperties": true
       },
       "abilities": {
-        "type": "array",
+        "type": "object",
         "items": {
           "type": "object",
           "properties": {
