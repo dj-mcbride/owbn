@@ -3,6 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors Bomb!</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/rpsb/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/rpsb/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/rpsb/favicon-16x16.png">
+        <link rel="manifest" href="/rpsb/site.webmanifest">
+        <link rel="mask-icon" href="/rpsb/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#ff0000">
+        <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="rpsb.css">
     </head>
     <body>
@@ -25,7 +32,16 @@
     <div class="check" id="ub"><label>User has the Bomb</label><input type="checkbox" name="userBomb" value="userBomb" id="userBomb" onclick="bombOnOff()"></div>
     <div class="check" id="ut"><label>User has Ties</label><input type="checkbox" name="userTies" value="userTies" id="userTies"></div>
     <div class="check" id="cb"><label>Comp has the Bomb</label><input type="checkbox" name="compBomb" value="compBomb" id="compBomb"></div>
-    <div class="check" id="ct"><label>Comp has Ties</label><input type="checkbox" name="compTies" value="compTies" id="compTies"></div>
+    <div class="check" id="ct"><label>Comp has Ties</label><input type="checkbox" name="compTies" value="compTies" id="compTies"></div><br>
+    <div class="check" id="csb"><label>Comp has the Bomb, and plays intelligently</label><input type="checkbox" name="compSmartBomb" value="compSmartBomb" id="compSmartBomb"></div>
+    <br><br>
+    <div class="check" id="ten"><label>Times 10</label><input type="radio" name="timesgroup" value="xX" id="xX" ></div>
+    <div class="check" id="hundred"><label>Times 100</label><input type="radio" name="timesgroup" value="xC" id="xC" ></div>
+    <div class="check" id="thousand"><label>Times 1000</label><input type="radio" name="timesgroup" value="xM" id="xM" ></div>
+    <div class="check" id="tenthousand"><label>Times 10000</label><input type="radio" name="timesgroup" value="x10M" id="x10M" ></div>
+    <div class="check" id="hundredthousand"><label>Times 100000</label><input type="radio" name="timesgroup" value="x100M" id="x100M" ></div>
+<!--<div class="check" id="million"><label>Times 1000000</label><input type="radio" name="timesgroup" value="xMillion" id="xMillion" ></div>-->
+
 </div>
 
 <div class="choices">
@@ -33,9 +49,11 @@
 <div class="choice" id="p"><img src="images/paper.svg" alt="paper"></div>
 <div class="choice" id="s"><img src="images/scissors.svg" alt="scissors"></div>
 <div class="choice" id="b"><img src="images/bomb.svg" alt="bomb"></div>
+<div class="choice" id="random">?</div>
 </div>
 
 <div id="action-message">Make a selection.</div>
+<div id="resetBlock"><button type="button" id="resetButton" onclick="resetScores()" name="RESETSCORES">RESET SCORES</button></div>
     </body>
 
     <script src="rpsb.js" charset="utf-8"></script>
