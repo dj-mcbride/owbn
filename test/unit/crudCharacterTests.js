@@ -53,6 +53,7 @@ describe('Character Sheet Tests', () => {
         createSheet = require('../../lib/rpc/character/crudCharacter').createSheet;
         updateSheet = require('../../lib/rpc/character/crudCharacter').updateSheet;
         deleteSheet = require('../../lib/rpc/character/crudCharacter').deleteSheet;
+        addAttribute = require('../../lib/rpc/character/crudCharacter').addAttribute;
         initLogs('createSheet.test.txt');
     });
 
@@ -582,6 +583,145 @@ describe('Character Sheet Tests', () => {
             } catch (error) {
                 console.log(`error : ${JSON.stringify(error)}`);
                 expect(error).to.not.exist;
+            }
+        });
+    });
+
+    describe('Function: addAttribute', () => {
+        // In this update, Vincent will have become keeper
+        let updateVincent = {
+            'name': 'Vincent Ivey',
+            'player': 'DeeJay McBride',
+            updateValues: {
+                    'physicalTraits': [
+                        'Tacos'
+                    ],
+                    'socialTraits': [
+                        'Rule'
+                    ],
+                    'mentalTraits': [
+                        'onTuesday'
+                    ]
+            }
+        };
+        td.reset();
+
+        // For this we want to do a simple update of our character
+        it('should succeed if no error found', async () => {
+            // First we need to alter our db.findOne to return a value.
+            td.when(collection.findOne(td.matchers.anything())).thenReturn(testSheet);
+
+            // Set our updates to return valid data 
+            const returnGoodValue = { 'ok': 1, 'writeErrors': [] };
+            td.when(collection.updateOne(td.matchers.anything())).thenReturn(returnGoodValue);
+            td.when(collection.bulkWrite(td.matchers.anything())).thenReturn(returnGoodValue);
+
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = addAttribute(updateVincent);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.message).to.include('Character Sheet updated!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        xit('should fail if user name was not passed', async () => {
+            td.reset();
+            // In this update, we will forget what name to pass
+            let updateVincentNameFail = {
+                name: 'Vincent Ivey',
+                position: 'Keeper'
+            };
+
+            // Run our promise
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = addAttribute(updateVincentNameFail);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('updateSheet');
+                expect(response.message).to.include('Value of player name not found!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        xit('should fail if character name was not passed', async () => {
+            // In this update, we will forget what name to pass
+            let updateVincentNameFail = {
+                player: 'DeeJay McBride',
+                position: 'Keeper'
+            };
+
+            // Run our promise
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = addAttribute(updateVincentNameFail);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('updateSheet');
+                expect(response.message).to.include('Value of character name not found!');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        xit('should fail if character sheet was not found', async () => {
+            // Since we are not mocking findOne, we should not find the sheet 
+            // in our DB
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = addAttribute(updateVincent);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.exist;
+                expect(response.results).to.include('updateSheet');
+                expect(response.message).to.include('Character sheet not found!  Unable to update.');
+            } catch (error) {
+                console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.not.exist;
+            }
+        });
+
+        xit('should fail if character sheet was unable to be updated', async () => {
+            // First we need to alter our db.findOne to return a value.
+            const errorMessage = { message: 'unable to update' };
+            td.when(collection.updateOne(td.matchers.anything())).thenThrow(errorMessage);
+            td.when(collection.bulkWrite(td.matchers.anything())).thenThrow(errorMessage);
+
+            // First we need to alter our db.findOne to return a value.
+            td.when(collection.findOne(td.matchers.anything())).thenReturn(testSheet);
+
+            try {
+                const response = await new Promise((resolve, reject) => {
+                    const responceObject = addAttribute(updateVincent);
+                    return resolve(responceObject);
+                });
+
+                // console.log(`response : ${JSON.stringify(response, 2, null)}`);
+                expect(response.results).to.not.exist;
+            } catch (error) {
+                // Sinced we are throwing an error here, we want to see this throw an 
+                // entire error
+                // console.log(`error : ${JSON.stringify(error)}`);
+                expect(error).to.exist;
+                expect(error.message).to.include('unable to update');
             }
         });
     });
