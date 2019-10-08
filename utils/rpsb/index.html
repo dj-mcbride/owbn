@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors Bomb!</title>
+        <meta name="viewport" content="width=device-width">
         <link rel="apple-touch-icon" sizes="180x180" href="/rpsb/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/rpsb/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/rpsb/favicon-16x16.png">
@@ -13,6 +14,7 @@
         <link rel="stylesheet" href="rpsb.css">
     </head>
     <body>
+        <div id="container">
 <header>
     <h1>Rock, Paper, Scissors, Bomb!</h1>
 </header>
@@ -44,6 +46,11 @@
 
 </div>
 
+<div class="traitsBlock">
+    <div id="traitsLeft"><label>Player Traits</label><input type="number" id="playerTraits"></div>
+    <div id="traitsRight"><label>Comp Traits</label><input type="number" id="compTraits"></div>
+</div>
+
 <div class="choices">
 <div class="choice" id="r"><img src="images/rock.svg" alt="rock"></div>
 <div class="choice" id="p"><img src="images/paper.svg" alt="paper"></div>
@@ -54,6 +61,7 @@
 
 <div id="action-message">Make a selection.</div>
 <div id="resetBlock"><button type="button" id="resetButton" onclick="resetScores()" name="RESETSCORES">RESET SCORES</button></div>
+</div>
     </body>
 
     <script src="rpsb.js" charset="utf-8"></script>

@@ -4,68 +4,132 @@
     box-sizing: border-box;
 }
 
-body { background: #333333; 
+body {
+    background: #333333; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white; }
+    color: white; 
+}
 
-header {background: #ffffff; 
-padding: 20px;}
+div#container {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
 
-header h1 { color: red; 
-text-align: center;}
+header {
+    background: #ffffff; 
+    padding: 20px;
+}
+
+header h1 {
+    color: red; 
+    text-align: center;
+}
 
 .scoreboard {
     margin: 20px auto; 
     border: 3px white solid;
     padding: 15px 20px;
-width: 500px;
-font-size: 48px;
-border-radius: 4px;
-text-align:center;
-position: relative;
+    max-width: 500px;
+    font-size: 48px;
+    border-radius: 4px;
+    text-align:center;
+    position: relative;
 }
 
-.badge {background: red;
-color:white;
-font-size: 14px;
-padding: 2px 10px;}
+.badge {
+    background: red;
+    color:white;
+    font-size: 14px;
+    padding: 2px 10px;
+}
 
-#userlabel {position: absolute;
-top: 30px;
-left: -25px;}
-
-#complabel {position: absolute;
+#userlabel {
+    position: absolute;
     top: 30px;
-right: -30px;}
+    left: -25px;
+}
 
-#tieslabel {position: absolute;
+#complabel {
+    position: absolute;
+    top: 30px;
+    right: -30px;
+}
+
+#tieslabel {
+    position: absolute;
     bottom: -8px;
-right: 225px;}
+    right: 225px;
+}
 
 .result {
     font-size: 40px;
 }
 
-.result > p { color: white; 
+.result > p { 
+    color: white; 
     font-weight: bold;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-text-align: center;}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
 
 .variableRules {
-    width: 700px;
-    margin: 30px auto;}
+    max-width: 400px;
+    margin: 30px auto;
+}
 
-.check {display: inline-block;
-margin: 0 10px 0 0;}
+.check {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
 
-.check > label {margin: 0 10px 0 0;}
 
-.choices {margin: 50px 0 30px 0 ;
-    text-align: center;}
+.check > label {
+    margin: 0 10px 0 0;
+}
 
-#b {display:none;}
+.traitsBlock {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 10px;
+    border: solid 3px red;
+    position: relative;
+}
 
-#random {font-size: 84px; line-height: 84px; vertical-align: top;}
+.traitsBlock > div {
+    display: inline-block;
+    margin: 0;
+}
+
+.traitsBlock > div#traitsRight {
+    position: absolute;
+    right: 10px;
+}
+
+.traitsBlock > div > label {
+    display: inline-block;
+    width: 110px;
+    margin: 0 10px 0 0;
+}
+
+.traitsBlock > div > input {
+    display: inline-block;
+    width: 50px;
+}
+
+.choices {
+    margin: 50px 0 30px 0 ;
+    text-align: center;
+}
+
+#b {
+    display:none;
+}
+
+#random {
+    font-size: 84px; 
+    line-height: 84px; 
+    vertical-align: top;
+}
 
 .choice {
     display:inline-block;
@@ -73,19 +137,90 @@ margin: 0 10px 0 0;}
     width: 100px;
     margin: 10px;
     padding: 5px;
-border: 3px solid white;
-border-radius: 50%;
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
-.choice:hover {background: #999999;
-cursor: grabbing;
-transition: all 0.3s ease;}
+.choice:hover {
+    background: #999999;
+    cursor: grabbing;
+    transition: all 0.3s ease;
+}
 
-.choice > img {width: 100%;}
+.choice > img {
+    width: 100%;
+}
 
-#action-message {text-align: center;
-font-size: 18px;}
+#action-message {
+    text-align: center;
+    font-size: 18px;
+}
 
-#resetBlock {text-align: center;}
-#resetButton {margin: 30px auto 0 auto; padding: 10px 20px; border-radius: 10px; color: white; background: #666666;}
-#resetButton:hover {background: #999999; transition: all 0.3s ease;}
+#resetBlock {
+    text-align: center;
+}
+
+#resetButton {
+    margin: 30px auto 0 auto; 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    color: white; 
+    background: #666666;
+}
+
+#resetButton:hover {
+    background: #999999; 
+    transition: all 0.3s ease; 
+}
+
+@media screen and (max-width:600px){
+
+    .traitsBlock > div {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .traitsBlock > div#traitsRight {
+        position: relative;
+        right: 0;
+    }
+
+    .scoreboard {
+        margin: 20px auto; 
+        border: 3px white solid;
+        padding: 0px 20px 0px 20px;
+        max-width: 500px;
+        font-size: 48px;
+        border-radius: 4px;
+        text-align:center;
+        position: relative;
+    }
+    
+    .badge {
+        background: red;
+        color:white;
+        font-size: 14px;
+        padding: 2px 10px;
+    }
+    
+    #userlabel {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+    }
+    
+    #complabel {
+        position: absolute;
+        top: 30px;
+        right: 0px;
+    }
+    
+    #tieslabel {
+        position: relative;
+        bottom: 0px;
+        right: auto;
+        width: 50px;
+        margin: 0 auto;
+    }
+
+}
