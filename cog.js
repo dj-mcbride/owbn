@@ -10,6 +10,7 @@ const viewItems = require(path.join(__dirname, './lib/rpc/items/viewItems'));
 const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
 const crudPlayers = require(path.join(__dirname, './lib/rpc/player/crudGames'));
 const viewPlayers = require(path.join(__dirname, './lib/rpc/player/viewGames'));
+const rpsb = require(path.join(__dirname, './lib/rpc/rpsb/rpsb'));
 
 class owbn {
 
@@ -694,6 +695,35 @@ class owbn {
         }
         log.debug(`Cog : Ending viewPlayerSelection.viewPlayerSelection, return value is ${JSON.stringify(returnValue)}`);
         return callback(returnValue);
+    }
+
+        /**
+     * @description Create a new character.  This will import what is passed and insert it into mongo.
+     * @pronghornType method
+     * @name staticRPSB
+     * @summary Create a new character
+     * @param {object} requestStaticRPSB paramerters of game of RPSB to be played
+     * @param {function} callback Callback function
+     * @returns {object} Response object
+     *
+     * @route {GET} /owbn/staticRPSB
+     * @roles admin player gm owbn
+     * @task true
+     *
+     */
+    async staticRPSB(requestStaticRPSB, callback) {
+        log.debug('Cog : Calling: rpsb.staticRPSB');
+        let returnWinLoseTie;
+        try {
+            returnWinLoseTie = await rpsb.staticRPSB(requestStaticRPSB);
+        } catch (error) {
+            error => new Response({
+                    from: error
+                })
+                .errorOn([500], callback);
+        }
+        log.debug(`Cog : Ended createSheet call, return value is ${JSON.stringify(returnValue)}`);
+        return callback(returnWinLoseTie);
     }
 
 }

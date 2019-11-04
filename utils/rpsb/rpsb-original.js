@@ -304,6 +304,7 @@ function main() {
  } */
 
     //Event Listeners
+    // This triggers on the click of one of the buttons on the web page, and causes the game to run X times
 
     rock_div.addEventListener('click', function(){
 

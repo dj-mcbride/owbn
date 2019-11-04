@@ -550,6 +550,28 @@
 				"admin", "player", "gm", "owbn"
 			],
 			"task": true
+		},
+		{
+			"name": "staticRPSB",
+			"summary": "Run a static game of RPSB",
+			"description": "Return a condition from a game of RPSB",
+			"input": {
+					"name": "requestStaticRPSB",
+					"type": "object"
+			},
+			"output": {
+				"name": "returnWinLoseTie",
+				"type": "string",
+				"description": "RPSB"
+			},
+			"route": {
+				"path": "/staticRPSB",
+				"verb": "GET"
+			},
+			"roles": [
+				"admin", "player", "gm", "owbn"
+			],
+			"task": true
 		}
 	],
 	"views": [        
