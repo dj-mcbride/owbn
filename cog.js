@@ -8,8 +8,8 @@ const viewGames = require(path.join(__dirname, './lib/rpc/games/viewGames'));
 const crudItems = require(path.join(__dirname, './lib/rpc/items/crudItems'));
 const viewItems = require(path.join(__dirname, './lib/rpc/items/viewItems'));
 const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
-const crudPlayers = require(path.join(__dirname, './lib/rpc/player/crudGames'));
-const viewPlayers = require(path.join(__dirname, './lib/rpc/player/viewGames'));
+const crudPlayers = require(path.join(__dirname, './lib/rpc/player/crudPlayers'));
+const viewPlayers = require(path.join(__dirname, './lib/rpc/player/viewPlayers'));
 const rpsb = require(path.join(__dirname, './lib/rpc/rpsb/rpsb'));
 
 class owbn {
