@@ -10,7 +10,7 @@ const viewItems = require(path.join(__dirname, './lib/rpc/items/viewItems'));
 const charUtils = require(path.join(__dirname, './lib/rpc/player/charUtils'));
 const crudPlayers = require(path.join(__dirname, './lib/rpc/player/crudPlayers'));
 const viewPlayers = require(path.join(__dirname, './lib/rpc/player/viewPlayers'));
-const rpsb = require(path.join(__dirname, './lib/rpc/rpsb/rpsb'));
+const rpsb = require(path.join(__dirname, './lib/rpc/rpsb/rpsbAPI'));
 
 class owbn {
 
