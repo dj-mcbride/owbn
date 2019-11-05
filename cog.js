@@ -713,7 +713,7 @@ class owbn {
      */
     staticRPSB(requestStaticRPSB, callback) {
         log.debug('Cog : Calling: rpsb.staticRPSB');
-        const returnWinLoseTie;
+        let returnWinLoseTie;
         // const returnWinLoseTie = rpsb.staticRPSB(requestStaticRPSB);
         try {
             log.debug(`Cog : Update: rpsb.staticRPSB : requestStaticRPSB == ${requestStaticRPSB}`);
