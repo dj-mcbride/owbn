@@ -4,9 +4,6 @@
        "$id": "http://example.com/root.json",
        "type": "object",
        "title": "The Root Schema",
-       "required": [
-         "requestStaticRPSB"
-       ],
       "properties": {
         "requestStaticRPSB": {
           "$id": "#/properties/requestStaticRPSB",
@@ -31,7 +28,7 @@
               ],
               "enum": [
                     "r", "p", "s", "b"
-              ],
+                ],
               "pattern": "^(.*)$"
             },
             "cpuBomb": {
