@@ -561,12 +561,12 @@
 			},
 			"output": {
 				"name": "returnWinLoseTie",
-				"type": "string",
+				"type": "object",
 				"description": "RPSB"
 			},
 			"route": {
 				"path": "/staticRPSB",
-				"verb": "GET"
+				"verb": "POST"
 			},
 			"roles": [
 				"admin", "player", "gm", "owbn"
