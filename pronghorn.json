@@ -411,12 +411,14 @@
 			"name": "viewItemSelection",
 			"summary": "Show Selection",
 			"description": "Display an existing element of a item.  The item name needs to be passed in the request object",
-			"input": [{
+			"input": [
+				{
 					"name": "requestObject",
 					"type": "object"
 				},
-				{"name": "project",
-				"type" : "string"
+				{
+					"name": "project",
+					"type" : "string"
 				}
 			],
 			"output": {
@@ -555,10 +557,10 @@
 			"name": "staticRPSB",
 			"summary": "Run a static game of RPSB",
 			"description": "Return a condition from a game of RPSB",
-			"input": {
+			"input": [{
 					"name": "requestStaticRPSB",
 					"type": "object"
-			},
+			}],
 			"output": {
 				"name": "returnWinLoseTie",
 				"type": "object",
