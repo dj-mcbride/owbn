@@ -711,11 +711,12 @@ class owbn {
      * @task true
      *
      */
-    async staticRPSB(requestStaticRPSB, callback) {
+    staticRPSB(requestStaticRPSB, callback) {
         log.debug('Cog : Calling: rpsb.staticRPSB');
         let returnWinLoseTie;
         try {
-            returnWinLoseTie = await rpsb.staticRPSB(requestStaticRPSB);
+            returnWinLoseTie = rpsb.staticRPSB(requestStaticRPSB);
+            log.debug(`Cog : Update: rpsb.staticRPSB : returnWinLoseTie == ${returnWinLoseTie}`);
         } catch (error) {
             error => new Response({
                     from: error
