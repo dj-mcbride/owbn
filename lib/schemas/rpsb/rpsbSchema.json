@@ -1,0 +1,85 @@
+{
+       "definitions": {},
+       "$schema": "http://json-schema.org/draft-07/schema#",
+       "$id": "http://example.com/root.json",
+       "type": "object",
+       "title": "The Root Schema",
+       "required": [
+         "requestStaticRPSB"
+       ],
+      "properties": {
+        "requestStaticRPSB": {
+          "$id": "#/properties/requestStaticRPSB",
+          "type": "object",
+          "title": "The Requeststaticrpsb Schema",
+          "required": [
+            "userChoice",
+            "cpuBomb",
+            "pcTraits",
+            "cpuTraits",
+            "pcWinsTies",
+            "cpuWinsTies"
+          ],
+          "properties": {
+            "userChoice": {
+              "$id": "#/properties/requestStaticRPSB/properties/userChoice",
+              "type": "string",
+              "title": "The Userchoice Schema",
+              "default": "",
+              "examples": [
+                "r", "s", "b"
+              ],
+              "enum": [
+                    "r", "p", "s", "b"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "cpuBomb": {
+              "$id": "#/properties/requestStaticRPSB/properties/cpuBomb",
+              "type": "boolean",
+              "title": "The Cpubomb Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "pcTraits": {
+              "$id": "#/properties/requestStaticRPSB/properties/pcTraits",
+              "type": "integer",
+              "title": "The Pctraits Schema",
+              "default": 0,
+              "examples": [
+                11
+              ]
+            },
+            "cpuTraits": {
+              "$id": "#/properties/requestStaticRPSB/properties/cpuTraits",
+              "type": "integer",
+              "title": "The Cputraits Schema",
+              "default": 0,
+              "examples": [
+                10
+              ]
+            },
+            "pcWinsTies": {
+              "$id": "#/properties/requestStaticRPSB/properties/pcWinsTies",
+              "type": "boolean",
+              "title": "The Pcwinsties Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            },
+            "cpuWinsTies": {
+              "$id": "#/properties/requestStaticRPSB/properties/cpuWinsTies",
+              "type": "boolean",
+              "title": "The Cpuwinsties Schema",
+              "default": false,
+              "examples": [
+                false
+              ]
+            }
+          }
+        }
+      }
+    }
