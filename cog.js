@@ -713,18 +713,19 @@ class owbn {
      */
     staticRPSB(requestStaticRPSB, callback) {
         log.debug('Cog : Calling: rpsb.staticRPSB');
-        let returnWinLoseTie;
-        try {
-            log.debug(`Cog : Update: rpsb.staticRPSB : requestStaticRPSB == ${requestStaticRPSB}`);
-            returnWinLoseTie = rpsb.staticRPSB(requestStaticRPSB);
-            log.debug(`Cog : Update: rpsb.staticRPSB : returnWinLoseTie == ${returnWinLoseTie}`);
-        } catch (error) {
-            error => new Response({
-                    from: error
-                })
-                .errorOn([500], callback);
-        }
-        log.debug(`Cog : Ended createSheet call, return value is ${JSON.stringify(returnValue)}`);
+        // const returnWinLoseTie;
+        const returnWinLoseTie = rpsb.staticRPSB(requestStaticRPSB);
+        // try {
+        //     log.debug(`Cog : Update: rpsb.staticRPSB : requestStaticRPSB == ${requestStaticRPSB}`);
+        //     returnWinLoseTie = rpsb.staticRPSB(requestStaticRPSB);
+        //     log.debug(`Cog : Update: rpsb.staticRPSB : returnWinLoseTie == ${returnWinLoseTie}`);
+        // } catch (error) {
+        //     error => new Response({
+        //             from: error
+        //         })
+        //         .errorOn([500], callback);
+        // }
+        log.debug(`Cog : Ended createSheet call, return value is ${JSON.stringify(returnWinLoseTie)}`);
         return callback(returnWinLoseTie);
     }
 
