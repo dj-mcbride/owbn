@@ -715,6 +715,7 @@ class owbn {
         log.debug('Cog : Calling: rpsb.staticRPSB');
         let returnWinLoseTie;
         try {
+            log.debug(`Cog : Update: rpsb.staticRPSB : requestStaticRPSB == ${requestStaticRPSB}`);
             returnWinLoseTie = rpsb.staticRPSB(requestStaticRPSB);
             log.debug(`Cog : Update: rpsb.staticRPSB : returnWinLoseTie == ${returnWinLoseTie}`);
         } catch (error) {
